@@ -1,0 +1,410 @@
+html, body, ul, li, ol, dl, dd, dt, p, b, input, select, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img, input {
+  border: none; }
+
+img {
+  display: block; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, li, ol {
+  list-style: none; }
+
+body {
+  color: #333;
+  padding: 5px 0;
+  font: 12px/20px "SimSun","microsoft yahei","Arial Narrow",HELVETICA;
+  background: #fff;
+  /* overflow-y:scroll;*/
+  overflow-x: hidden; }
+
+a, b {
+  color: #666;
+  text-decoration: none; }
+
+b {
+  font-weight: normal; }
+
+a:visited {
+  color: #666; }
+
+a:hover, a:active, a:focus {
+  text-decoration: underline; }
+
+#topbar {
+  width: 1308px;
+  height: 24px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e2e2e2; }
+  #topbar ul {
+    padding-left: 60px;
+    line-height: 24px;
+    float: left;
+    width: 200px; }
+    #topbar ul li {
+      width: 50px;
+      padding: 0 15px;
+      float: left; }
+    #topbar ul li:nth-child(2n+1) {
+      background: url(../images/index_03.jpg) no-repeat left center; }
+    #topbar ul li:nth-child(2n) {
+      background: url(../images/index_05.jpg) no-repeat left center;
+      padding-left: 22px; }
+  #topbar p {
+    float: right; }
+    #topbar p a {
+      width: 44px;
+      text-align: center;
+      line-height: 24px; }
+  #topbar dl {
+    float: right;
+    line-height: 24px;
+    padding: 0 58px 0 15px; }
+    #topbar dl dd {
+      float: left;
+      width: 62px;
+      padding: 0 8px; }
+      #topbar dl dd a {
+        float: left; }
+      #topbar dl dd a:hover {
+        text-decoration: none; }
+      #topbar dl dd img {
+        float: left;
+        padding: 10px 0 0 8px; }
+    #topbar dl dt {
+      float: left;
+      width: 50px;
+      padding: 0 8px; }
+  #topbar .myegg {
+    width: 118px;
+    line-height: 35px;
+    background: #fff;
+    border: 1px solid #000;
+    clear: both;
+    display: none; }
+  #topbar .sevice {
+    width: 148px;
+    height: 102px;
+    display: none; }
+
+#header {
+  width: 1308px;
+  height: 146px; }
+  #header .ad {
+    margin: 0 54px;
+    position: relative;
+    width: 1200px;
+    height: 60px; }
+    #header .ad a {
+      background: url(../images/index_06.jpg) no-repeat left top;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 5px;
+      top: 5px; }
+  #header .wraper {
+    margin: 0 54px;
+    width: 1200px;
+    height: 86px;
+    position: relative; }
+    #header .wraper .log {
+      background: url(../images/logo.png);
+      width: 319px;
+      height: 65px;
+      position: absolute;
+      left: 4px;
+      top: 11px; }
+    #header .wraper .days7 {
+      background: url(../images/all.gif);
+      position: absolute;
+      width: 225px;
+      height: 86px;
+      top: 0;
+      right: 0; }
+    #header .wraper .search {
+      position: absolute;
+      left: 368px;
+      top: 18px; }
+      #header .wraper .search p {
+        width: 337px;
+        height: 30px;
+        border: solid 2px #ff6600;
+        float: left; }
+        #header .wraper .search p input {
+          width: 330px;
+          border: 0 solid #000;
+          height: 30px;
+          text-indent: 6px;
+          color: #b7b7b7; }
+      #header .wraper .search em {
+        float: left; }
+        #header .wraper .search em a {
+          float: left;
+          background: #ff6600;
+          color: #fff;
+          text-align: center;
+          width: 98px;
+          height: 34px;
+          font: bolder 14px/34px simsun;
+          border-radius: 0px 3px 3px 0; }
+      #header .wraper .search span {
+        display: block;
+        clear: both;
+        line-height: 29px;
+        padding-left: 5px; }
+        #header .wraper .search span a {
+          float: left;
+          line-height: 29px; }
+        #header .wraper .search span b {
+          float: left;
+          margin: 0 15px;
+          line-height: 29px; }
+
+#menu {
+  width: 1308px;
+  height: 40px;
+  background: #10286c;
+  position: relative; }
+  #menu .innermenu {
+    position: absolute;
+    left: 54px;
+    top: 0; }
+    #menu .innermenu h3 {
+      line-height: 40px;
+      width: 179px;
+      text-indent: 20px;
+      background: url(../images/bg.png) no-repeat 120px -1252px #ff6600; }
+      #menu .innermenu h3 a {
+        color: #fff;
+        display: block;
+        font: 14px/40px "microsoft yahei"; }
+      #menu .innermenu h3 a:hover {
+        text-decoration: none; }
+    #menu .innermenu .menulist {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 174px;
+      height: 467px;
+      border: 2px solid #ff6600;
+      border-top: none; }
+  #menu .nav {
+    position: absolute;
+    left: 243px;
+    top: 0;
+    width: 520px;
+    height: 40px; }
+    #menu .nav li {
+      float: left; }
+    #menu .nav a {
+      color: #fff;
+      display: block;
+      font: 14px/40px "microsoft yahei";
+      padding: 0 20px; }
+    #menu .nav a:hover {
+      text-decoration: none;
+      background: #295dd7; }
+
+.wrap {
+  width: 1200px;
+  margin: 0 54px; }
+  .wrap #section {
+    margin-left: 190px;
+    margin-top: 10px; }
+    .wrap #section .secLeft {
+      float: left; }
+      .wrap #section .secLeft .leftSlide {
+        width: 771px;
+        height: 245px;
+        position: relative; }
+        .wrap #section .secLeft .leftSlide li {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 771px;
+          height: 245px; }
+        .wrap #section .secLeft .leftSlide .prev, .wrap #section .secLeft .leftSlide .next {
+          width: 20px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          color: #fff;
+          background: #000;
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          position: absolute;
+          top: 50%;
+          font-size: 16px;
+          margin-top: -25px;
+          cursor: pointer; }
+        .wrap #section .secLeft .leftSlide .prev {
+          left: 0; }
+        .wrap #section .secLeft .leftSlide .next {
+          right: 0; }
+        .wrap #section .secLeft .leftSlide .dot {
+          position: absolute;
+          right: 8px;
+          bottom: 10px;
+          overflow: hidden; }
+          .wrap #section .secLeft .leftSlide .dot span {
+            display: block;
+            width: 26px;
+            height: 26px;
+            margin-left: 10px;
+            float: left;
+            font-family: arial;
+            cursor: pointer;
+            background: url(../images/navbg.png) no-repeat -34px top;
+            color: #fff;
+            text-align: center;
+            line-height: 26px; }
+          .wrap #section .secLeft .leftSlide .dot .active {
+            background: url(../images/navbg.png) no-repeat 1px top; }
+      .wrap #section .secLeft .timer {
+        width: 771px;
+        height: 203px;
+        position: relative;
+        margin-top: 10px; }
+        .wrap #section .secLeft .timer h3 {
+          font: bold 16px/24px "microsoft yahei";
+          padding-left: 16px;
+          margin-bottom: 10px;
+          color: #bf1313; }
+        .wrap #section .secLeft .timer .more {
+          display: block;
+          position: absolute;
+          background: url(../images/arrow.png) no-repeat 93px 5px;
+          color: #666;
+          top: 0;
+          right: 0;
+          padding: 0 16px 0 11px;
+          font-weight: bold; }
+        .wrap #section .secLeft .timer p {
+          position: absolute;
+          left: 50%;
+          top: 0;
+          color: #666;
+          font-weight: bold;
+          line-height: 28px;
+          font-size: 14px;
+          margin-left: -95px;
+          width: 190px; }
+          .wrap #section .secLeft .timer p span {
+            width: 28px;
+            height: 28px;
+            background: #efefef;
+            display: block;
+            float: left; }
+        .wrap #section .secLeft .timer ul {
+          padding: 0 20px;
+          width: 744px; }
+          .wrap #section .secLeft .timer ul li {
+            float: left;
+            width: 150px;
+            height: 173px;
+            padding: 0 18px; }
+            .wrap #section .secLeft .timer ul li img {
+              width: 144px;
+              height: 108px; }
+            .wrap #section .secLeft .timer ul li dt {
+              line-height: 18px;
+              padding: 5px 0;
+              height: 36px;
+              overflow: hidden;
+              width: 150px; }
+            .wrap #section .secLeft .timer ul li dd {
+              color: #ff6600;
+              font: bold 14px/14px arial; }
+        .wrap #section .secLeft .timer .prev {
+          background: url(../images/abtn.png) no-repeat;
+          display: block;
+          width: 9px;
+          height: 17px;
+          position: absolute;
+          left: 0;
+          top: 115px; }
+        .wrap #section .secLeft .timer .next {
+          background: url(../images/abtn.png) no-repeat -9px top;
+          display: block;
+          width: 9px;
+          height: 17px;
+          position: absolute;
+          right: 0;
+          top: 115px; }
+    .wrap #section .secRight {
+      float: right; }
+      .wrap #section .secRight .rightSlide {
+        width: 226px;
+        height: 241px;
+        position: relative;
+        border: 2px solid #f1d4b3; }
+        .wrap #section .secRight .rightSlide li {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 226px;
+          height: 241px; }
+        .wrap #section .secRight .rightSlide .dot {
+          position: absolute;
+          left: 8px;
+          top: 8px;
+          overflow: hidden; }
+          .wrap #section .secRight .rightSlide .dot span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin-right: 7px;
+            float: left;
+            font-family: arial;
+            cursor: pointer;
+            background: url(../images/dotnav.png) no-repeat -16px top; }
+          .wrap #section .secRight .rightSlide .dot .active {
+            background: url(../images/dotnav.png) no-repeat left top; }
+      .wrap #section .secRight .groupAd {
+        margin-top: 10px; }
+  .wrap #hot_sale {
+    padding: 10px 0; }
+    .wrap #hot_sale .hot {
+      width: 960px;
+      height: 287px;
+      float: left; }
+      .wrap #hot_sale .hot .title {
+        border-bottom: 3px solid #ff6600;
+        width: 960px;
+        height: 48px;
+        padding-top: 7px; }
+        .wrap #hot_sale .hot .title h2 {
+          font: bolder 20px/36px "microsoft yahei";
+          padding-left: 10px;
+          color: #ff6600;
+          float: left; }
+        .wrap #hot_sale .hot .title .change {
+          background: url(../images/hot_flash.png) no-repeat left 2px;
+          padding-left: 16px;
+          float: left; }
+        .wrap #hot_sale .hot .title span {
+          float: right; }
+      .wrap #hot_sale .hot ul {
+        border: 1px solid #dadada;
+        clear: both; }
+      .wrap #hot_sale .hot li {
+        float: left; }
+        .wrap #hot_sale .hot li img {
+          width: 180px;
+          height: 135px; }
+        .wrap #hot_sale .hot li dt {
+          line-height: 18px;
+          padding: 5px 0;
+          height: 36px;
+          overflow: hidden;
+          width: 150px; }
+        .wrap #hot_sale .hot li dd {
+          color: #ff6600;
+          font: bold 14px/14px arial; }
+
+/*# sourceMappingURL=index.css.map */
