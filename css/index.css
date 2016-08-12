@@ -1,4 +1,4 @@
-html, body, ul, li, ol, dl, dd, dt, p, b, input, select, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+html, body, ul, li, ol, dl, dd, dt, p, b, input, select, em, i, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
   margin: 0;
   padding: 0; }
 
@@ -93,13 +93,13 @@ a:hover, a:active, a:focus {
     display: none; }
 
 #header {
-  width: 1308px;
-  height: 146px; }
+  width: 1308px; }
   #header .ad {
     margin: 0 54px;
     position: relative;
     width: 1200px;
-    height: 60px; }
+    height: 60px;
+    display: block; }
     #header .ad a {
       background: url(../images/index_06.jpg) no-repeat left top;
       width: 20px;
@@ -140,7 +140,8 @@ a:hover, a:active, a:focus {
           border: 0 solid #000;
           height: 30px;
           text-indent: 6px;
-          color: #b7b7b7; }
+          color: #b7b7b7;
+          outline: medium; }
       #header .wraper .search em {
         float: left; }
         #header .wraper .search em a {
@@ -152,6 +153,8 @@ a:hover, a:active, a:focus {
           height: 34px;
           font: bolder 14px/34px simsun;
           border-radius: 0px 3px 3px 0; }
+        #header .wraper .search em a:hover {
+          text-decoration: none; }
       #header .wraper .search span {
         display: block;
         clear: both;
@@ -210,25 +213,32 @@ a:hover, a:active, a:focus {
       text-decoration: none;
       background: #295dd7; }
 
-.wrap {
+#body {
   width: 1200px;
   margin: 0 54px; }
-  .wrap #section {
+  #body #section {
     margin-left: 190px;
-    margin-top: 10px; }
-    .wrap #section .secLeft {
-      float: left; }
-      .wrap #section .secLeft .leftSlide {
+    margin-top: 10px;
+    height: 478px;
+    width: 1010px;
+    overflow: hidden; }
+    #body #section .secLeft {
+      float: left;
+      width: 771px;
+      height: 462px;
+      overflow: hidden; }
+      #body #section .secLeft .leftSlide {
         width: 771px;
         height: 245px;
         position: relative; }
-        .wrap #section .secLeft .leftSlide li {
+        #body #section .secLeft .leftSlide li {
           position: absolute;
           left: 0;
           top: 0;
           width: 771px;
-          height: 245px; }
-        .wrap #section .secLeft .leftSlide .prev, .wrap #section .secLeft .leftSlide .next {
+          height: 245px;
+          display: none; }
+        #body #section .secLeft .leftSlide .prev, #body #section .secLeft .leftSlide .next {
           width: 20px;
           height: 50px;
           line-height: 50px;
@@ -241,17 +251,18 @@ a:hover, a:active, a:focus {
           top: 50%;
           font-size: 16px;
           margin-top: -25px;
-          cursor: pointer; }
-        .wrap #section .secLeft .leftSlide .prev {
+          cursor: pointer;
+          font-weight: bold; }
+        #body #section .secLeft .leftSlide .prev {
           left: 0; }
-        .wrap #section .secLeft .leftSlide .next {
+        #body #section .secLeft .leftSlide .next {
           right: 0; }
-        .wrap #section .secLeft .leftSlide .dot {
+        #body #section .secLeft .leftSlide .dot {
           position: absolute;
           right: 8px;
           bottom: 10px;
           overflow: hidden; }
-          .wrap #section .secLeft .leftSlide .dot span {
+          #body #section .secLeft .leftSlide .dot span {
             display: block;
             width: 26px;
             height: 26px;
@@ -263,19 +274,19 @@ a:hover, a:active, a:focus {
             color: #fff;
             text-align: center;
             line-height: 26px; }
-          .wrap #section .secLeft .leftSlide .dot .active {
+          #body #section .secLeft .leftSlide .dot .active {
             background: url(../images/navbg.png) no-repeat 1px top; }
-      .wrap #section .secLeft .timer {
+      #body #section .secLeft .timer {
         width: 771px;
         height: 203px;
         position: relative;
         margin-top: 10px; }
-        .wrap #section .secLeft .timer h3 {
+        #body #section .secLeft .timer h3 {
           font: bold 16px/24px "microsoft yahei";
           padding-left: 16px;
           margin-bottom: 10px;
           color: #bf1313; }
-        .wrap #section .secLeft .timer .more {
+        #body #section .secLeft .timer .more {
           display: block;
           position: absolute;
           background: url(../images/arrow.png) no-repeat 93px 5px;
@@ -284,7 +295,7 @@ a:hover, a:active, a:focus {
           right: 0;
           padding: 0 16px 0 11px;
           font-weight: bold; }
-        .wrap #section .secLeft .timer p {
+        #body #section .secLeft .timer p {
           position: absolute;
           left: 50%;
           top: 0;
@@ -293,34 +304,37 @@ a:hover, a:active, a:focus {
           line-height: 28px;
           font-size: 14px;
           margin-left: -95px;
-          width: 190px; }
-          .wrap #section .secLeft .timer p span {
+          width: 200px; }
+          #body #section .secLeft .timer p span {
             width: 28px;
             height: 28px;
             background: #efefef;
-            display: block;
-            float: left; }
-        .wrap #section .secLeft .timer ul {
+            display: inline-block;
+            text-align: center;
+            line-height: 28px;
+            border-radius: 2px;
+            margin: 0 3px; }
+        #body #section .secLeft .timer ul {
           padding: 0 20px;
           width: 744px; }
-          .wrap #section .secLeft .timer ul li {
+          #body #section .secLeft .timer ul li {
             float: left;
             width: 150px;
             height: 173px;
             padding: 0 18px; }
-            .wrap #section .secLeft .timer ul li img {
+            #body #section .secLeft .timer ul li img {
               width: 144px;
               height: 108px; }
-            .wrap #section .secLeft .timer ul li dt {
+            #body #section .secLeft .timer ul li dt {
               line-height: 18px;
               padding: 5px 0;
               height: 36px;
               overflow: hidden;
               width: 150px; }
-            .wrap #section .secLeft .timer ul li dd {
+            #body #section .secLeft .timer ul li dd {
               color: #ff6600;
               font: bold 14px/14px arial; }
-        .wrap #section .secLeft .timer .prev {
+        #body #section .secLeft .timer .prev {
           background: url(../images/abtn.png) no-repeat;
           display: block;
           width: 9px;
@@ -328,7 +342,7 @@ a:hover, a:active, a:focus {
           position: absolute;
           left: 0;
           top: 115px; }
-        .wrap #section .secLeft .timer .next {
+        #body #section .secLeft .timer .next {
           background: url(../images/abtn.png) no-repeat -9px top;
           display: block;
           width: 9px;
@@ -336,25 +350,26 @@ a:hover, a:active, a:focus {
           position: absolute;
           right: 0;
           top: 115px; }
-    .wrap #section .secRight {
+    #body #section .secRight {
       float: right; }
-      .wrap #section .secRight .rightSlide {
+      #body #section .secRight .rightSlide {
         width: 226px;
         height: 241px;
         position: relative;
         border: 2px solid #f1d4b3; }
-        .wrap #section .secRight .rightSlide li {
+        #body #section .secRight .rightSlide li {
           position: absolute;
           left: 0;
           top: 0;
           width: 226px;
-          height: 241px; }
-        .wrap #section .secRight .rightSlide .dot {
+          height: 241px;
+          display: none; }
+        #body #section .secRight .rightSlide .dot {
           position: absolute;
           left: 8px;
           top: 8px;
           overflow: hidden; }
-          .wrap #section .secRight .rightSlide .dot span {
+          #body #section .secRight .rightSlide .dot span {
             display: block;
             width: 10px;
             height: 10px;
@@ -363,48 +378,653 @@ a:hover, a:active, a:focus {
             font-family: arial;
             cursor: pointer;
             background: url(../images/dotnav.png) no-repeat -16px top; }
-          .wrap #section .secRight .rightSlide .dot .active {
+          #body #section .secRight .rightSlide .dot .active {
             background: url(../images/dotnav.png) no-repeat left top; }
-      .wrap #section .secRight .groupAd {
+      #body #section .secRight .groupAd {
         margin-top: 10px; }
-  .wrap #hot_sale {
-    padding: 10px 0; }
-    .wrap #hot_sale .hot {
+  #body #hot_sale {
+    clear: both;
+    padding: 10px 0;
+    height: 289px; }
+    #body #hot_sale .hot {
       width: 960px;
       height: 287px;
       float: left; }
-      .wrap #hot_sale .hot .title {
+      #body #hot_sale .hot .title {
         border-bottom: 3px solid #ff6600;
         width: 960px;
-        height: 48px;
+        height: 38px;
         padding-top: 7px; }
-        .wrap #hot_sale .hot .title h2 {
+        #body #hot_sale .hot .title h2 {
           font: bolder 20px/36px "microsoft yahei";
           padding-left: 10px;
           color: #ff6600;
           float: left; }
-        .wrap #hot_sale .hot .title .change {
+        #body #hot_sale .hot .title .change {
           background: url(../images/hot_flash.png) no-repeat left 2px;
-          padding-left: 16px;
+          height: 15px;
+          padding-left: 15px;
+          margin: 10px 0 0 12px;
           float: left; }
-        .wrap #hot_sale .hot .title span {
-          float: right; }
-      .wrap #hot_sale .hot ul {
+        #body #hot_sale .hot .title span {
+          float: right;
+          margin-top: 10px; }
+      #body #hot_sale .hot ul {
         border: 1px solid #dadada;
-        clear: both; }
-      .wrap #hot_sale .hot li {
+        clear: both;
+        width: 958px;
+        height: 237px; }
+        #body #hot_sale .hot ul li {
+          float: left;
+          width: 196px;
+          height: 199px;
+          padding: 15px 19px 16px 24px; }
+          #body #hot_sale .hot ul li p {
+            width: 190px;
+            height: 135px;
+            position: relative; }
+            #body #hot_sale .hot ul li p a img {
+              width: 180px;
+              height: 135px; }
+            #body #hot_sale .hot ul li p strong img {
+              width: 52px;
+              height: 52px;
+              position: absolute;
+              top: 0;
+              right: 0; }
+          #body #hot_sale .hot ul li dt {
+            line-height: 18px;
+            padding: 5px 0;
+            height: 36px;
+            overflow: hidden;
+            width: 190px; }
+          #body #hot_sale .hot ul li dd {
+            color: #ff6600;
+            font: bold 14px/16px arial;
+            padding-left: 18px;
+            height: 24px; }
+            #body #hot_sale .hot ul li dd a {
+              display: inline-block;
+              text-align: center;
+              background: #f7661f;
+              height: 23px;
+              width: 44px;
+              border: 1px solid #f7661f;
+              border-radius: 2px;
+              color: #fff;
+              margin-left: 25px;
+              font: normal 12px/24px simsun; }
+            #body #hot_sale .hot ul li dd a:hover {
+              text-decoration: none;
+              background: #ff971c;
+              border: 1px solid #ff971c; }
+    #body #hot_sale .hotright {
+      width: 230px;
+      height: 289px;
+      float: right;
+      margin-top: 5px; }
+      #body #hot_sale .hotright .new {
+        background: #f6f6f6;
+        border: 1px solid #dadada;
+        width: 228px;
+        padding-bottom: 20px; }
+        #body #hot_sale .hotright .new dt {
+          border-bottom: dashed 1px #d9d9d9;
+          padding: 5px 20px 0 10px;
+          height: 28px;
+          clear: both;
+          margin-bottom: 10px; }
+          #body #hot_sale .hotright .new dt span {
+            float: left;
+            font: bolder 14px/28px simsun; }
+          #body #hot_sale .hotright .new dt a {
+            float: right;
+            font: 12px/28px simsun; }
+        #body #hot_sale .hotright .new dd {
+          padding-left: 10px;
+          height: 20px; }
+          #body #hot_sale .hotright .new dd span {
+            display: inline-block;
+            background: url(../images/bg.png) no-repeat left -1031px;
+            width: 20px;
+            height: 9px;
+            text-indent: -2000px; }
+      #body #hot_sale .hotright .mobile_recharge {
+        width: 204px;
+        height: 133px;
+        padding: 0 12px 5px 12px;
+        border: 1px solid #dadada;
+        margin-top: 17px; }
+        #body #hot_sale .hotright .mobile_recharge h3 {
+          color: #ff6600; }
+        #body #hot_sale .hotright .mobile_recharge a {
+          display: inline-block;
+          text-align: center;
+          background: #f7661f;
+          height: 24px;
+          width: 44px;
+          border: 1px solid #f7661f;
+          border-radius: 2px;
+          color: #fff;
+          margin-left: 25px;
+          font: normal 12px/24px simsun; }
+        #body #hot_sale .hotright .mobile_recharge a:hover {
+          text-decoration: none;
+          background: #ff971c;
+          border: 1px solid #ff971c; }
+  #body #good_reviews {
+    clear: both;
+    height: 325px;
+    margin: 10px 0; }
+    #body #good_reviews .title {
+      width: 1190px;
+      height: 38px;
+      padding: 7px 0 0 10px;
+      border-bottom: 3px solid #ff6600; }
+      #body #good_reviews .title h2 {
+        font: bolder 20px/38px "microsoft yahei";
+        color: #ff6600;
         float: left; }
-        .wrap #hot_sale .hot li img {
-          width: 180px;
-          height: 135px; }
-        .wrap #hot_sale .hot li dt {
-          line-height: 18px;
-          padding: 5px 0;
-          height: 36px;
-          overflow: hidden;
-          width: 150px; }
-        .wrap #hot_sale .hot li dd {
+      #body #good_reviews .title span {
+        float: right;
+        line-height: 38px; }
+    #body #good_reviews .goods {
+      width: 1198px;
+      height: 275px;
+      border: 1px solid #dadada;
+      position: relative; }
+    #body #good_reviews .goods1 {
+      position: absolute;
+      left: 0;
+      top: 0; }
+    #body #good_reviews .chlid1 {
+      width: 675px;
+      height: 240px;
+      padding-top: 35px;
+      border-right: 1px solid #dadada;
+      display: none; }
+      #body #good_reviews .chlid1 .left {
+        width: 250px;
+        height: 239px;
+        margin: 0 30px;
+        float: left; }
+        #body #good_reviews .chlid1 .left img {
+          width: 250px;
+          height: 185px; }
+      #body #good_reviews .chlid1 .right {
+        float: left;
+        width: 338px;
+        height: 208px; }
+        #body #good_reviews .chlid1 .right strong {
+          display: inline-block;
+          width: 360px;
+          height: 19px;
           color: #ff6600;
-          font: bold 14px/14px arial; }
+          font: bold 14px "microsoft yahei";
+          white-space: nowrap;
+          line-height: 14px; }
+          #body #good_reviews .chlid1 .right strong a {
+            display: inline-block;
+            width: 270px;
+            height: 19px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font: normal 14px/19px tahoma;
+            color: #333; }
+        #body #good_reviews .chlid1 .right p {
+          margin: 10px 0;
+          width: 338px;
+          height: 123px;
+          color: #676767;
+          font: 12px/20px tahoma,simsun; }
+        #body #good_reviews .chlid1 .right .views {
+          width: 338px;
+          height: 50px; }
+          #body #good_reviews .chlid1 .right .views a {
+            float: left;
+            width: 21px;
+            height: 12px;
+            padding-left: 65px;
+            background: url(../images/index/flat_rank.gif) no-repeat left top;
+            color: #039;
+            line-height: 12px; }
+          #body #good_reviews .chlid1 .right .views span {
+            float: right;
+            height: 16px;
+            padding: 0 10px 30px 0;
+            width: 36px; }
+          #body #good_reviews .chlid1 .right .views em {
+            display: inline-block;
+            float: right;
+            width: 46px;
+            height: 46px;
+            background: url(../images/index/user.jpg) no-repeat -97px -205px; }
+    #body #good_reviews .child2 {
+      width: 175px;
+      height: 234px;
+      padding-left: 20px;
+      padding-top: 35px; }
+      #body #good_reviews .child2 dt {
+        height: 19px;
+        margin-bottom: 10px;
+        color: #333;
+        font: 14px/19px "microsoft yahei";
+        width: 330px;
+        overflow: hidden; }
+      #body #good_reviews .child2 dd {
+        color: #ff6600;
+        line-height: 18px; }
+      #body #good_reviews .child2 img {
+        width: 220px;
+        height: 165px; }
+  #body #select_goods {
+    clear: both;
+    margin: 20px 0;
+    height: 270px; }
+    #body #select_goods .goodsTab {
+      width: 958px;
+      height: 268px;
+      border: 1px solid #dadada;
+      float: left;
+      border-right: none; }
+      #body #select_goods .goodsTab .goodsTop {
+        width: 960px;
+        height: 30px; }
+        #body #select_goods .goodsTab .goodsTop span {
+          float: left;
+          width: 239px;
+          height: 29px;
+          border-left: 1px solid #dadada;
+          text-align: center;
+          line-height: 29px;
+          border-bottom: 1px solid #dadada;
+          cursor: pointer;
+          color: #666 l;
+          background: #f6f6f6;
+          font: 14px/28px "microsoft yahei"; }
+        #body #select_goods .goodsTab .goodsTop span:first-child {
+          border-left: none; }
+        #body #select_goods .goodsTab .goodsTop .active {
+          color: #ff6600;
+          background: #fff;
+          border-bottom: none; }
+      #body #select_goods .goodsTab .goodsList {
+        width: 950px;
+        height: 208px;
+        padding: 30px 10px 0 10px; }
+        #body #select_goods .goodsTab .goodsList ul {
+          clear: both;
+          width: 938px;
+          height: 183px;
+          display: block;
+          overflow: hidden; }
+          #body #select_goods .goodsTab .goodsList ul li {
+            float: left;
+            width: 150px;
+            height: 183px;
+            padding: 0 18px; }
+            #body #select_goods .goodsTab .goodsList ul li p {
+              width: 150px;
+              height: 108px;
+              position: relative; }
+              #body #select_goods .goodsTab .goodsList ul li p a img {
+                width: 144px;
+                height: 108px; }
+              #body #select_goods .goodsTab .goodsList ul li p strong img {
+                width: 52px;
+                height: 52px;
+                position: absolute;
+                top: 0;
+                right: 0; }
+            #body #select_goods .goodsTab .goodsList ul li dt {
+              line-height: 18px;
+              padding: 5px 0 15px 0;
+              height: 36px;
+              overflow: hidden;
+              width: 150px;
+              overflow: hidden;
+              font-family: tahoma, \5b8b\4f53 !important; }
+            #body #select_goods .goodsTab .goodsList ul li dd {
+              color: #ff6600;
+              font: bold 14px/21px arial;
+              padding-left: 18px;
+              height: 21px; }
+    #body #select_goods .goodsSlide {
+      width: 238px;
+      height: 268px;
+      position: relative;
+      border: 1px solid #dadada;
+      float: right; }
+      #body #select_goods .goodsSlide li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 238px;
+        height: 268px;
+        display: block; }
+      #body #select_goods .goodsSlide .dot {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        overflow: hidden; }
+        #body #select_goods .goodsSlide .dot span {
+          display: block;
+          width: 10px;
+          height: 10px;
+          margin-right: 7px;
+          float: left;
+          font-family: arial;
+          cursor: pointer;
+          background: url(../images/dotnav.png) no-repeat -16px top; }
+        #body #select_goods .goodsSlide .dot .active {
+          background: url(../images/dotnav.png) no-repeat left top; }
+  #body #subject {
+    width: 960px;
+    height: 2100px;
+    overflow: hidden; }
+    #body #subject .subject01 {
+      width: 960px;
+      height: 505px;
+      margin-bottom: 20px; }
+      #body #subject .subject01 h2 {
+        width: 950px;
+        height: 38px;
+        font: bolder 20px/36px "microsoft yahei";
+        padding-left: 10px;
+        border-bottom: 3px solid #2565bd;
+        border-top: 1px solid #e6e6e6;
+        color: #2565bd; }
+      #body #subject .subject01 .main {
+        width: 938px;
+        height: 409px;
+        overflow: hidden;
+        padding: 0 10px;
+        border: 1px solid #dadada;
+        border-top: none; }
+        #body #subject .subject01 .main li {
+          float: left;
+          width: 197px;
+          height: 179px;
+          padding: 25px 12px 1px 19px; }
+          #body #subject .subject01 .main li p {
+            width: 191px;
+            height: 108px;
+            position: relative; }
+            #body #subject .subject01 .main li p a img {
+              width: 144px;
+              height: 108px;
+              margin: 0 auto; }
+            #body #subject .subject01 .main li p strong img {
+              width: 52px;
+              height: 52px;
+              position: absolute;
+              top: 0;
+              right: -10px; }
+          #body #subject .subject01 .main li dt {
+            line-height: 18px;
+            padding: 5px 0;
+            height: 36px;
+            overflow: hidden;
+            width: 190px;
+            overflow: hidden;
+            font-family: tahoma; }
+          #body #subject .subject01 .main li dd {
+            color: #ff6600;
+            font: bold 14px/21px arial;
+            height: 21px; }
+        #body #subject .subject01 .main .mainslide {
+          width: 480px;
+          height: 205px;
+          position: relative;
+          float: left; }
+          #body #subject .subject01 .main .mainslide li {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 480px;
+            height: 205px;
+            display: block;
+            padding: 0; }
+          #body #subject .subject01 .main .mainslide .dot {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            overflow: hidden; }
+            #body #subject .subject01 .main .mainslide .dot span {
+              display: block;
+              width: 18px;
+              height: 16px;
+              margin-right: 3px;
+              float: left;
+              font-family: arial;
+              cursor: pointer;
+              background: url(../images/navsbg.png) no-repeat -20px top;
+              font: 11px/15px tahoma;
+              text-align: center;
+              color: #fff; }
+            #body #subject .subject01 .main .mainslide .dot .active {
+              background: url(../images/navsbg.png) no-repeat left top; }
+      #body #subject .subject01 .bottom {
+        width: 955px;
+        height: 40px;
+        padding: 6px 0 6px 3px;
+        border: 1px solid #dadada;
+        border-top: none; }
+        #body #subject .subject01 .bottom li {
+          float: left;
+          width: 100px;
+          height: 40px;
+          overflow: hidden;
+          padding: 0 9px;
+          position: relative; }
+          #body #subject .subject01 .bottom li a {
+            overflow: hidden;
+            width: 100px;
+            height: 40px;
+            display: block; }
+          #body #subject .subject01 .bottom li img {
+            width: 100px;
+            height: 80px; }
+  #body #color {
+    width: 1200px;
+    height: 82px;
+    margin: 30px 0 20px 0; }
+    #body #color li {
+      width: 228px;
+      height: 76px;
+      padding: 2px;
+      margin-right: 6px;
+      float: left; }
+    #body #color .b1 {
+      border: 1px solid #fcc; }
+    #body #color .b2 {
+      border: 1px solid #ffe0cc; }
+    #body #color .b3 {
+      border: 1px solid #caf2c2; }
+    #body #color .b4 {
+      border: 1px solid #c2eef2; }
+    #body #color .b5 {
+      border: 1px solid #cdf; }
+  #body #infobook {
+    height: 81px;
+    margin: 10px 0;
+    width: 1200px; }
+    #body #infobook div {
+      float: left; }
+    #body #infobook .app, #body #infobook .wechat {
+      width: 350px;
+      height: 71px; }
+      #body #infobook .app span, #body #infobook .wechat span {
+        background: url(../images/infobook.png) no-repeat left -130px;
+        width: 70px;
+        height: 70px;
+        float: left; }
+      #body #infobook .app dl, #body #infobook .wechat dl {
+        float: left;
+        padding-left: 5px;
+        height: 71px; }
+        #body #infobook .app dl dt, #body #infobook .wechat dl dt {
+          font: bold 14px/21px tahoma;
+          color: #484848;
+          padding-bottom: 14px; }
+        #body #infobook .app dl dd, #body #infobook .wechat dl dd {
+          line-height: 18px; }
+    #body #infobook .wechat span {
+      background: url(../images/infobook.png) no-repeat left -50px; }
+    #body #infobook .email {
+      width: 350px; }
+      #body #infobook .email span {
+        background: url(../images/infobook.png) no-repeat left top;
+        width: 46px;
+        height: 42px;
+        float: left; }
+      #body #infobook .email dl {
+        float: left;
+        padding-left: 5px;
+        height: 42px; }
+        #body #infobook .email dl dt {
+          font: bold 14px/21px tahoma;
+          color: #484848;
+          padding-bottom: 3px; }
+        #body #infobook .email dl dd {
+          font: normal 12px/18px tahoma;
+          float: left;
+          padding-right: 20px; }
+          #body #infobook .email dl dd a {
+            padding-right: 10px; }
+      #body #infobook .email p {
+        clear: left;
+        float: left;
+        width: 200px;
+        height: 24px;
+        padding: 4px 5px 3px 5px;
+        border: 1px solid #d8d8d8;
+        background: #f3f3f3; }
+        #body #infobook .email p input {
+          width: 200px;
+          height: 24px;
+          background: #f3f3f3;
+          outline: medium;
+          color: #666; }
+      #body #infobook .email em {
+        float: left; }
+        #body #infobook .email em a {
+          float: left;
+          display: inline-block;
+          text-align: center;
+          background: #f7661f;
+          height: 30px;
+          width: 70px;
+          border: 1px solid #f7661f;
+          border-radius: 2px;
+          color: #fff;
+          font: bold 14px/30px simsun;
+          margin: 1px 0 0 5px; }
+        #body #infobook .email em a:hover {
+          text-decoration: none;
+          background: #ff971c;
+          border: 1px solid #ff971c; }
+    #body #infobook .guanzhu {
+      width: 150px;
+      height: 81px; }
+      #body #infobook .guanzhu dt {
+        font: bold 14px/21px tahoma;
+        color: #484848;
+        padding-bottom: 3px; }
+      #body #infobook .guanzhu .wb, #body #infobook .guanzhu .tx {
+        padding-left: 70px;
+        height: 30px;
+        width: 80px; }
+        #body #infobook .guanzhu .wb span, #body #infobook .guanzhu .tx span {
+          width: 24px;
+          height: 23px;
+          padding-top: 6px;
+          background: url(../images/wb_attention.png) no-repeat left top;
+          float: left; }
+        #body #infobook .guanzhu .wb a, #body #infobook .guanzhu .tx a {
+          float: left;
+          text-align: center;
+          background: url(../images/wb_attention.png) no-repeat left -58px;
+          height: 28px;
+          width: 46px;
+          color: #fff;
+          font: normal 12px/20px simsun;
+          padding: 1px 0 0 5px; }
+        #body #infobook .guanzhu .wb a:hover, #body #infobook .guanzhu .tx a:hover {
+          text-decoration: none;
+          background: url(../images/wb_attention.png) no-repeat left -88px; }
+      #body #infobook .guanzhu .tx span {
+        background: url(../images/wb_attention.png) no-repeat left -29px; }
+
+#footer {
+  width: 1200px;
+  margin: 100px 54px 0 54px;
+  height: 407px; }
+  #footer .helpcenter {
+    height: 185px;
+    width: 1200px;
+    padding-left: 18px; }
+    #footer .helpcenter .hc1, #footer .helpcenter .hc2, #footer .helpcenter .hc3, #footer .helpcenter .hc4, #footer .helpcenter .hc5 {
+      float: left;
+      width: 208px;
+      height: 185px;
+      padding: 0 10px 0 18px;
+      border-right: 1px solid #dbdbdb; }
+      #footer .helpcenter .hc1 dt, #footer .helpcenter .hc2 dt, #footer .helpcenter .hc3 dt, #footer .helpcenter .hc4 dt, #footer .helpcenter .hc5 dt {
+        padding: 0 0 10px 28px;
+        background: url(../images/helpcenter.gif) no-repeat;
+        height: 20px;
+        font: bolder 14px/20px tahoma; }
+    #footer .helpcenter dd {
+      height: 22px;
+      line-height: 22px;
+      padding-left: 28px;
+      background: url(../images/list.jpg) no-repeat 16px center; }
+    #footer .helpcenter .hc2 dt {
+      background-position-y: -113px; }
+    #footer .helpcenter .hc3 dt {
+      background: url(../images/SpecialServies.png) no-repeat 1px 3px; }
+    #footer .helpcenter .hc4 dt {
+      background-position-y: -152px; }
+    #footer .helpcenter .hc5 {
+      border-right: none; }
+      #footer .helpcenter .hc5 dt {
+        background-position-y: -190px; }
+  #footer .footer {
+    height: 112px;
+    width: 1200px;
+    padding: 80px 0 30px 0;
+    text-align: center;
+    color: #484848; }
+    #footer .footer a {
+      color: #484848; }
+    #footer .footer .ft1 {
+      width: 123px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left top;
+      display: inline-block; }
+    #footer .footer .ft2 {
+      width: 116px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -92px;
+      display: inline-block; }
+    #footer .footer .ft3 {
+      width: 130px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -276px;
+      display: inline-block; }
+    #footer .footer .ft4 {
+      width: 127px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -326px;
+      display: inline-block; }
+    #footer .footer .ft5 {
+      width: 106px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -376px;
+      display: inline-block; }
+    #footer .footer p {
+      padding: 5px 0 10px 0; }
 
 /*# sourceMappingURL=index.css.map */

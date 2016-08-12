@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/slide.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="topbar">
@@ -42,7 +43,7 @@
 		<div id="header">
 			<p class="ad"> <img src="images/index_04.jpg"/><a href="javascript:;"></a></p>
 			<div class="wraper">
-				<a href="www.newegg.cn" class="log" title="新蛋中国  - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货 "></a>
+				<a href="newegg.cn" class="log" title="新蛋中国  - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货 "></a>
 				<a href="#" title="七天无理由退换货" class="days7"></a>
 				<div class="search">
 					<p> <input type="text" class="searchText" value="荣耀品牌日 爆款立减300元！" autocomplete="off" maxlength="50"/></p>
@@ -58,27 +59,39 @@
 				</div>
 			</div>
 		</div>
+<script type="text/javascript">
+	$(".ad a").click(function(){
+		$(".ad").css("display","none")
+	})
+	
+	$(".search .searchText").click(function(){
+		$(".search .searchText").css({"border":0,"color":"#333"}).val("")
+		
+	})
+</script>		
+		
+		
 		<div id="menu">
 			<div class="innermenu">
-				<h3><a href="www.newegg.cn" title="首页"> 全部商品分类</a></h>
+				<h3><a href="newegg.cn" title="首页"> 全部商品分类</a></h>
 				<div class="menulist">
 					
 				</div>
 			</div>
 			
 			<ul class="nav">
-				<li><a href="www.newegg.cn" title="首页"> 首页</a></li>
-				<li><a href="www.newegg.cn" title="限时抢购"> 限时抢购</a></li>
-				<li><a href="www.newegg.cn" title="团团赚"> 团团赚</a></li>
-				<li><a href="www.newegg.cn" title="海外直购"> 海外直购</a></li>
-				<li><a href="www.newegg.cn" title="爱车配"> 爱车配</a></li>
-				<li><a href="www.newegg.cn" title="二手宝库">二手宝库</a></li>
+				<li><a href="newegg.cn" title="首页"> 首页</a></li>
+				<li><a href="newegg.cn" title="限时抢购"> 限时抢购</a></li>
+				<li><a href="newegg.cn" title="团团赚"> 团团赚</a></li>
+				<li><a href="newegg.cn" title="海外直购"> 海外直购</a></li>
+				<li><a href="newegg.cn" title="爱车配"> 爱车配</a></li>
+				<li><a href="newegg.cn" title="二手宝库">二手宝库</a></li>
 			</ul>
 			<div class="utility">
 				
 			</div>
 		</div>
-		<div class="wrap">
+		<div id="body">
 			
 		<div id="section">
 			<div class="secLeft">
@@ -99,11 +112,45 @@
 						<span class="active">1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span>
 					</div>
 				</div>
+				
+				
+<script>
+	$(function(){
+		var slide = new Slide("#section .leftSlide");
+		
+		slide.box.find("li").fadeOut().eq(0).fadeIn();
+		slide.timer = setInterval(function(){
+			slide.fnNext().fnChange();
+		},2000);
+		$("#section .leftSlide .prev").click(function(){
+			slide.fnPrev().fnChange();
+		});
+		$("#section .leftSlide .next").click(function(){
+			slide.fnNext().fnChange();
+		});
+		$("#section .leftSlide").mouseover(function(){
+			clearInterval(slide.timer);
+		})
+		$("#section .leftSlide").mouseout(function(){
+			slide.timer = setInterval(function(){
+				slide.fnNext().fnChange();
+			},2000);
+		});
+		$("#section .leftSlide .dot span").mouseover(function(){
+			slide.numChange(this);
+		});
+	});
+</script>
+				
+				
+				
+				
+				
 				<div class="timer">
 					<h3>限时抢购</h3>
 					
 					<a href="#" class="more">更多抢购商品</a>
-					<p>剩余时间：   &nbsp;<span>00</span>:<span>00</span>:<span>00</span></p>
+					<p>剩余时间:&nbsp;<span>00</span>:<span>00</span>:<span>00</span></p>
 					<ul>
 						<li>
 							<a href="#"><img src="images/timer_01.jpg" alt="品质的追求"/></a>
@@ -153,6 +200,31 @@
 					</div>
 					
 				</div>
+				
+<script>
+	$(function(){
+		var slide = new Slide("#section .rightSlide");
+		
+		slide.box.find("li").fadeOut().eq(0).fadeIn();
+		slide.timer = setInterval(function(){
+			slide.fnNext().fnChange();
+		},2000);
+		$("#section .rightSlide").mouseover(function(){
+			clearInterval(slide.timer);
+		})
+		$("#section .rightSlide").mouseout(function(){
+			slide.timer = setInterval(function(){
+				slide.fnNext().fnChange();
+			},2000);
+		});
+		$("#section .rightSlide .dot span").mouseover(function(){
+			slide.numChange(this);
+		});
+	});
+</script>
+				
+				
+				
 				<div class="groupAd">
 					<a href="#" title="8.10" target="_blank">
 						<img src="images/groupAd.jpg" width="230" height="218" alt="8.10"/>
@@ -171,7 +243,8 @@
 				<ul>
 					<li>
 						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/><strong></strong></a>
+							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
+							<strong><img src="images/xpth.png"/></strong></a>
 						</p>
 						<dl>
 							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
@@ -180,7 +253,8 @@
 					</li>
 					<li>
 						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/><strong></strong></a>
+							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
+							<strong><img src="images/xpth.png"/></strong></a>
 						</p>
 						<dl>
 							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
@@ -189,7 +263,8 @@
 					</li>
 					<li>
 						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/><strong></strong></a>
+							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
+							<strong><img src="images/xpth.png"/></strong></a>
 						</p>
 						<dl>
 							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
@@ -198,19 +273,339 @@
 					</li>
 					<li>
 						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/><strong></strong></a>
+							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
+							<strong><img src="images/xpth.png"/></strong></a>
 						</p>
-						<dl>
+						<dl>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
 							<dd>¥1429.00 <a href="#">抢购</a></dd>
 						</dl>
 					</li>
 				</ul>
 			</div>
+			
+			<div class="hotright">
+				<dl class="new">
+					<dt><span>新蛋动态</span> <a href="#">更多>></a></dt>
+					<dd><a href="#">奥运狂欢节家电来助阵！</a><span>new</span></dd>
+					<dd><a href="#">荣耀品牌日 最高直降300元！</a></dd>
+					<dd><a href="#">玩家作战计划 神券等你来拿</a></dd>
+				</dl>
+				<div class="mobile_recharge">
+					<h3>手机充值</h3>
+					<p>手机号 <input type="text" class="mobile" /></p>
+					<p>面值 <input type="text" class="money" value="100元"/> <span>100.00</span></p>
+					<a href="javascript:;">充值</a>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div id="good_reviews">
+			<div class="title">
+				<h2>好评热品</h2>
+				<span>热门好评商品，不要错过哦</span>
+			</div>
+			<div class="goods">
+				<div class="goods1">
+					<div class="chlid1">
+						<a href="#" class="left" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">
+							<img src="images/index/good_reviews1.jpg" alt="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏"/></a>
+						<div class="right">
+							<strong>推荐度100% 
+							<a href="#" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</a></strong>
+							<p>到打开后，真的太棒的感觉！近乎完美的外观设计，超薄机身配备12寸Retina显示屏。全新的键盘和触摸板设置，先进的usb－c接口，完全引领潮流。不用多说，New Macbook绝对吸引眼球！玫瑰金颜色也真的好看！</p>
+							<div class="views">
+								<a href="#">[4]</a><em></em><span>潘多多</span>
+							</div>
+						</div>
+					</div>
+					<div class="child2">
+						<dl>
+							<dt>Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</dt>
+							<dd>推荐度100%</dd>
+							<dd>4人已评论</dd>
+						</dl>
+						<img src="images/index/good_reviews1.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="select_goods">
+			<div class="goodsTab">
+				<div class="goodsTop">
+					<span class="active">您也许感兴趣</span>
+					<span>新品发布</span>
+					<span>发烧好评</span>
+					<span>狠惠配</span>
+				</div>
+				<div class="goodsList">
+					<ul>
+						<li >
+							<p>
+								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+								<strong><img src="images/xpth.png"/></strong></a>
+							</p>
+							<dl>
+								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3 </a></dt>
+								<dd>¥958.00</dd>
+							</dl>
+						</li>
+						<li>
+							<p>
+								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+								<strong><img src="images/xpth.png"/></strong></a>
+							</p>
+							<dl>
+								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3</a></dt>
+								<dd>¥958.00</dd>
+							</dl>
+						</li>
+						<li>
+							<p>
+								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+								<strong><img src="images/xpth.png"/></strong></a>
+							</p>
+							<dl>
+								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3 </a></dt>
+								<dd>¥958.00</dd>
+							</dl>
+						</li>
+						<li>
+							<p>
+								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+								<strong><img src="images/xpth.png"/></strong></a>
+							</p>
+							<dl>
+								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3</a></dt>
+								<dd>¥958.00</dd>
+							</dl>
+						</li>
+						<li>
+							<p>
+								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+								<strong><img src="images/xpth.png"/></strong></a>
+							</p>
+							<dl>
+								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3 </a></dt>
+								<dd>¥958.00</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="goodsSlide">
+				<ul>
+					<li><a href="#" title="首页"><img src="images/goodsSlide1.jpg" width="100%"/></a></li>
+					<li><a href="#"><img src="images/goodsSlide2.jpg" width="100%"/></a></li>
+					<li><a href="#"><img src="images/goodsSlide3.jpg" width="100%"/></a></li>
+					<li><a href="#"><img src="images/goodsSlide4.jpg" width="100%"/></a></li>
+					<li><a href="#"><img src="images/goodsSlide5.jpg" width="100%"/></a></li>
+					<li><a href="#"><img src="images/goodsSlide6.jpg" width="100%"/></a></li>
+				</ul>
+				
+				<div class="dot">
+					<span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+				</div>
+				
+			</div>
+		</div>
+		<div id="subject">
+			<div class="subject01">
+				<h2>手机   • 摄影</h2>
+				
+				<ul class="main">
+					<li >
+						<p>
+							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+							<strong><img src="images/xpth.png"/></strong></a>
+						</p>
+						<dl>
+							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠!</a></dt>
+							<dd>¥958.00</dd>
+						</dl>
+					</li>
+					<div class="mainslide">
+						<ul>
+							<li><a href="#" title="首页"><img src="images/index/subject01_slide1.jpg" width="100%"/></a></li>
+							<li><a href="#"><img src="images/index/subject01_slide2.jpg" width="100%"/></a></li>
+							<li><a href="#"><img src="images/index/subject01_slide3.jpg" width="100%"/></a></li>
+							<li><a href="#"><img src="images/index/subject01_slide4.jpg" width="100%"/></a></li>
+							<li><a href="#"><img src="images/index/subject01_slide5.jpg" width="100%"/></a></li>
+						</ul>
+						
+						<div class="dot">
+							<span class="active">1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+						</div>
+					</div>
+					<li>
+						<p>
+							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+							<strong><img src="images/xpth.png"/></strong></a>
+						</p>
+						<dl>
+							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠!</a></dt>
+							<dd>¥958.00</dd>
+						</dl>
+					</li>
+					<li>
+						<p>
+							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+							<strong><img src="images/xpth.png"/></strong></a>
+						</p>
+						<dl>
+							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠! </a></dt>
+							<dd>¥958.00</dd>
+						</dl>
+					</li>
+					<li>
+						<p>
+							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+							<strong><img src="images/xpth.png"/></strong></a>
+						</p>
+						<dl>
+							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠!</a></dt>
+							<dd>¥958.00</dd>
+						</dl>
+					</li>
+					<li>
+						<p>
+							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+							<strong><img src="images/xpth.png"/></strong></a>
+						</p>
+						<dl>
+							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠! </a></dt>
+							<dd>¥958.00</dd>
+						</dl>
+					</li>
+					<li>
+						<p>
+							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
+							<strong><img src="images/xpth.png"/></strong></a>
+						</p>
+						<dl>
+							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠!</a></dt>
+							<dd>¥958.00</dd>
+						</dl>
+					</li>
+				</ul>
+				
+				<ul class="bottom">
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="color">
+			<ul>
+				<li class="b1"><a href="#" ><img src="images/b1.gif"/></a></li>
+				<li class="b2"><a href="#"><img src="images/b2.gif"/></a></li>
+				<li class="b3"><a href="#"><img src="images/b3.gif"/></a></li>
+				<li class="b4"><a href="#"><img src="images/b4.gif"/></a></li>
+				<li class="b5"><a href="#"><img src="images/b5.gif"/></a></li>
+			</ul>
+		</div>
+		
+		<div id="infobook">
+			<div class="app">
+				<span></span>
+				<dl>
+					<dt>掌上新蛋</dt>
+					<dd>手机扫描二维码</dd>
+					<dd>免费下载新蛋商城</dd>
+				</dl>
+			</div>
+			<div class="wechat">
+				<span></span>
+				<dl>
+					<dt>新蛋微信公众号</dt>
+					<dd>使用微信扫描一下</dd>
+					<dd>或找微信号：Newegg_China</dd>
+				</dl>
+			</div>
+			<div class="email">
+				<span></span>
+				<dl>
+					<dt>订阅新蛋优惠信息</dt>
+					<dd><a href="#">分类订阅</a>&gt;&gt;</dd>
+					<dd><a href="#">咨询导购</a>&gt;&gt;</dd>
+				</dl>
+				<p> <input type="text" class="emailText" value="请输入Email地址" autocomplete="off" maxlength="50"/></p>
+				<em><a href="javascript:;" title="搜索">订阅</a></em>
+			</div>
+			<div class="guanzhu">
+				<dl>
+					<dt>关注我们：</dt>
+					<dd class="wb"><span></span><a href="#">加关注</a></dd>
+					<dd class="tx"><span></span><a href="#">加关注</a></dd>
+				</dl>
+			</div>
 		</div>
 		
 		
 		</div>
-		
+		<div id="footer">
+			<div class="helpcenter">
+				<dl class="hc1">
+					<dt>新手上路</dt>
+					<dd><a href="#">怎样购物</a></dd>
+					<dd><a href="#">支付常见问题</a></dd>
+					<dd><a href="#">免运费政策</a></dd>
+					<dd><a href="#">发票须知</a></dd>
+					<dd><a href="#">签收验货流程</a></dd>
+					<dd><a href="#">用户评论/咨询</a></dd>
+					<dd><a href="#">大件商品订货流程</a></dd>
+				</dl>
+				<dl class="hc2">
+					<dt>售后服务</dt>
+					<dd><a href="#">退换货政策</a></dd>
+					<dd><a href="#">订单查询</a></dd>
+					<dd><a href="#">售后申请</a></dd>
+				</dl>
+				<dl class="hc3">
+					<dt>特色服务 </dt>
+					<dd><a href="#">关于会员制</a></dd>
+					<dd><a href="#">价格保护</a></dd>
+				</dl>
+				<dl class="hc4">
+					<dt>申请合作</dt>
+					<dd><a href="#">申请成为供应商</a></dd>
+					<dd><a href="#">申请入驻开放平台</a></dd>
+					<dd><a href="#">友情合作</a></dd>
+					<dd><a href="#">网站联盟</a></dd>
+					<dd><a href="#">企业客户</a></dd>
+				</dl>
+				<dl class="hc5">
+					<dt>关于我们</dt>
+					<dd><a href="#">新蛋集团</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+					<dd><a href="#">诚聘英才</a></dd>
+				</dl>
+			</div>
+			<div class="footer">
+				
+					<a href="#" class="ft1"></a>
+					<a href="#" class="ft2"></a>
+					<a href="#" class="ft3"></a>
+					<a href="#" class="ft4"></a>
+					<a href="#" class="ft5"></a>
+				
+				<p>新蛋集团网站 :
+					<a href="#">美国新蛋</a>
+					<a href="#">中国新蛋</a>
+					<a href="#">加拿大新蛋</a>
+					<a href="#">新蛋软件</a>
+				</p>
+				<span>&copy; 2001-2016&nbsp;新蛋贸易（中国）有限公司&nbsp;版权所有&nbsp;<a href="#">沪ICP备:05006005</a></span>
+			</div>
+		</div>
 	</body>
 </html>
