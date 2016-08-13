@@ -51,14 +51,10 @@ a:hover, a:active, a:focus {
       padding: 0 15px;
       float: left; }
     #topbar ul li:nth-child(2n+1) {
-      background: url(../images/topbar.png) no-repeat left 7px; }
-    #topbar ul li:nth-child(2n+1):hover {
-      background: url(../images/topbar.png) no-repeat left -13px; }
+      background: url(../images/index_03.jpg) no-repeat left center; }
     #topbar ul li:nth-child(2n) {
-      background: url(../images/topbar.png) no-repeat left -127px;
+      background: url(../images/index_05.jpg) no-repeat left center;
       padding-left: 22px; }
-    #topbar ul li:nth-child(2n):hover {
-      background: url(../images/topbar.png) no-repeat left -152px; }
   #topbar p {
     float: right; }
     #topbar p a {
@@ -518,9 +514,6 @@ a:hover, a:active, a:focus {
           font: normal 12px/18px tahoma;
           margin-top: 3px;
           float: left; }
-        #body #hot_sale .hotright .mobile_recharge .phoneNum {
-          width: 204px;
-          height: 30px; }
         #body #hot_sale .hotright .mobile_recharge .phoneNum p {
           width: 158px;
           height: 26px;
@@ -533,57 +526,23 @@ a:hover, a:active, a:focus {
             color: #ff6600;
             padding-left: 7px;
             float: left;
-            outline: medium;
-            font-size: 16px; }
+            outline: medium; }
           #body #hot_sale .hotright .mobile_recharge .phoneNum p em {
-            position: absolute;
-            width: 8px;
-            height: 10px;
-            background: url(../images/bg.png) no-repeat 0 -23px;
+            width: 5px;
+            height: 3px;
+            background: url(../images/bg.png) no-repeat -1 -23px;
             right: 7px;
-            top: 7px; }
-        #body #hot_sale .hotright .mobile_recharge .phoneMoney {
-          margin: 5px 0;
-          width: 204px;
-          height: 30px; }
-          #body #hot_sale .hotright .mobile_recharge .phoneMoney p {
-            width: 58px;
-            height: 26px;
-            border: 1px solid #dadada;
-            float: left;
-            position: relative; }
-            #body #hot_sale .hotright .mobile_recharge .phoneMoney p i {
-              width: 50px;
-              height: 24px;
-              color: #666;
-              padding-left: 7px;
-              float: left;
-              font: bolder 12px/24px tahoma,simsun; }
-            #body #hot_sale .hotright .mobile_recharge .phoneMoney p em {
-              position: absolute;
-              width: 8px;
-              height: 10px;
-              background: url(../images/bg.png) no-repeat 0 -23px;
-              right: 3px;
-              top: 7px; }
-          #body #hot_sale .hotright .mobile_recharge .phoneMoney span {
-            float: left;
-            height: 26px;
-            font: bolder 12px/26px tahoma;
-            color: #ff6600;
-            width: 50px;
-            padding-left: 8px; }
+            top: 20px; }
         #body #hot_sale .hotright .mobile_recharge a {
-          float: both;
           display: inline-block;
           text-align: center;
           background: #f7661f;
           height: 24px;
-          width: 68px;
+          width: 44px;
           border: 1px solid #f7661f;
           border-radius: 2px;
           color: #fff;
-          margin-left: 43px;
+          margin-left: 25px;
           font: normal 12px/24px simsun; }
         #body #hot_sale .hotright .mobile_recharge a:hover {
           text-decoration: none;
@@ -820,8 +779,7 @@ a:hover, a:active, a:focus {
   #body #subject {
     width: 960px;
     height: 2100px;
-    overflow: hidden;
-    float: left; }
+    overflow: hidden; }
     #body #subject .subject1, #body #subject .subject2, #body #subject .subject3, #body #subject .subject4 {
       width: 960px;
       height: 505px;
@@ -928,88 +886,10 @@ a:hover, a:active, a:focus {
     #body #subject .subject2 h2, #body #subject .subject4 h2 {
       border-bottom: 3px solid #ff6600;
       color: #ff6600; }
-  #body #subject_select {
-    float: right;
-    widows: 230px;
-    height: 2100px;
-    overflow: hidden; }
-    #body #subject_select .select1 {
-      width: 230px;
-      height: 508px;
-      margin-bottom: 17px;
-      position: relative; }
-      #body #subject_select .select1 h4 {
-        width: 222px;
-        height: 27px;
-        padding: 3px 0 0 6px;
-        border: 1px solid #dbdbdb;
-        font: normal 12px/27px "microsoft yahei";
-        color: #666; }
-      #body #subject_select .select1 .tab {
-        width: 185px;
-        height: 28px;
-        position: absolute;
-        top: 4px;
-        left: 50px; }
-        #body #subject_select .select1 .tab span {
-          float: left;
-          width: 56px;
-          height: 26px;
-          border: 1px solid #e9e9e9;
-          border-bottom: 1px solid #dbdbdb;
-          background-color: #e9e9e9;
-          text-align: center;
-          color: #999;
-          font: normal 12px/26px tahoma;
-          margin-right: 1px;
-          cursor: pointer; }
-        #body #subject_select .select1 .tab .active {
-          background-color: #fff;
-          border: 1px solid #dbdbdb;
-          border-bottom: 1px solid #fff;
-          font-weight: bold;
-          color: #ff6600; }
-      #body #subject_select .select1 ul {
-        width: 226px;
-        height: 371px;
-        border-left: 1px solid #dbdbdb;
-        border-right: 1px solid #dbdbdb;
-        margin-bottom: 10px; }
-        #body #subject_select .select1 ul li {
-          width: 205px;
-          height: 60px;
-          padding: 16px 12px 16px 12px;
-          border-bottom: 1px solid #dbdbdb;
-          overflow: hidden; }
-        #body #subject_select .select1 ul img {
-          width: 80px;
-          height: 60px;
-          float: left;
-          padding-right: 8px; }
-        #body #subject_select .select1 ul dl {
-          width: 116px;
-          height: 60px;
-          float: left; }
-          #body #subject_select .select1 ul dl dt {
-            line-height: 18px;
-            margin-bottom: 5px;
-            height: 36px;
-            overflow: hidden;
-            width: 116px;
-            overflow: hidden;
-            font-family: tahoma; }
-          #body #subject_select .select1 ul dl dd {
-            color: #ff6600;
-            font: bold 14px/21px arial;
-            height: 21px; }
-      #body #subject_select .select1 .bottomImg {
-        width: 230px;
-        height: 90px; }
   #body #color {
     width: 1200px;
     height: 82px;
-    margin: 30px 0 20px 0;
-    clear: both; }
+    margin: 30px 0 20px 0; }
     #body #color li {
       width: 228px;
       height: 76px;
@@ -1206,8 +1086,5 @@ a:hover, a:active, a:focus {
       display: inline-block; }
     #footer .footer p {
       padding: 5px 0 10px 0; }
-    #footer .footer span {
-      color: #484848;
-      font: 12px tahoma; }
 
 /*# sourceMappingURL=index.css.map */

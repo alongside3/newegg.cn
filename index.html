@@ -65,8 +65,16 @@
 	})
 	
 	$(".search .searchText").click(function(){
-		$(".search .searchText").css({"border":0,"color":"#333"}).val("")
+		$(this).css({"border":0,"color":"#333"}).val("")
 		
+	})
+	
+	$(function(){
+		$("#infobook .email .emailText").click(function(){
+			$(this).val("")
+		}
+			
+		)
 	})
 </script>		
 		
@@ -139,11 +147,70 @@
 		$("#section .leftSlide .dot span").mouseover(function(){
 			slide.numChange(this);
 		});
+		
+		
+		
+		
 	});
 </script>
 				
 				
-				
+<!--<script>
+	$(
+		function(){
+		var slide = new Slide("#section .rightSlide");
+		
+		slide.box.find("li").fadeOut().eq(0).fadeIn();
+		slide.timer = setInterval(function(){
+			slide.fnNext().fnChange();
+		},2000);
+		$("#section .rightSlide").mouseover(function(){
+			clearInterval(slide.timer);
+		})
+		$("#section .rightSlide").mouseout(function(){
+			slide.timer = setInterval(function(){
+				slide.fnNext().fnChange();
+			},2000);
+		});
+		$("#section .rightSlide .dot span").mouseover(function(){
+			slide.numChange(this);
+		});
+		};
+		
+	
+	);
+</script>	-->
+
+
+<script type="text/javascript">
+	function codeslide(obj){
+		var slide = new Slide(obj);
+		
+		slide.box.find("li").fadeOut().eq(0).fadeIn();
+		
+		slide.timer = setInterval(function(){
+			slide.fnNext().fnChange();
+		},2000);
+		$(obj).mouseover(function(){
+			clearInterval(slide.timer);
+		})
+		$(obj).mouseout(function(){
+			slide.timer = setInterval(function(){
+				slide.fnNext().fnChange();
+			},2000);
+		});
+		$(obj).find(".dot span").mouseover(function(){
+			slide.numChange(this);
+		});
+	};
+		
+	$(function(){
+		codeslide("#section .rightSlide");
+		codeslide("#select_goods .goodsSlide");
+		codeslide("#subject .subject01 .mainslide");
+	})
+		
+</script>
 				
 				
 				<div class="timer">
@@ -201,27 +268,7 @@
 					
 				</div>
 				
-<script>
-	$(function(){
-		var slide = new Slide("#section .rightSlide");
-		
-		slide.box.find("li").fadeOut().eq(0).fadeIn();
-		slide.timer = setInterval(function(){
-			slide.fnNext().fnChange();
-		},2000);
-		$("#section .rightSlide").mouseover(function(){
-			clearInterval(slide.timer);
-		})
-		$("#section .rightSlide").mouseout(function(){
-			slide.timer = setInterval(function(){
-				slide.fnNext().fnChange();
-			},2000);
-		});
-		$("#section .rightSlide .dot span").mouseover(function(){
-			slide.numChange(this);
-		});
-	});
-</script>
+
 				
 				
 				
@@ -237,53 +284,71 @@
 			<div class="hot">
 				<div class="title">
 					<h2>热卖区</h2>
-					<a href="#" class="change">换一批</a>
+					<a href="javascript:;" class="change">换一批</a>
 					<span>热卖促销商品，不容错过，更多惊喜等你发现</span>
 				</div>
-				<ul>
-					<li>
-						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
-							<dd>¥1429.00 <a href="#">抢购</a></dd>
-						</dl>
-					</li>
-					<li>
-						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
-							<dd>¥1429.00 <a href="#">抢购</a></dd>
-						</dl>
-					</li>
-					<li>
-						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
-							<dd>¥1429.00 <a href="#">抢购</a></dd>
-						</dl>
-					</li>
-					<li>
-						<p>
-							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
-							<dd>¥1429.00 <a href="#">抢购</a></dd>
-						</dl>
-					</li>
-				</ul>
-			</div>
+				<div class="hot_sale">
+					<ul>
+						
+					</ul>
+					
+				</div>
 			
+					<!--<li>
+						<p>
+							<a href="#"><img src="images/hot_sale2.jpg" alt="breo 倍轻松  智能手表"/>
+							<strong><img src="images/xpth.png"/></strong></a>
+						</p>
+						<dl>
+							<dt><a href="#" title="breo 倍轻松  智能手表">breo 倍轻松  智能手表breo 倍轻松  智能手表</a></dt>
+							<dd>¥1429.00 <a href="#">抢购</a></dd>
+						</dl>
+					</li>
+					-->
+			</div>
+<script type="text/javascript">
+	$.ajax({
+	type:"GET",
+	url:"json/hot_sales.txt",
+	async:true,
+	cache:false,
+	error:function(xhr){
+		alert("错误码"+xhr.state)
+	},
+	success:function(str){
+		var arr=eval(str);
+		for(var i=0;i<arr.length;i++){
+			var json=arr[i];
+			var $li=$("<li></li>")
+			
+				var $liP=$('<p><a href="'+json["catHref"]+'" title="'+json["catAlt"]+'"><img src="'+json["catImg"]+'" alt="'+json["catAlt"]+'"/></a><strong><img src="'+json["catSpan"]+'"/></strong></p>');	
+				var $liDl=$('<dl><dt><a href="'+json["catHref"]+'" title="'+json["catAlt"]+'">'+json["catDt"]+'</a></dt><dd>'+json["catDd"]+' <a href="#">抢购</a></dd></dl>')
+				$li.append($liP)
+				$li.append($liDl)
+			$("#hot_sale .hot ul").append($li)
+		}
+	}
+	});
+	
+	$(function(){
+		var num=0
+		$("#hot_sale .hot .title .change").click(
+			function(){
+				num++
+				if(num>3){
+					num=0
+					return $("#hot_sale .hot ul").css({"left":0})
+				}
+				$("#hot_sale .hot ul").animate({"left":(num*-958)},500)	
+			}
+		);
+		
+		$("#good_reviews .goods").find(".chlid2").mouseover(function(){
+			console.log($(this).width())
+		})
+		
+	})
+</script>			
 			<div class="hotright">
 				<dl class="new">
 					<dt><span>新蛋动态</span> <a href="#">更多>></a></dt>
@@ -293,9 +358,9 @@
 				</dl>
 				<div class="mobile_recharge">
 					<h3>手机充值</h3>
-					<p>手机号 <input type="text" class="mobile" /></p>
-					<p>面值 <input type="text" class="money" value="100元"/> <span>100.00</span></p>
-					<a href="javascript:;">充值</a>
+					<div class="phoneNum"><strong>手机号</strong> <p><input type="text" class="mobile" /><em>&nbsp;</em></p></div>
+					<div class="phoneMoney"><strong>面&nbsp;&nbsp;&nbsp;值</strong> <p><i>100元</i><em>&nbsp;</em></p><span>100.00</span></div>
+					<a href="javascript:;">立即充值</a>
 					
 					
 				</div>
@@ -329,9 +394,78 @@
 						<img src="images/index/good_reviews1.jpg"/>
 					</div>
 				</div>
+				<div class="goods2">
+					<div class="chlid1">
+						<a href="#" class="left" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">
+							<img src="images/index/good_reviews1.jpg" alt="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏"/></a>
+						<div class="right">
+							<strong>推荐度100% 
+							<a href="#" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</a></strong>
+							<p>到打开后，真的太棒的感觉！近乎完美的外观设计，超薄机身配备12寸Retina显示屏。全新的键盘和触摸板设置，先进的usb－c接口，完全引领潮流。不用多说，New Macbook绝对吸引眼球！玫瑰金颜色也真的好看！</p>
+							<div class="views">
+								<a href="#">[4]</a><em></em><span>潘多多</span>
+							</div>
+						</div>
+					</div>
+					<div class="child2">
+						<dl>
+							<dt>Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</dt>
+							<dd>推荐度100%</dd>
+							<dd>4人已评论</dd>
+						</dl>
+						<img src="images/index/good_reviews1.jpg"/>
+					</div>
+				</div>
+				<div class="goods3">
+					<div class="chlid1">
+						<a href="#" class="left" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">
+							<img src="images/index/good_reviews1.jpg" alt="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏"/></a>
+						<div class="right">
+							<strong>推荐度100% 
+							<a href="#" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</a></strong>
+							<p>到打开后，真的太棒的感觉！近乎完美的外观设计，超薄机身配备12寸Retina显示屏。全新的键盘和触摸板设置，先进的usb－c接口，完全引领潮流。不用多说，New Macbook绝对吸引眼球！玫瑰金颜色也真的好看！</p>
+							<div class="views">
+								<a href="#">[4]</a><em></em><span>潘多多</span>
+							</div>
+						</div>
+					</div>
+					<div class="child2">
+						<dl>
+							<dt>Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</dt>
+							<dd>推荐度100%</dd>
+							<dd>4人已评论</dd>
+						</dl>
+						<img src="images/index/good_reviews1.jpg"/>
+					</div>
+				</div>
+				<div class="goods4">
+					<div class="chlid1">
+						<a href="#" class="left" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">
+							<img src="images/index/good_reviews1.jpg" alt="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏"/></a>
+						<div class="right">
+							<strong>推荐度100% 
+							<a href="#" title="Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏">Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</a></strong>
+							<p>到打开后，真的太棒的感觉！近乎完美的外观设计，超薄机身配备12寸Retina显示屏。全新的键盘和触摸板设置，先进的usb－c接口，完全引领潮流。不用多说，New Macbook绝对吸引眼球！玫瑰金颜色也真的好看！</p>
+							<div class="views">
+								<a href="#">[4]</a><em></em><span>潘多多</span>
+							</div>
+						</div>
+					</div>
+					<div class="child2">
+						<dl>
+							<dt>Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</dt>
+							<dd>推荐度100%</dd>
+							<dd>4人已评论</dd>
+						</dl>
+						<img src="images/index/good_reviews1.jpg"/>
+					</div>
+				</div>
 			</div>
 			
 		</div>
+		
+		
+		
 		<div id="select_goods">
 			<div class="goodsTab">
 				<div class="goodsTop">
@@ -412,7 +546,7 @@
 			</div>
 		</div>
 		<div id="subject">
-			<div class="subject01">
+			<!--<div class="subject01">
 				<h2>手机   • 摄影</h2>
 				
 				<ul class="main">
@@ -439,56 +573,6 @@
 							<span class="active">1</span><span>2</span><span>3</span><span>4</span><span>5</span>
 						</div>
 					</div>
-					<li>
-						<p>
-							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠!</a></dt>
-							<dd>¥958.00</dd>
-						</dl>
-					</li>
-					<li>
-						<p>
-							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠! </a></dt>
-							<dd>¥958.00</dd>
-						</dl>
-					</li>
-					<li>
-						<p>
-							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠!</a></dt>
-							<dd>¥958.00</dd>
-						</dl>
-					</li>
-					<li>
-						<p>
-							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠! </a></dt>
-							<dd>¥958.00</dd>
-						</dl>
-					</li>
-					<li>
-						<p>
-							<a href="#"><img src="images/index/subject01_1.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-							<strong><img src="images/xpth.png"/></strong></a>
-						</p>
-						<dl>
-							<dt><a href="#" title="breo 倍轻松  智能手表">【新复古口袋机X70】 更小! 更广角! 更实惠!</a></dt>
-							<dd>¥958.00</dd>
-						</dl>
-					</li>
 				</ul>
 				
 				<ul class="bottom">
@@ -501,8 +585,258 @@
 					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
 					<li><a href="#"><img src="images/index/subject01_bottom1.jpg"/></a></li>
 				</ul>
-			</div>
+			</div>-->
 		</div>
+		
+		<div id="subject_select">
+			<div class="select1">
+			<h4>热销榜</h4>
+			<div class="tab">
+				<span class="active">智能手机</span>
+				<span>微单</span>
+				<span>单反手机</span>
+			</div>
+			<ul>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+			</ul>
+			<a href="#"><img src="images/index/select01.jpg" class="bottomImg"/></a>
+			</div>
+			
+			
+			<div class="select1">
+			<h4>热销榜</h4>
+			<div class="tab">
+				<span class="active">智能手机</span>
+				<span>微单</span>
+				<span>单反手机</span>
+			</div>
+			<ul>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+			</ul>
+			<a href="#"><img src="images/index/select01.jpg" class="bottomImg"/></a>
+			</div>
+			
+			
+			<div class="select1">
+			<h4>热销榜</h4>
+			<div class="tab">
+				<span class="active">智能手机</span>
+				<span>微单</span>
+				<span>单反手机</span>
+			</div>
+			<ul>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+			</ul>
+			<a href="#"><img src="images/index/select01.jpg" class="bottomImg"/></a>
+			</div>
+			
+			
+			<div class="select1">
+			<h4>热销榜</h4>
+			<div class="tab">
+				<span class="active">智能手机</span>
+				<span>微单</span>
+				<span>单反手机</span>
+			</div>
+			<ul>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+				<li>
+					<img src="images/index/subject01_select01.jpg"/>
+					<dl>
+						<dt>Panasonic 松下 Lumix DMC-GF8 微型单电单镜套机 粉色 手动变焦版 美颜自拍利器 12-32mm</dt>
+						<dd>2688.00</dd>
+					</dl>
+				</li>
+			</ul>
+			<a href="#"><img src="images/index/select01.jpg" class="bottomImg"/></a>
+			</div>
+			
+		</div>
+		
+		
+<script type="text/javascript">
+	$.ajax({
+	type:"GET",
+	url:"json/subject.txt",
+	async:true,
+	cache:false,
+	error:function(xhr){
+		alert("错误码"+xhr.state)
+	},
+	success:function(str){
+		var arr=eval(str);
+			
+		for(var i=0;i<arr.length;i++){
+			
+			var json=arr[i];
+
+			
+			var $div=$('<div class="subject'+(i+1)+'"><h2>'+arr[i]["catname"]+'</h2></div>')
+			var $main=$('<ul class="main"></ul>')	
+			
+			
+			var $slide=$('<div class="mainslide"><ul></ul></div>')	
+			
+			var $dot=$('<div class="dot"></div>')	
+			
+			
+			
+			var $bottom=$('<ul class="bottom"></ul>')	
+			
+			
+			for(var j=0;j<json["main"].length;j++){
+				
+				if(j==1){
+					for(var k=0;k<json["mainslide"].length;k++){
+				
+						var $span=$("<span>"+(k+1)+"</span>")
+						var $slideLi=$('<li><a href="#"><img src="'+json["mainslide"][k]+'" width="100%"/></a></li>')
+						
+						$dot.append($span)
+						$slide.append($slideLi)
+					}
+					$slide.append($dot)
+					$main.append($slide)
+				}
+				
+				var main=json["main"][j];
+
+					var $li=$("<li></li>")
+				
+					var $liP=$('<p><a href="'+main["catHref"]+'" title="'+main["catDd"]+'"><img src="'+main["catImg"]+'" alt="'+main["catDd"]+'"/></a><strong><img src="'+main["catSpan"]+'"/></strong></p>');	
+					var $liDl=$('<dl><dt><a href="'+main["catHref"]+'" title="'+main["catDd"]+'">'+main["catDt"]+'</a></dt><dd>'+main["catDd"]+'</dd></dl>')
+					$li.append($liP)
+					$li.append($liDl)
+					
+					
+					
+				$main.append($li)
+			}
+					
+			for(var l=0;l<json["bottom"].length;l++){
+				var $bottomli=$('<li><a href="#"><img src="'+json["bottom"][l]+'"/></a></li>')
+				
+				$bottom.append($bottomli)
+			}
+			
+
+			$div.append($main)
+			$div.append($bottom)
+			
+			$("#subject").append($div)
+			
+			codeslide($slide);
+			
+			
+		}
+		
+	}
+	});
+	
+
+	
+</script>	
 		
 		<div id="color">
 			<ul>
