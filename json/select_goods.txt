@@ -1,0 +1,149 @@
+﻿[
+{"catname":"您也许感兴趣",
+
+"main":[
+{"catImg":"images/index/hotsales01.jpg",
+"catHref":"#",
+"catDt":"[经典升级]超3米宽高清3D巨屏,2D转3D,不断提升只为更好的用户体验,品质成熟的智能投影!",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥2599.00"},
+
+{"catImg":"images/index/subject01_2.jpg",
+"catHref":"#",
+"catDt":"佳能 EOS M10 轻巧便携高画质 WIFI分享乐趣多",
+"catSpan":"images/index/qwdj.png",
+"catDd":"¥2608.00"},
+
+{"catImg":"images/index/subject01_3.jpg",
+"catHref":"#",
+"catDt":"输入蛋券编码mate400立减400元(8.10-8.21日),限时限量,不要错过!",
+"catSpan":"images/index/xsqg.png",
+"catDd":"¥2669.00"},
+
+{"catImg":"images/index/hotsales09.jpg",
+"catHref":"#",
+"catDt":"HUAWEI 华为 M2 8英寸 LTE通话版/3G内存/16GB/1920*1200 IPS屏/4G网络 平板电脑 月光银",
+"catSpan":"images/index/rxtj.png",
+"catDd":"¥1649.00"},
+
+{"catImg":"images/index/hotsales02.jpg",
+"catHref":"#",
+"catDt":"【新蛋自营 正品保证】 心脏管家 睡眠助手 远程关爱 运动跟踪",
+"catSpan":"images/index/xpth.png",
+"catDd":"¥1099.00"}
+
+]},
+
+
+{"catname":"新品发布",
+
+"main":[
+{"catImg":"images/index/hotsales03.jpg",
+"catHref":"#",
+"catDt":"输入蛋券编码mate300立减300元(8.10-8.21日),限时限量,不要错过!",
+"catSpan":"images/index/rxtj.png",
+"catDd":"¥3315.00"},
+
+{"catImg":"images/index/hotsales05.jpg",
+"catHref":"#",
+"catDt":"2015年新款 3.2GHz 四核 Intel Core i5 处理器,8GB内存,1TB 硬盘",
+"catSpan":"images/index/zj.png",
+"catDd":"¥12128.00"},
+
+{"catImg":"images/index/hotsales07.jpg",
+"catHref":"#",
+"catDt":"[经典升级]Cherry 樱桃 MX-BOARD 2.0 C 黑色红轴机械键盘",
+"catSpan":"images/index/rqbk.png",
+"catDd":"¥449.00"},
+
+{"catImg":"images/index/subject01_5.jpg",
+"catHref":"#",
+"catDt":"输入蛋券18SJ30立减30元(8.10-8.20日),限时限量,不要错过!",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥2299.00"},
+
+{"catImg":"images/index/subject01_6.jpg",
+"catHref":"#",
+"catDt":"输入蛋券18SJ60立减60元(8.10-8.20日),限时限量,不要错过!",
+"catSpan":"images/index/qilin955a.png",
+"catDd":"¥3039.00"}
+
+
+
+]},
+
+
+{"catname":"发烧好评",
+
+"main":[
+{"catImg":"images/index/subject01_1.jpg",
+"catHref":"#",
+"catDt":"【新复古口袋机X70】 更小! 更广角! 更实惠!",
+"catSpan":"images/index/rqfq.png",
+"catDd":"¥4680.00"},
+
+{"catImg":"images/index/hotsales04.jpg",
+"catHref":"#",
+"catDt":"轻便小巧全画幅 配24-105镜头 2020万有效像素 11点自动对焦 内置WIFI!",
+"catSpan":"images/index/rqbk.png",
+"catDd":"¥13288.00"},
+
+{"catImg":"images/index/hotsales06.jpg",
+"catHref":"#",
+"catDt":"飞利浦上代旗舰,超高性价比HIFI耳机,烧友必备",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥329.00"},
+
+{"catImg":"images/index/hotsales08.jpg",
+"catHref":"#",
+"catDt":"Microsoft 微软 Surface Pro 4 - Intel Core i5 128G存储4G内存 12.3英寸",
+"catSpan":"images/index/rqbk.png",
+"catDd":"¥6566.00"},
+
+{"catImg":"images/index/hotsales10.jpg",
+"catHref":"#",
+"catDt":"WD十周年纪念版 奢华金色 彰显尊贵 轻薄身段 高速传输 密码保护 专用自动备份软件",
+"catSpan":"images/index/zj.png",
+"catDd":"¥519.00"}
+
+
+
+]},
+
+
+{"catname":"很惠配",
+
+"main":[
+{"catImg":"images/index/hotsales11.jpg",
+"catHref":"#",
+"catDt":"高阶需求 专业摄影必备 极速体验",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥259.00"},
+
+{"catImg":"images/index/subject01_2.jpg",
+"catHref":"#",
+"catDt":"佳能 EOS M10 轻巧便携高画质 WIFI分享乐趣多",
+"catSpan":"images/index/qwdj.png",
+"catDd":"¥2608.00"},
+
+{"catImg":"images/index/hotsales14.jpg",
+"catHref":"#",
+"catDt":"水晶缎金 12小时自动保温 一键控制 操作方便 营养可口米饭一触即享",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥246.00"},
+
+{"catImg":"images/index/subject01_4.jpg",
+"catHref":"#",
+"catDt":"2015年新款iMac 采用3.1GHz 四核 Intel Core i5 处理器,8GB 内存,1TB 硬盘",
+"catSpan":"images/index/rxtj.png",
+"catDd":"¥9866.00"},
+
+{"catImg":"images/index/hotsales12.jpg",
+"catHref":"#",
+"catDt":"源自Laice 工业设计 12.1mm*薄厚度 全金属面板 带来**存储体验!",
+"catSpan":"images/index/qwdj.png",
+"catDd":"¥659.00"}
+
+]}
+
+]

@@ -26,7 +26,15 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     .dispark:hover{background: url(../images/topbar.png) no-repeat left -105px;}; };
     p{position: absolute;left:886px;height: 24px;line-height: 24px;a{padding-left: 10px;}
     strong{display:inline-block;color:#666;font:normal 12px/24px simsun;height: 25px;padding-left: 10px;width: 70px;img{display: inline;}};}
-    .sevice{position: absolute;top:24px;left:1034px;width:126px;height: 125px;padding: 3px 10px 6px 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);background:#fff;border: 1px solid #eee;z-index:5}
+    .sevice{position: absolute;top:24px;left:987px;width:126px;height: 125px;padding: 3px 10px 6px 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);background:#fff;border: 1px solid #eee;z-index:5;display: none;
+    dl{height: 36px;padding: 5px 0 0 10px;width: 115px;dt{color:#fe7b23;font:bold 14px/18px tahoma};dd{font:bold 12px/18px tahoma}};
+    span{display:inline-block;height: 18px;padding:0 0 8px 10px;width: 115px;line-height: 18px;font-family: tahoma;clear: both;}
+    a{display: block;float: left;background: #4f9ee7;height: 25px;width: 60px;line-height: 25px;color: #fff;text-align: center;}
+    a:hover{text-decoration: none;};
+    .youj{margin-left:4px;};
+    .phone{text-align:center;background: $color_org;height:25px;width: 124px;color: #fff;font:  12px/25px simsun;margin-top: 4px;}
+    .phone:hover{text-decoration: none;}  
+    }
     .active{background-color: #fff;border: 1px solid #fff;}
 }
 
@@ -60,6 +68,25 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     .liji:hover{text-decoration: none;background: #ff971c;border: 1px solid #ff971c}    
     }
 
+    }
+    .login_bottom{width:305px;height: 109px;padding: 16px 25px 0 30px;
+    dl{width:305px;height: 109px;overflow: hidden;position: relative;a:hover{color: $color_org;};
+    dt{clear: both;width: 305px;height: 15px;line-height: 15px;color: #666};
+    .zfb a{position:absolute;left:0;top:25px;width: 36px;height: 30px;padding-left:33px;background: url(../images/login/4link.png) no-repeat left top;line-height: 30px;}
+    .qq a{position: absolute;left:85px;top:25px;padding-left:33px;height: 30px;width: 20px;background: url(../images/login/4link.png) no-repeat left -45px;font-family: tahoma;line-height:30px;}
+    .wx a{position:absolute;left:154px;top:25px;width: 24px;height: 30px;padding-left:33px;background: url(../images/login/4link.png) no-repeat left -97px;line-height: 30px;}
+    .xlwb a{position:absolute;left:224px;top:25px;width: 48px;height: 30px;padding-left:33px;background: url(../images/login/4link.png) no-repeat left -161px;line-height: 30px;}
+    .sjzf a{position:absolute;left:0px;top:55px;width: 48px;height: 26px;padding-left:26px;background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2576px;line-height: 30px;}
+    .sddl a{position:absolute;left:88px;top:55px;width: 48px;height: 26px;padding-left:26px;background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2609px;line-height: 30px;}
+    .xl a{position:absolute;left:178px;top:55px;width: 24px;height: 26px;padding-left:26px;background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2508px;line-height: 30px;}
+    .wy a{position:absolute;left:238px;top:55px;width:24px;height: 26px;padding-left:26px;background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2428px;line-height: 30px;}
+    .ptzf a{position:absolute;left:0px;top:82px;width: 96px;height: 26px;padding-left:26px;background: url(../images/login/ptlogo.gif) no-repeat 3px 7px;line-height: 30px;}
+    
+    
+    
+    
+    
+    };
     }
     }
      

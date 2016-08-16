@@ -1,0 +1,49 @@
+﻿[{"catImg":"images/index/hotsales07.jpg",
+"catHref":"#",
+"catDt":"[经典升级]Cherry 樱桃 MX-BOARD 2.0 C 黑色红轴机械键盘",
+"catSpan":"images/index/rqbk.png",
+"catDd":"¥449.00"},
+
+{"catImg":"images/index/subject01_5.jpg",
+"catHref":"#",
+"catDt":"输入蛋券18SJ30立减30元(8.10-8.20日),限时限量,不要错过!",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥2299.00"},
+
+
+{"catImg":"images/index/hotsales08.jpg",
+"catHref":"#",
+"catDt":"Microsoft 微软 Surface Pro 4 - Intel Core i5 128G存储4G内存 12.3英寸",
+"catSpan":"images/index/rqbk.png",
+"catDd":"¥6566.00"},
+
+{"catImg":"images/index/subject01_4.jpg",
+"catHref":"#",
+"catDt":"2015年新款iMac 采用3.1GHz 四核 Intel Core i5 处理器,8GB 内存,1TB 硬盘",
+"catSpan":"images/index/rxtj.png",
+"catDd":"¥9866.00"},
+
+{"catImg":"images/index/hotsales11.jpg",
+"catHref":"#",
+"catDt":"高阶需求 专业摄影必备 极速体验",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥259.00"},
+
+{"catImg":"images/index/hotsales06.jpg",
+"catHref":"#",
+"catDt":"飞利浦上代旗舰,超高性价比HIFI耳机,烧友必备",
+"catSpan":"images/index/mxsp.png",
+"catDd":"¥329.00"},
+
+{"catImg":"images/index/hotsales03.jpg",
+"catHref":"#",
+"catDt":"输入蛋券编码mate300立减300元(8.10-8.21日),限时限量,不要错过!",
+"catSpan":"images/index/rxtj.png",
+"catDd":"¥3315.00"},
+
+{"catImg":"images/index/hotsales09.jpg",
+"catHref":"#",
+"catDt":"HUAWEI 华为 M2 8英寸 LTE通话版/3G内存/16GB/1920*1200 IPS屏/4G网络 平板电脑 月光银",
+"catSpan":"images/index/rxtj.png",
+"catDd":"¥1649.00"}
+]

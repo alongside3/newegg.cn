@@ -18,16 +18,22 @@
 			
 			<dl>
 				<dt><a href="#">我的订单</a></dt>
-				<dd><a href="#">我的新蛋</a> <img src="images/index_08.jpg"/>
+				<dd class="topegg"><a href="#">我的新蛋</a> <img src="images/index_08.jpg"/>
 					<div class="myegg">
-						请 <a href="#"> 登录 </a> 后查看  
+						请 <a href="#">登录</a> 后查看  
 					</div>
 				</dd>
 				<dt><a href="#">帮助中心</a></dt>
 				
-				<dd><a href="#">客户服务</a> <img src="images/index_08.jpg"/>
+				<dd class="topsevice"><a href="#">客户服务</a> <img src="images/index_08.jpg"/>
 					<div class="sevice">
-						请 <a href="#"> 登录 </a> 后查看  
+						<dl>
+							<dt>400-820-4400</dt>
+							<dd>021-67072999</dd>
+						</dl>
+						<span>每天 9：00 - 18：00</span>
+						<a href="#">在线咨询</a>
+						<a href="#" class="youj">邮件我们</a>
 					</div>
 				</dd>
 			</dl>
@@ -39,7 +45,8 @@
 				<span> 晚上好，欢迎来新蛋购物！</span>
 			<p>
 	
-		</div>
+		</div>	
+		
 		<div id="header">
 			<p class="ad"> <img src="images/index_04.jpg"/><a href="javascript:;"></a></p>
 			<div class="wraper">
@@ -59,15 +66,39 @@
 				</div>
 			</div>
 		</div>
+		
 <script type="text/javascript">
+
+	$("#topbar .topsevice").mouseover(function(){	
+		$("#topbar .sevice").css({"display":"block"});
+		$("#topbar .topsevice").addClass("active")		
+	});
+			
+	$("#topbar .topsevice").mouseout(function(){	
+		$("#topbar .sevice").css({"display":"none"});
+		$("#topbar .topsevice").removeClass("active")
+	});
+	
+	$("#topbar .topegg").mouseover(function(){	
+		$("#topbar .myegg").css({"display":"block"});
+		$("#topbar .topegg").addClass("active")		
+	});
+			
+	$("#topbar .topegg").mouseout(function(){	
+		$("#topbar .myegg").css({"display":"none"});
+		$("#topbar .topegg").removeClass("active")
+	});
+
+
+
 	$(".ad a").click(function(){
 		$(".ad").css("display","none")
-	})
+	});
 	
 	$(".search .searchText").click(function(){
 		$(this).css({"border":0,"color":"#333"}).val("")
 		
-	})
+	});
 	
 	$(function(){
 		$("#infobook .email .emailText").click(function(){
@@ -469,33 +500,13 @@
 		<div id="select_goods">
 			<div class="goodsTab">
 				<div class="goodsTop">
-					<span class="active">您也许感兴趣</span>
+					<!--<span class="active">您也许感兴趣</span>
 					<span>新品发布</span>
 					<span>发烧好评</span>
-					<span>狠惠配</span>
+					<span>狠惠配</span>-->
 				</div>
 				<div class="goodsList">
-					<ul>
-						<li >
-							<p>
-								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-								<strong><img src="images/xpth.png"/></strong></a>
-							</p>
-							<dl>
-								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3 </a></dt>
-								<dd>¥958.00</dd>
-							</dl>
-						</li>
-						<li>
-							<p>
-								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-								<strong><img src="images/xpth.png"/></strong></a>
-							</p>
-							<dl>
-								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3</a></dt>
-								<dd>¥958.00</dd>
-							</dl>
-						</li>
+					<!--<ul>
 						<li>
 							<p>
 								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
@@ -506,29 +517,72 @@
 								<dd>¥958.00</dd>
 							</dl>
 						</li>
-						<li>
-							<p>
-								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-								<strong><img src="images/xpth.png"/></strong></a>
-							</p>
-							<dl>
-								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3</a></dt>
-								<dd>¥958.00</dd>
-							</dl>
-						</li>
-						<li>
-							<p>
-								<a href="#"><img src="images/index/goods01.jpg" alt="亚马逊 全 新Kindle Paperwhite 3 电子书阅读器 6英寸 白色"/>
-								<strong><img src="images/xpth.png"/></strong></a>
-							</p>
-							<dl>
-								<dt><a href="#" title="breo 倍轻松  智能手表">亚马逊 全 新Kindle Paperwhite 3 </a></dt>
-								<dd>¥958.00</dd>
-							</dl>
-						</li>
-					</ul>
+					</ul>-->
 				</div>
 			</div>
+			
+<script type="text/javascript">
+
+function Tag(ele){
+	$(ele).find('.goodsTop > span').mouseover(function(){
+		var $index= $(this).index();
+		
+	$(ele).find('.goodsTop > span').removeClass("active").eq($index).addClass("active")	
+	$(ele).find('.goodsList > ul').css({"display":"none"}).eq($index).css({"display":"block"})
+	
+	
+	})
+	
+}
+
+
+
+$.ajax({
+	type:"GET",
+	url:"json/select_goods.txt",
+	async:true,
+	cache:false,
+	error:function(xhr){
+		alert("错误码"+xhr.state)
+	},
+	success:function(str){
+		var arr=eval(str);
+		for(var i=0;i<arr.length;i++){
+			var jsonArr=arr[i];
+			var $ul=$("<ul></ul>")
+			var $span=$("<span>"+jsonArr["catname"]+"</span>")
+			
+			console.log(jsonArr["main"])
+			
+			for(var j=0;j<jsonArr["main"].length;j++){
+				var json= jsonArr["main"][j];
+				var $li=$("<li></li>")
+				
+				var $liP=$('<p><a href="'+json["catHref"]+'" title="'+json["catDt"]+'"><img src="'+json["catImg"]+'" alt="'+json["catDt"]+'"/></a><strong><img src="'+json["catSpan"]+'"/></strong></p>');	
+				var $liDl=$('<dl><dt><a href="'+json["catHref"]+'" title="'+json["catDt"]+'">'+json["catDt"]+'</a></dt><dd>'+json["catDd"]+' </dd></dl>')
+				
+				$li.append($liP)
+				$li.append($liDl)
+				$ul.append($li)
+				
+			}
+			
+			$("#select_goods .goodsTop").append($span)
+			$("#select_goods .goodsList").append($ul)
+			
+		};
+		$("#select_goods").find('.goodsTop > span').removeClass("active").eq(0).addClass("active");
+		$("#select_goods").find('.goodsList > ul').css({"display":"none"}).eq(0).css({"display":"block"});
+		Tag("#select_goods");
+	}
+	});
+	
+
+	
+</script>			
+			
+			
+			
 			<div class="goodsSlide">
 				<ul>
 					<li><a href="#" title="首页"><img src="images/goodsSlide1.jpg" width="100%"/></a></li>

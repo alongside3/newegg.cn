@@ -40,7 +40,8 @@ a:hover, a:active, a:focus {
   width: 1308px;
   height: 24px;
   background: #f1f1f1;
-  border-bottom: 1px solid #e2e2e2; }
+  border-bottom: 1px solid #e2e2e2;
+  position: relative; }
   #topbar ul {
     padding-left: 60px;
     line-height: 24px;
@@ -85,16 +86,77 @@ a:hover, a:active, a:focus {
       width: 50px;
       padding: 0 8px; }
   #topbar .myegg {
-    width: 118px;
+    position: absolute;
+    top: 24px;
+    left: 987px;
+    width: 101px;
     line-height: 35px;
+    height: 35px;
     background: #fff;
     border: 1px solid #000;
     clear: both;
-    display: none; }
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    border: 1px solid #eee;
+    z-index: 5;
+    padding-left: 17px; }
+    #topbar .myegg a {
+      text-decoration: underline;
+      display: inline;
+      float: none;
+      color: #039; }
+    #topbar .myegg a:hover {
+      text-decoration: underline; }
   #topbar .sevice {
-    width: 148px;
-    height: 102px;
+    position: absolute;
+    top: 24px;
+    left: 1103px;
+    width: 126px;
+    height: 93px;
+    padding: 3px 10px 6px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border: 1px solid #eee;
+    z-index: 5;
     display: none; }
+    #topbar .sevice dl {
+      height: 36px;
+      padding: 5px 0 0 10px;
+      width: 115px;
+      overflow: hidden; }
+      #topbar .sevice dl dt {
+        color: #fe7b23;
+        font: bold 14px/18px tahoma;
+        width: 115px;
+        padding: 0; }
+      #topbar .sevice dl dd {
+        font: bold 12px/18px tahoma;
+        width: 115px;
+        padding: 0; }
+    #topbar .sevice span {
+      display: inline-block;
+      height: 18px;
+      padding: 0 0 8px 10px;
+      width: 115px;
+      line-height: 18px;
+      font-family: tahoma;
+      clear: both; }
+    #topbar .sevice a {
+      display: block;
+      float: left;
+      background: #4f9ee7;
+      height: 25px;
+      width: 60px;
+      line-height: 25px;
+      color: #fff;
+      text-align: center; }
+    #topbar .sevice a:hover {
+      text-decoration: none; }
+    #topbar .sevice .youj {
+      margin-left: 4px; }
+  #topbar .active {
+    background-color: #fff;
+    border: 1px solid #fff; }
 
 #header {
   width: 1308px; }
@@ -777,7 +839,7 @@ a:hover, a:active, a:focus {
                 right: 0; }
             #body #select_goods .goodsTab .goodsList ul li dt {
               line-height: 18px;
-              padding: 5px 0 15px 0;
+              margin: 5px 0 15px 0;
               height: 36px;
               overflow: hidden;
               width: 150px;
@@ -786,7 +848,6 @@ a:hover, a:active, a:focus {
             #body #select_goods .goodsTab .goodsList ul li dd {
               color: #ff6600;
               font: bold 14px/21px arial;
-              padding-left: 18px;
               height: 21px; }
     #body #select_goods .goodsSlide {
       width: 238px;

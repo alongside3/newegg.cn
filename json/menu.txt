@@ -1,0 +1,109 @@
+﻿
+[
+{"catname":["Kindle商店"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["Fire平板电脑"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["亚马逊海外购"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["图书"],
+"data":[{"cattitle":"中文图书","catlist":["教材教辅","少儿","文学","社科 ","经管","亚马逊编辑推荐"]},
+{"cattitle":"进口图书","catlist":["Children's Books","Literature& Fiction","进口港台图书"]},
+{"cattitle":"Kindle电子书","catlist":["小说","经管","文学","原版","社科","特价书","包月服务"]},
+{"cattitle":"教材教辅","catlist":["考试","外语学习","教材","中小学教辅 ","工具书","教育理论"]}
+]},
+{"catname":["手机、","摄影、","数码"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["家具、","厨具、","家装"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["电脑、","办公"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["家用电器"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["美妆、","个护健康"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["亚马逊海外购"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["图书"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["手机、","摄影、","数码"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["家具、","厨具、","家装"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["电脑、","办公"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+{"catname":["家用电器"],
+"data":[{"cattitle":"电子书阅读器","catlist":["Kindle","Kindle Paperwhite","Kindle Voyaga","Kindle Oasis","Kindle配件"]},
+{"cattitle":"Kindle电子书","catlist":["排行榜","特价书","杂志店","小说","经管","进口原版","文学","免费书","少儿","社科人文"]},
+{"cattitle":"Kindle Unlimited","catlist":["包月电子书"]},
+{"cattitle":"Kindle帮助","catlist":["常见问题","帮助视频"]}
+]},
+
+
+
+
+
+
+
+
+{"catname":["美妆、","个护健康"],
+"data":[{"cattitle":"数码外设","catlist":["耳机","电脑外设","手机配件","音响","网络设备","办公设备","U盘/存储卡","游戏主机及配件","解锁版手机","相机及配件"]},
+{"cattitle":"电脑平板","catlist":["笔记本电脑","硬板内存","电脑主板","声卡显卡","笔记本电脑包","平板设备","外置硬盘","固态硬盘","迷你主机","CPU处理器","散热设备"]},
+{"cattitle":"家用电器","catlist":["厨房电器","清洁电器","个人护理","口腔清洁","生活电器"]},
+{"cattitle":"生活百货","catlist":["男鞋女鞋","手表配件","美妆","太阳眼镜","服饰","品牌箱包","首饰","汽车配件","户外用品","文具/耗材"]},
+{"cattitle":"个护美妆","catlist":["面膜","润肤","面部彩妆","洗发水"]},
+{"cattitle":"母婴商品","catlist":["婴儿喂养","婴儿服饰配件","洗浴尿布","儿童玩具","安全座椅&手推车"]},
+{"cattitle":"营养保健","catlist":["营养类"]}
+]}]

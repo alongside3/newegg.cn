@@ -95,14 +95,55 @@ a:hover, a:active, a:focus {
   #topbar .sevice {
     position: absolute;
     top: 24px;
-    left: 1034px;
+    left: 987px;
     width: 126px;
     height: 125px;
     padding: 3px 10px 6px 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     background: #fff;
     border: 1px solid #eee;
-    z-index: 5; }
+    z-index: 5;
+    display: none; }
+    #topbar .sevice dl {
+      height: 36px;
+      padding: 5px 0 0 10px;
+      width: 115px; }
+      #topbar .sevice dl dt {
+        color: #fe7b23;
+        font: bold 14px/18px tahoma; }
+      #topbar .sevice dl dd {
+        font: bold 12px/18px tahoma; }
+    #topbar .sevice span {
+      display: inline-block;
+      height: 18px;
+      padding: 0 0 8px 10px;
+      width: 115px;
+      line-height: 18px;
+      font-family: tahoma;
+      clear: both; }
+    #topbar .sevice a {
+      display: block;
+      float: left;
+      background: #4f9ee7;
+      height: 25px;
+      width: 60px;
+      line-height: 25px;
+      color: #fff;
+      text-align: center; }
+    #topbar .sevice a:hover {
+      text-decoration: none; }
+    #topbar .sevice .youj {
+      margin-left: 4px; }
+    #topbar .sevice .phone {
+      text-align: center;
+      background: #f60;
+      height: 25px;
+      width: 124px;
+      color: #fff;
+      font: 12px/25px simsun;
+      margin-top: 4px; }
+    #topbar .sevice .phone:hover {
+      text-decoration: none; }
   #topbar .active {
     background-color: #fff;
     border: 1px solid #fff; }
@@ -241,6 +282,105 @@ a:hover, a:active, a:focus {
           text-decoration: none;
           background: #ff971c;
           border: 1px solid #ff971c; }
+    #main #login .login_bottom {
+      width: 305px;
+      height: 109px;
+      padding: 16px 25px 0 30px; }
+      #main #login .login_bottom dl {
+        width: 305px;
+        height: 109px;
+        overflow: hidden;
+        position: relative; }
+        #main #login .login_bottom dl a:hover {
+          color: #f60; }
+        #main #login .login_bottom dl dt {
+          clear: both;
+          width: 305px;
+          height: 15px;
+          line-height: 15px;
+          color: #666; }
+        #main #login .login_bottom dl .zfb a {
+          position: absolute;
+          left: 0;
+          top: 25px;
+          width: 36px;
+          height: 30px;
+          padding-left: 33px;
+          background: url(../images/login/4link.png) no-repeat left top;
+          line-height: 30px; }
+        #main #login .login_bottom dl .qq a {
+          position: absolute;
+          left: 85px;
+          top: 25px;
+          padding-left: 33px;
+          height: 30px;
+          width: 20px;
+          background: url(../images/login/4link.png) no-repeat left -45px;
+          font-family: tahoma;
+          line-height: 30px; }
+        #main #login .login_bottom dl .wx a {
+          position: absolute;
+          left: 154px;
+          top: 25px;
+          width: 24px;
+          height: 30px;
+          padding-left: 33px;
+          background: url(../images/login/4link.png) no-repeat left -97px;
+          line-height: 30px; }
+        #main #login .login_bottom dl .xlwb a {
+          position: absolute;
+          left: 224px;
+          top: 25px;
+          width: 48px;
+          height: 30px;
+          padding-left: 33px;
+          background: url(../images/login/4link.png) no-repeat left -161px;
+          line-height: 30px; }
+        #main #login .login_bottom dl .sjzf a {
+          position: absolute;
+          left: 0px;
+          top: 55px;
+          width: 48px;
+          height: 26px;
+          padding-left: 26px;
+          background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2576px;
+          line-height: 30px; }
+        #main #login .login_bottom dl .sddl a {
+          position: absolute;
+          left: 88px;
+          top: 55px;
+          width: 48px;
+          height: 26px;
+          padding-left: 26px;
+          background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2609px;
+          line-height: 30px; }
+        #main #login .login_bottom dl .xl a {
+          position: absolute;
+          left: 178px;
+          top: 55px;
+          width: 24px;
+          height: 26px;
+          padding-left: 26px;
+          background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2508px;
+          line-height: 30px; }
+        #main #login .login_bottom dl .wy a {
+          position: absolute;
+          left: 238px;
+          top: 55px;
+          width: 24px;
+          height: 26px;
+          padding-left: 26px;
+          background: url(../images/login/otherLoginIcon20140616.gif) no-repeat 3px -2428px;
+          line-height: 30px; }
+        #main #login .login_bottom dl .ptzf a {
+          position: absolute;
+          left: 0px;
+          top: 82px;
+          width: 96px;
+          height: 26px;
+          padding-left: 26px;
+          background: url(../images/login/ptlogo.gif) no-repeat 3px 7px;
+          line-height: 30px; }
 
 #footer {
   height: 112px;

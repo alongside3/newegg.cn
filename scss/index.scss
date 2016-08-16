@@ -13,7 +13,7 @@ b{font-weight: normal;}
 a:visited { color:#666; } 
 a:hover, a:active, a:focus { text-decoration: underline;} 
 
-#topbar{width:1308px;height: 24px;background: #f1f1f1;border-bottom: 1px solid #e2e2e2;
+#topbar{width:1308px;height: 24px;background: #f1f1f1;border-bottom: 1px solid #e2e2e2;position: relative;
     ul{padding-left: 60px; line-height:24px;float: left;width: 200px;
     li{width: 50px;padding: 0 15px;float:left;};
     li:nth-child(2n+1){background: url(../images/topbar.png) no-repeat left 7px;};
@@ -25,8 +25,15 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     dl{float:right;line-height: 24px;padding: 0 58px 0 15px;
     dd{float: left;width:62px;padding: 0 8px;a{float: left;};a:hover { text-decoration: none;};img{float: left;padding:10px 0 0 8px;}};
     dt{float: left;width:50px;padding: 0 8px;}};
-    .myegg{width: 118px;line-height: 35px;background: #fff;border: 1px solid #000;clear: both;display: none;}
-    .sevice{width:148px;height: 102px;display: none;}
+    .myegg{position: absolute;top:24px;left:987px;width: 101px;line-height: 35px;height:35px;background: #fff;border: 1px solid #000;clear: both;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);display: none;
+    border: 1px solid #eee;z-index:5;padding-left: 17px;a{text-decoration: underline;display: inline;float: none;color: #039;};a:hover{text-decoration: underline;}}
+    .sevice{position: absolute;top:24px;left:1103px;width:126px;height: 93px;padding: 3px 10px 6px 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);background:#fff;border: 1px solid #eee;z-index:5;display: none;
+    dl{height: 36px;padding: 5px 0 0 10px;width: 115px;overflow: hidden;dt{color:#fe7b23;font:bold 14px/18px tahoma;width: 115px;padding: 0;};dd{font:bold 12px/18px tahoma;width: 115px;padding: 0;}};
+    span{display:inline-block;height: 18px;padding:0 0 8px 10px;width: 115px;line-height: 18px;font-family: tahoma;clear: both;}
+    a{display: block;float: left;background: #4f9ee7;height: 25px;width: 60px;line-height: 25px;color: #fff;text-align: center;}
+    a:hover{text-decoration: none;};
+    .youj{margin-left:4px;}; 
+    };.active{background-color: #fff;border: 1px solid #fff;}
 }
     
 #header{width:1308px;
@@ -193,8 +200,8 @@ a:hover, a:active, a:focus { text-decoration: underline;}
             li{float: left;width: 150px;height: 183px;padding: 0 18px;
             p{width: 150px;height: 108px;position: relative; a img{width: 144px;height: 108px;};
             strong img{width:52px;height: 52px;position: absolute;top: 0;right: 0;}}
-            dt{line-height: 18px;padding:5px 0 15px 0;height: 36px;overflow: hidden;width: 150px;overflow: hidden;font-family: tahoma,\5b8b\4f53!important;}
-            dd{color: $color_org;font: bold 14px/21px arial;padding-left: 18px;height: 21px; }
+            dt{line-height: 18px;margin:5px 0 15px 0;height: 36px;overflow: hidden;width: 150px;overflow: hidden;font-family: tahoma,\5b8b\4f53!important;}
+            dd{color: $color_org;font: bold 14px/21px arial;height: 21px; }
             }};
         };};
     .goodsSlide{

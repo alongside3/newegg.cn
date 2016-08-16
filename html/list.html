@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div id="topbar">
+			<ul>
+				<li><a href="#">掌上新蛋</a></li>
+				<li><a href="#">企业团购</a></li>
+			</ul>
+			
+			
+			
+			<dl>
+				<dt><a href="#">我的订单</a></dt>
+				<dd class="topegg"><a href="#">我的新蛋</a> <img src="../images/index_08.jpg"/>
+					<div class="myegg">
+						请 <a href="#">登录</a> 后查看  
+					</div>
+				</dd>
+				<dt><a href="#">帮助中心</a></dt>
+				
+				<dd class="topsevice"><a href="#">客户服务</a> <img src="../images/index_08.jpg"/>
+					<div class="sevice">
+						<dl>
+							<dt>400-820-4400</dt>
+							<dd>021-67072999</dd>
+						</dl>
+						<span>每天 9：00 - 18：00</span>
+						<a href="#">在线咨询</a>
+						<a href="#" class="youj">邮件我们</a>
+					</div>
+				</dd>
+			</dl>
+			
+			<p>
+				<a href="#">注册</a>
+				<b>|</b>
+				<a href="#">登录</a>
+				<span> 晚上好，欢迎来新蛋购物！</span>
+			<p>
+	
+		</div>	
+		
+		<div id="header">
+			<p class="ad"> <img src="../images/index_04.jpg"/><a href="javascript:;"></a></p>
+			<div class="wraper">
+				<a href="newegg.cn" class="log" title="新蛋中国  - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货 "></a>
+				<a href="#" title="七天无理由退换货" class="days7"></a>
+				<div class="search">
+					<p> <input type="text" class="searchText" value="荣耀品牌日 爆款立减300元！" autocomplete="off" maxlength="50"/></p>
+					<em><a href="javascript:;" title="搜索">搜索</a></em>
+					
+					<span>
+						<a href="#">移动硬盘</a><b>|</b>
+						<a href="#">MacBook</a><b>|</b>
+						<a href="#">mate8</a><b>|</b>
+						<a href="#">Thinkpad</a><b>|</b>
+						<a href="#">行车记录仪</a>
+					<span>
+				</div>
+			</div>
+		</div>
+		
+<script type="text/javascript">
+
+	$("#topbar .topsevice").mouseover(function(){	
+		$("#topbar .sevice").css({"display":"block"});
+		$("#topbar .topsevice").addClass("active")		
+	});
+			
+	$("#topbar .topsevice").mouseout(function(){	
+		$("#topbar .sevice").css({"display":"none"});
+		$("#topbar .topsevice").removeClass("active")
+	});
+	
+	$("#topbar .topegg").mouseover(function(){	
+		$("#topbar .myegg").css({"display":"block"});
+		$("#topbar .topegg").addClass("active")		
+	});
+			
+	$("#topbar .topegg").mouseout(function(){	
+		$("#topbar .myegg").css({"display":"none"});
+		$("#topbar .topegg").removeClass("active")
+	});
+
+
+
+	$(".ad a").click(function(){
+		$(".ad").css("display","none")
+	});
+	
+	$(".search .searchText").click(function(){
+		$(this).css({"border":0,"color":"#333"}).val("")
+		
+	});
+	
+	$(function(){
+		$("#infobook .email .emailText").click(function(){
+			$(this).val("")
+		}
+			
+		)
+	})
+</script>		
+		
+		
+		<div id="menu">
+			<div class="innermenu">
+				<h3><a href="newegg.cn" title="首页"> 全部商品分类</a></h>
+				<div class="menulist">
+					
+				</div>
+			</div>
+			
+			<ul class="nav">
+				<li><a href="newegg.cn" title="首页"> 首页</a></li>
+				<li><a href="newegg.cn" title="限时抢购"> 限时抢购</a></li>
+				<li><a href="newegg.cn" title="团团赚"> 团团赚</a></li>
+				<li><a href="newegg.cn" title="海外直购"> 海外直购</a></li>
+				<li><a href="newegg.cn" title="爱车配"> 爱车配</a></li>
+				<li><a href="newegg.cn" title="二手宝库">二手宝库</a></li>
+			</ul>
+			<div class="utility">
+				<dl class="mycart">
+					<dt><a href="#" target="_blank">购物车<strong>1</strong>件   <span></span></a></dt>
+					
+					<dd></dd>
+				</dl>
+				<dl class="favor">
+					<dt><a href="#" target="_blank">收藏提醒  <span></span></a></dt>
+					
+					<dd></dd>
+				</dl>
+			</div>
+		</div>
+		<div id="crumb">
+				<a href="#">首页</a><span>&gt;</span><a href="#">海外直购</a><span>&gt;</span>
+				<strong>笔记本电脑</strong>
+		</div>
+		
+		<div id="main">
+			<div id="left">
+				<dl class="leftmenu">
+					<dt>电脑平板</dt>
+					<dd><ul>
+						<li><a href="#">笔记本电脑</a></li>
+						<li><a href="#">笔记本电脑</a></li>
+						<li><a href="#">笔记本电脑</a></li>
+						<li><a href="#">笔记本电脑</a></li>
+						<li><a href="#">笔记本电脑</a></li>
+					</ul></dd>
+				</dl>
+			</div>
+<script type="text/javascript">
+	$.ajax({
+		type:"GET",
+		url:"../json/listmenu.txt",
+		async:true,
+		cache:false,
+		error:function(xhr){
+			alert("错误码"+xhr.state)
+		},
+		success:function(str){
+			var arr=eval(str);
+			for (var i=0;i<arr.length;i++) {
+				var json=arr[i];
+				var $dt=$('<dt>'+json["cattitle"]+'</dt>')
+				var $dd=$('<dd></dd>')
+				var $ul=$('<ul></ul>')
+				
+				for (var j = 0; j < json["catlist"].length; j++) {
+					
+					 var $li=$('<li><a href="#">'+json["catlist"][j]+'</a></li>')
+					 
+					 $ul.append($li)
+				}
+				
+				$dd.append($ul)
+				$("#main #left .leftmenu").append($dt)
+				$("#main #left .leftmenu").append($dd)
+				
+
+				
+			}
+		}
+		
+	});
+</script>			
+			
+			
+			<div id="right">
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		<div id="footer">
+			<div class="helpcenter">
+				<dl class="hc1">
+					<dt>新手上路</dt>
+					<dd><a href="#">怎样购物</a></dd>
+					<dd><a href="#">支付常见问题</a></dd>
+					<dd><a href="#">免运费政策</a></dd>
+					<dd><a href="#">发票须知</a></dd>
+					<dd><a href="#">签收验货流程</a></dd>
+					<dd><a href="#">用户评论/咨询</a></dd>
+					<dd><a href="#">大件商品订货流程</a></dd>
+				</dl>
+				<dl class="hc2">
+					<dt>售后服务</dt>
+					<dd><a href="#">退换货政策</a></dd>
+					<dd><a href="#">订单查询</a></dd>
+					<dd><a href="#">售后申请</a></dd>
+				</dl>
+				<dl class="hc3">
+					<dt>特色服务 </dt>
+					<dd><a href="#">关于会员制</a></dd>
+					<dd><a href="#">价格保护</a></dd>
+				</dl>
+				<dl class="hc4">
+					<dt>申请合作</dt>
+					<dd><a href="#">申请成为供应商</a></dd>
+					<dd><a href="#">申请入驻开放平台</a></dd>
+					<dd><a href="#">友情合作</a></dd>
+					<dd><a href="#">网站联盟</a></dd>
+					<dd><a href="#">企业客户</a></dd>
+				</dl>
+				<dl class="hc5">
+					<dt>关于我们</dt>
+					<dd><a href="#">新蛋集团</a></dd>
+					<dd><a href="#">联系我们</a></dd>
+					<dd><a href="#">诚聘英才</a></dd>
+				</dl>
+			</div>
+			<div class="footer">
+				
+					<a href="#" class="ft1"></a>
+					<a href="#" class="ft2"></a>
+					<a href="#" class="ft3"></a>
+					<a href="#" class="ft4"></a>
+					<a href="#" class="ft5"></a>
+				
+				<p>新蛋集团网站 :
+					<a href="#">美国新蛋</a>
+					<a href="#">中国新蛋</a>
+					<a href="#">加拿大新蛋</a>
+					<a href="#">新蛋软件</a>
+				</p>
+				<span>&copy; 2001-2016&nbsp;新蛋贸易（中国）有限公司&nbsp;版权所有&nbsp;<a href="#">沪ICP备:05006005</a></span>
+			</div>
+		</div>
+	</body>
+</html>

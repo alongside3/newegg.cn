@@ -1,0 +1,344 @@
+html, body, ul, li, ol, dl, dd, dt, p, b, input, select, em, i, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img, input {
+  border: none; }
+
+img {
+  display: block; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, li, ol {
+  list-style: none; }
+
+body {
+  color: #666;
+  padding: 5px 0;
+  font: 12px/20px "SimSun","microsoft yahei","Arial Narrow",HELVETICA;
+  background: #fff;
+  /* overflow-y:scroll;*/
+  overflow-x: hidden; }
+
+a, b {
+  color: #666;
+  text-decoration: none; }
+
+b {
+  font-weight: normal; }
+
+a:visited {
+  color: #666; }
+
+a:hover, a:active, a:focus {
+  text-decoration: underline; }
+
+#topbar {
+  width: 1308px;
+  height: 24px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e2e2e2;
+  position: relative; }
+  #topbar ul {
+    position: absolute;
+    left: 180px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    width: 252px; }
+    #topbar ul li {
+      float: left;
+      padding: 0 5px; }
+      #topbar ul li a {
+        font: 12px/24px simsun;
+        display: block; }
+    #topbar ul .handegg {
+      background: url(../images/topbar.png) no-repeat left 7px;
+      width: 48px;
+      height: 24px;
+      padding-left: 16px; }
+    #topbar ul .company {
+      background: url(../images/topbar.png) no-repeat left -37px;
+      width: 48px;
+      height: 24px;
+      padding-left: 16px; }
+    #topbar ul .dispark {
+      background: url(../images/topbar.png) no-repeat left -85px;
+      width: 72px;
+      height: 24px;
+      padding-left: 16px; }
+    #topbar ul .handegg:hover {
+      background: url(../images/topbar.png) no-repeat left -13px; }
+    #topbar ul .company:hover {
+      background: url(../images/topbar.png) no-repeat left -57px; }
+    #topbar ul .dispark:hover {
+      background: url(../images/topbar.png) no-repeat left -105px; }
+  #topbar p {
+    position: absolute;
+    left: 886px;
+    height: 24px;
+    line-height: 24px; }
+    #topbar p a {
+      padding-left: 10px; }
+    #topbar p strong {
+      display: inline-block;
+      color: #666;
+      font: normal 12px/24px simsun;
+      height: 25px;
+      padding-left: 10px;
+      width: 70px; }
+      #topbar p strong img {
+        display: inline; }
+  #topbar .sevice {
+    position: absolute;
+    top: 24px;
+    left: 987px;
+    width: 126px;
+    height: 125px;
+    padding: 3px 10px 6px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border: 1px solid #eee;
+    z-index: 5;
+    display: none; }
+    #topbar .sevice dl {
+      height: 36px;
+      padding: 5px 0 0 10px;
+      width: 115px; }
+      #topbar .sevice dl dt {
+        color: #fe7b23;
+        font: bold 14px/18px tahoma; }
+      #topbar .sevice dl dd {
+        font: bold 12px/18px tahoma; }
+    #topbar .sevice span {
+      display: inline-block;
+      height: 18px;
+      padding: 0 0 8px 10px;
+      width: 115px;
+      line-height: 18px;
+      font-family: tahoma;
+      clear: both; }
+    #topbar .sevice a {
+      display: block;
+      float: left;
+      background: #4f9ee7;
+      height: 25px;
+      width: 60px;
+      line-height: 25px;
+      color: #fff;
+      text-align: center; }
+    #topbar .sevice a:hover {
+      text-decoration: none; }
+    #topbar .sevice .youj {
+      margin-left: 4px; }
+    #topbar .sevice .phone {
+      text-align: center;
+      background: #f60;
+      height: 25px;
+      width: 124px;
+      color: #fff;
+      font: 12px/25px simsun;
+      margin-top: 4px; }
+    #topbar .sevice .phone:hover {
+      text-decoration: none; }
+  #topbar .active {
+    background-color: #fff;
+    border: 1px solid #fff; }
+
+#header {
+  width: 1308px;
+  height: 107px;
+  position: relative; }
+  #header a {
+    position: absolute;
+    width: 320px;
+    height: 69px;
+    background: url(../images/logo.png) no-repeat left top;
+    top: 20px;
+    left: 165px; }
+  #header h1 {
+    position: absolute;
+    top: 25px;
+    left: 509px;
+    border-left: 1px solid #d9d9d9;
+    padding-left: 26px;
+    height: 96px;
+    height: 49px;
+    color: #484848;
+    font: 24px/49px "microsoft yahei"; }
+
+#main {
+  width: 1308px;
+  height: 555px; }
+  #main .register {
+    padding-left: 164px;
+    height: 555px;
+    width: 1144px; }
+    #main .register h2 {
+      height: 40px;
+      width: 97px;
+      border: 1px solid #ccc;
+      text-align: center;
+      font: bolder 14px/40px simsun;
+      border-bottom: none; }
+    #main .register .form {
+      width: 977px;
+      height: 458px;
+      border: 1px solid #ccc;
+      position: relative; }
+      #main .register .form .kong {
+        border-top: 1px solid #fff;
+        width: 97px;
+        height: 0px;
+        display: block;
+        position: absolute;
+        top: -1px; }
+      #main .register .form .formleft {
+        width: 742px;
+        height: 458px;
+        border-right: 1px solid #ccc;
+        float: left; }
+        #main .register .form .formleft ul {
+          padding: 35px 0 0 20px;
+          width: 742px;
+          height: 182px; }
+          #main .register .form .formleft ul li {
+            height: 32px;
+            padding-bottom: 18px;
+            width: 742px; }
+            #main .register .form .formleft ul li strong {
+              float: left;
+              width: 68px;
+              height: 32px;
+              font: normal 12px/32px simsun; }
+            #main .register .form .formleft ul li input {
+              float: left;
+              width: 245px;
+              height: 30px;
+              border: 1px solid #ccc;
+              outline: medium;
+              font: normal 12px/32px tahoma,arial;
+              color: #f60;
+              padding-left: 5px; }
+            #main .register .form .formleft ul li span {
+              float: left;
+              width: 268px;
+              height: 32px;
+              font: normal 12px/32px simsun;
+              color: #f60;
+              padding-left: 10px; }
+          #main .register .form .formleft ul .yzm input {
+            width: 57px; }
+          #main .register .form .formleft ul .yzm em {
+            font-style: normal;
+            float: left;
+            width: 115px;
+            height: 30px;
+            border: 1px solid #fff;
+            margin-left: 5px; }
+          #main .register .form .formleft ul .yzm span {
+            color: #039;
+            cursor: pointer; }
+        #main .register .form .formleft .formleft_bottom {
+          padding: 26px 0 0 88px;
+          width: 650px;
+          height: 215px; }
+          #main .register .form .formleft .formleft_bottom span {
+            height: 13px;
+            width: 650px;
+            padding-bottom: 27px;
+            display: inline-block;
+            line-height: 13px; }
+          #main .register .form .formleft .formleft_bottom a {
+            display: inline-block;
+            text-align: center;
+            background: #f7661f;
+            height: 30px;
+            width: 203px;
+            border: 1px solid #f7661f;
+            border-radius: 2px;
+            color: #fff;
+            font: bolder 14px/30px simsun; }
+          #main .register .form .formleft .formleft_bottom a:hover {
+            text-decoration: none;
+            background: #ff971c;
+            border: 1px solid #ff971c; }
+          #main .register .form .formleft .formleft_bottom .tiaokuan {
+            width: 566px;
+            height: 74px;
+            border: 1px solid #ccc;
+            margin-top: 18px;
+            color: #999;
+            line-height: 18px;
+            padding: 26px 18px 0 16px;
+            overflow-y: scroll; }
+            #main .register .form .formleft .formleft_bottom .tiaokuan h3 {
+              color: #f60;
+              padding: 3px 0;
+              text-align: center; }
+            #main .register .form .formleft .formleft_bottom .tiaokuan p {
+              text-indent: 24px; }
+      #main .register .form .formright {
+        width: 234px;
+        text-align: center;
+        float: left; }
+        #main .register .form .formright .formright_top {
+          width: 234px;
+          height: 78px;
+          border-bottom: 1px solid #ccc;
+          padding-top: 38px; }
+          #main .register .form .formright .formright_top a {
+            color: #039; }
+          #main .register .form .formright .formright_top dt {
+            padding-bottom: 13px; }
+        #main .register .form .formright dt {
+          font: bold 16px/16px simsun; }
+        #main .register .form .formright dd {
+          font: normal 14px/23px simsun; }
+        #main .register .form .formright .formright_bottom {
+          width: 234px;
+          height: 295px;
+          padding-top: 46px; }
+          #main .register .form .formright .formright_bottom dt {
+            padding-bottom: 10px; }
+
+#footer {
+  height: 112px;
+  width: 1308px;
+  padding-top: 30px;
+  text-align: center;
+  color: #484848;
+  background: #f0f0f0;
+  border-top: 1px solid #d9d9d9; }
+  #footer a {
+    color: #484848; }
+  #footer .ft2 {
+    width: 116px;
+    height: 45px;
+    background: url(../images/logo_02.png) no-repeat left -92px;
+    display: inline-block; }
+  #footer .ft3 {
+    width: 130px;
+    height: 45px;
+    background: url(../images/logo_02.png) no-repeat left -276px;
+    display: inline-block; }
+  #footer .ft4 {
+    width: 127px;
+    height: 45px;
+    background: url(../images/logo_02.png) no-repeat left -326px;
+    display: inline-block; }
+  #footer .ft5 {
+    width: 106px;
+    height: 45px;
+    background: url(../images/logo_02.png) no-repeat left -376px;
+    display: inline-block; }
+  #footer p {
+    padding: 5px 0 10px 0; }
+  #footer span {
+    color: #484848;
+    font: 12px tahoma; }
+
+/*# sourceMappingURL=register.css.map */
