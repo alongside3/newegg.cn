@@ -277,7 +277,7 @@ a:hover, a:active, a:focus {
           padding: 0;
           margin: 0;
           padding-left: 5px; }
-        #menu .innermenu .menulist dl dt {
+        #menu .innermenu .menulist dl .menulistdt {
           height: 22px;
           background: url(../images/bg.png) no-repeat 125px -1549px;
           padding-bottom: 2px;
@@ -285,15 +285,18 @@ a:hover, a:active, a:focus {
           color: #000;
           text-indent: 2px;
           font: bolder 14px/22px "microsoft yahei"; }
-          #menu .innermenu .menulist dl dt a {
+          #menu .innermenu .menulist dl .menulistdt a {
             font: bolder 14px/22px "microsoft yahei";
             color: #000; }
-        #menu .innermenu .menulist dl dd {
+        #menu .innermenu .menulist dl .menulistdd {
           height: 18px;
           width: 160px; }
-          #menu .innermenu .menulist dl dd a {
+          #menu .innermenu .menulist dl .menulistdd a {
             color: #666;
             font: normal 12px/18px "microsoft yahei"; }
+      #menu .innermenu .menulist .menuactive {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 5; }
       #menu .innermenu .menulist .orange {
         color: #ff6600; }
       #menu .innermenu .menulist span {
@@ -319,6 +322,64 @@ a:hover, a:active, a:focus {
         #menu .innermenu .menulist .living dd {
           line-height: 27px;
           height: 27px; }
+    #menu .innermenu .menulist_right {
+      width: 818px;
+      height: 492px;
+      background: #fff;
+      overflow: hidden;
+      position: absolute;
+      top: -5px;
+      left: 160px;
+      z-index: 5;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      border-left: 1px solid #E3E3E3;
+      display: none; }
+      #menu .innermenu .menulist_right div {
+        width: 818px;
+        height: 492px;
+        overflow: hidden; }
+        #menu .innermenu .menulist_right div dl {
+          float: left;
+          width: 580px;
+          height: 475px;
+          padding: 15px 0 0 15px; }
+          #menu .innermenu .menulist_right div dl dt {
+            float: left;
+            color: #000;
+            font: bold 12px "microsoft yahei";
+            padding-bottom: 10px;
+            line-height: 26px;
+            clear: left;
+            padding-right: 15px; }
+          #menu .innermenu .menulist_right div dl dd {
+            float: left;
+            overflow: hidden;
+            width: 480px;
+            line-height: 26px;
+            padding-bottom: 10px; }
+            #menu .innermenu .menulist_right div dl dd li {
+              height: 26px;
+              float: left; }
+              #menu .innermenu .menulist_right div dl dd li a {
+                display: inline-block;
+                font: normal 12px tahoma;
+                color: #666;
+                height: 14px;
+                border-right: 1px solid #777777;
+                padding: 0 10px; }
+      #menu .innermenu .menulist_right .menu_img {
+        width: 205px;
+        height: 150px;
+        overflow: hidden;
+        padding-top: 15px; }
+        #menu .innermenu .menulist_right .menu_img li {
+          width: 100px;
+          height: 40px;
+          overflow: hidden;
+          float: left; }
+          #menu .innermenu .menulist_right .menu_img li img {
+            width: 100px;
+            height: 80px; }
   #menu .nav {
     position: absolute;
     left: 243px;
@@ -459,7 +520,8 @@ a:hover, a:active, a:focus {
         width: 771px;
         height: 203px;
         position: relative;
-        margin-top: 10px; }
+        margin-top: 10px;
+        overflow: hidden; }
         #body #section .secLeft .timer h3 {
           font: bold 16px/24px "microsoft yahei";
           padding-left: 16px;
@@ -495,7 +557,9 @@ a:hover, a:active, a:focus {
             margin: 0 3px; }
         #body #section .secLeft .timer ul {
           padding: 0 20px;
-          width: 744px; }
+          width: 1488px;
+          position: absolute;
+          left: 0; }
           #body #section .secLeft .timer ul li {
             float: left;
             width: 150px;
@@ -506,7 +570,7 @@ a:hover, a:active, a:focus {
               height: 108px; }
             #body #section .secLeft .timer ul li dt {
               line-height: 18px;
-              padding: 5px 0;
+              margin: 5px 0;
               height: 36px;
               overflow: hidden;
               width: 150px; }

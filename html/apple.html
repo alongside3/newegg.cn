@@ -112,19 +112,19 @@
 		
 		<div id="menu">
 			<div class="innermenu">
-				<h3><a href="newegg.cn" title="首页"> 全部商品分类</a></h>
+				<h3><a href="../index.html" title="首页"> 全部商品分类</a></h>
 				<div class="menulist">
 					
 				</div>
 			</div>
 			
 			<ul class="nav">
-				<li><a href="newegg.cn" title="首页"> 首页</a></li>
-				<li><a href="newegg.cn" title="限时抢购"> 限时抢购</a></li>
-				<li><a href="newegg.cn" title="团团赚"> 团团赚</a></li>
-				<li><a href="newegg.cn" title="海外直购"> 海外直购</a></li>
-				<li><a href="newegg.cn" title="爱车配"> 爱车配</a></li>
-				<li><a href="newegg.cn" title="二手宝库">二手宝库</a></li>
+				<li><a href="../index.html" title="首页"> 首页</a></li>
+				<li><a href="../index.html" title="限时抢购"> 限时抢购</a></li>
+				<li><a href="../index.html" title="团团赚"> 团团赚</a></li>
+				<li><a href="../index.html" title="海外直购"> 海外直购</a></li>
+				<li><a href="../index.html" title="爱车配"> 爱车配</a></li>
+				<li><a href="../index.html" title="二手宝库">二手宝库</a></li>
 			</ul>
 			<div class="utility">
 				<dl class="mycart">
@@ -144,7 +144,7 @@
 			
 		<div id="applecrumb">
 			<div class="crumbleft">
-				<a href="#">首页</a><span>&gt;</span><a href="#">苹果</a><span>&gt;</span>
+				<a href="../index.html">首页</a><span>&gt;</span><a href="#">苹果</a><span>&gt;</span>
 				<a href="#">MacBook</a><span>&gt;</span><a href="#">Apple苹果</a><span>&gt;</span>
 				<strong>产品编号: A1I-184-01U</strong>
 			</div>
@@ -174,9 +174,25 @@
 			<div class="tabshead_right">
 				<input type="checkbox" /> 将商品加入对比
 			</div>
+			
+			
+			
 		</div>	
 			
+		<div id="tabshead_fixed">
+			<ul >
+				<li class="fixed_active">商品详情</li>
+				<li>用户评论(4)</li>
+				<li>具体参数</li>
+				<li>售后服务</li>
+				<li>商品咨询</li>
+			</ul>
 			
+			<a href="javascript:;" class="addToCart">加入购物车</a>
+		</div>	
+		
+		
+		
 		<div id="applamain">
 			<div id="appleTab1">
 				<div class="goods_all">
@@ -185,13 +201,85 @@
 							<dt><img src="../images/apple/goods_prev01.jpg"/></dt>
 							<dd>
 								<ul>
-									<li><img src="../images/apple/goods_prev01.jpg"/></li>
+									<li class="goodsimg_active"><img src="../images/apple/goods_prev01.jpg"/></li>
 									<li><img src="../images/apple/goods_prev02.jpg"/></li>
 									<li><img src="../images/apple/goods_prev03.jpg"/></li>
 								</ul>
 							</dd>
 						</dl>
+						
+						<div class="goods_fixed">
+							<span class="goodsimg_prev"></span>
+							<span class="goodsimg_next"></span>
+							<span class="goodsimg_close"></span>
+							<img  src="../images/apple/goods_prev01.jpg"/>
+						</div>
 					</div>
+					
+		<!------------------放大镜及切换效果	-------------------------------------------->			
+					
+					
+<script type="text/javascript">
+	$("#appleTab1 .goods_prev li").mouseover(function(){
+		
+		$(this).siblings().removeClass("goodsimg_active")
+		$(this).addClass("goodsimg_active")
+		$("#appleTab1 .goods_prev dt").html('<img src="../images/apple/goods_prev0'+($(this).index()+1)+'.jpg"/>')
+	})
+	
+	$("#appleTab1 .goods_prev dt").click(function(){
+		$("#appleTab1 .goods_prev .goods_fixed").css("display","block")
+		$("#appleTab1 .goods_prev .goodsimg_prev").css("display","block");
+		$("#appleTab1 .goods_prev .goodsimg_next").css("display","block");
+		if($("#appleTab1 .goods_prev .goods_fixed img").has("goodsimg_big")){
+			$("#appleTab1 .goods_prev .goods_fixed img").removeClass("goodsimg_big").addClass("goodsimg_open");
+		}
+	})
+	
+	$("#appleTab1 .goods_prev .goods_fixed .goodsimg_close").click(function(){
+		$("#appleTab1 .goods_prev .goods_fixed").css("display","none")
+		
+	})
+	
+	$("#appleTab1 .goods_prev .goods_fixed img").click(function(){
+		
+		
+		if($("#appleTab1 .goods_prev .goods_fixed img").has("goodsimg_open")){
+			console.log("b")
+			$("#appleTab1 .goods_prev .goods_fixed img").removeClass("goodsimg_open").addClass("goodsimg_big");
+			$("#appleTab1 .goods_prev .goodsimg_prev").css("display","none");
+			$("#appleTab1 .goods_prev .goodsimg_next").css("display","none");
+			
+		}else if($("#appleTab1 .goods_prev .goods_fixed img").has("goodsimg_big")){
+			console.log("a")
+			$("#appleTab1 .goods_prev .goods_fixed img").removeClass("goodsimg_big").addClass("goodsimg_open");
+			$("#appleTab1 .goods_prev .goodsimg_prev").csss("display","block");
+			$("#appleTab1 .goods_prev .goodsimg_next").css("display","block");
+			return "a"
+			
+		}	
+		
+	})
+	
+	$(window).scroll(function(){
+		
+		var $scrollT= -$("body,html").offset().top
+		if($scrollT > 280){
+			$("#tabshead_fixed").css("display","block")
+			
+		}else{
+			$("#tabshead_fixed").css("display","none")
+		}
+		
+	})
+	
+</script>					
+					
+					
+					
+					
+					
+		<!------------------放大镜及切换效果	-------------------------------------------->				
 					<div class="goods_intro">
 						<div class="intro_title">
 							<h2>Apple 苹果 MacBook 12英寸 MMGL2CH/A 玫瑰金色 - 1.1GHz/8GB/256GB 闪存/Retina 显示屏</h2>
@@ -202,11 +290,11 @@
 							<ul>
 								<li><strong>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：</strong><a href="#">Apple 苹果</a></li>
 								<li><strong>产品型号：</strong><em>MMGL2CH/A</em></li>
-								<li class="intro_price"><strong>新&nbsp;&nbsp;蛋&nbsp;&nbsp;价：</strong><p><em>¥&nbsp;</em><span>2179.00</span></p></li>
+								<li class="intro_price"><strong>新&nbsp;&nbsp;蛋&nbsp;&nbsp;价：</strong><p><em>¥&nbsp;</em><span>8599.00</span></p></li>
 								<li class="intro_zhichi"><strong>商品支持：</strong><a href="#">不支持无理由退</a></li>
 								<li class="intro_disk"><strong>硬盘容量：</strong>
-									<span class="intro_active">256G闪存<s class="active"></s></span>
-									<span>512G闪存<s></s></span>
+									<span class="intro_active intro_256">256G闪存<s class="active"></s></span>
+									<span class="intro_512">512G闪存<s></s></span>
 									
 								</li>
 								<li class="intro_color"><strong>颜&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色：</strong>
@@ -223,8 +311,52 @@
 										库存：有货
 									</em>
 								</li>
+
+<script type="text/javascript">
+
+	var intro_num=$(".intro_num input").val()
+	
+	$(".intro_num .minus").click(
+		function(){
+			intro_num--
+			if(intro_num<=1){
+				intro_num=1
+			}
+			$(".intro_num input").val(intro_num)
+		}
+	);
+	$(".intro_num .plus").click(
+		function(){
+			intro_num++
+			$(".intro_num input").val(intro_num)
+		}
+		
+	);
+	
+	$(".intro_disk .intro_512").click(
+		function(){
+			$(this).addClass("intro_active").find("s").addClass("active")
+			$(this).siblings().removeClass("intro_active").find("s").removeClass("active")
+			$(".intro_price span").html("10588.00")
+			$(".intro_answer span").eq(0).html("“512G闪存")
+		}
+		
+	);
+	$(".intro_disk .intro_256").click(
+		function(){
+			$(this).addClass("intro_active").find("s").addClass("active")
+			$(this).siblings().removeClass("intro_active").find("s").removeClass("active")
+			$(".intro_price span").html("8599.00")
+			$(".intro_answer span").eq(0).html("“256G闪存")
+		}
+		
+	)
+	
+</script>
 								
-								<li class="intro_answer">已选择<span>“256G闪存、玫瑰金”</span></li>
+								
+								
+								<li class="intro_answer">已选择<span>“256G闪存</span><span>、玫瑰金”</span></li>
 							</ul>
 							
 							<div class="goods_btns">
@@ -261,9 +393,17 @@
 								<a href="#">降价通知</a>
 							</h3>
 							<div class="goods_comment">
-								
+								<p class="comment_score"><strong>5.0</strong><a href="#"></a></p>
+								<dl>
+									<dt>最有用好&nbsp;<a href="#">  已有4人评价</a></dt>
+									<dd><a href="#">潘多多:</a>&nbsp;到打开后，真的太棒的感觉！近乎完美的外观设计，超薄机身配备12寸Retina显示屏。全新的键盘和触...</dd>
+								</dl>
 							</div>
+							
 							<div class="goods_code">
+								
+									<img src="../images/apple/code.jpg"/>
+									<span>转到手机上看</span>
 								
 							</div>
 						</div>

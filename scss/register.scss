@@ -44,6 +44,8 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     }
     
 #main{width: 1308px;height: 555px;
+
+
     .register{padding-left:164px;height: 555px;width: 1144px;
     h2{height: 40px;width: 97px;border: 1px solid #ccc;text-align: center;font: bolder 14px/40px simsun;border-bottom: none;};
     .form{width: 977px;height: 458px;border: 1px solid #ccc ;position: relative;
@@ -51,11 +53,20 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     .formleft{width:742px;height: 458px;border-right:1px solid #ccc  ;float: left;
     ul{padding: 35px 0 0 20px;width: 742px;height: 182px;
     li{height: 32px;padding-bottom: 18px;width: 742px;
+    img{float: left;padding: 5px 0 0 10px ;display: none;}
     strong{float: left;width: 68px;height: 32px;font: normal 12px/32px simsun;}; 
     input{float:left;width: 245px;height: 30px ;border: 1px solid #ccc ;outline: medium;font: normal 12px/32px tahoma,arial;color: $color_org;padding-left: 5px;};
-    span{float: left;width: 268px;height: 32px;font: normal 12px/32px simsun;color:$color_org;padding-left: 10px;};};
-    .yzm{input{width:57px};em{font-style:normal;float: left;width: 115px;height: 30px;border: 1px solid #fff;margin-left: 5px;}span{color: #039;cursor: pointer;}}
+    span{float: left;width: 200px;height: 32px;font: normal 12px/32px simsun;color:$color_org;padding-left: 10px;display: none;};};
+    
+    .yzm{input{width:57px};em{font-style:normal;float: left;width: 115px;height: 30px;border: 1px solid #ccc;margin-left: 5px;text-align: center;position: relative;font: bolder 16px/30px arial;
+    strong{width: 1px;height: 1px;position: absolute;};}span{color: #039;cursor: pointer;width: 100px;display: block;};
+    .yzmspan{color:$color_org;display: none;}}
     }
+    
+    
+    
+    
+    
     .formleft_bottom{padding: 26px 0 0 88px;width: 650px;height: 215px;
     span{height: 13px;width:650px;padding-bottom: 27px;display: inline-block;line-height: 13px;}
     a{display: inline-block;text-align:center;background: #f7661f;height:30px;width: 203px;border: 1px solid #f7661f;
@@ -74,6 +85,9 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     .formright_bottom{width: 234px;height: 295px;padding-top: 46px;dt{padding-bottom: 10px;}}}
     }}
     };
+
+#success{width: 1308px;height: 150px;text-align: center;margin:100px auto;color: #000;font-size: 20px;display: none;p{padding-bottom: 20px;}}
+
 
 #footer{height: 112px;width:1308px;padding-top:30px;text-align: center;color:#484848;background: #f0f0f0;border-top:1px solid #d9d9d9;
     a{color:#484848;};

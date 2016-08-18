@@ -235,9 +235,9 @@ a:hover, a:active, a:focus {
             clear: both;
             font-style: normal;
             color: #f60;
-            background: url(../images/login/icon_logoin_s.png) no-repeat left -38px;
+            background: url(../images/login/icon_logoin_s.png) no-repeat left -40px;
             padding-left: 17px;
-            display: block; }
+            display: none; }
         #main #login .login_top .login_center .toux, #main #login .login_top .login_center .mima {
           float: left;
           width: 30px;
@@ -381,6 +381,17 @@ a:hover, a:active, a:focus {
           padding-left: 26px;
           background: url(../images/login/ptlogo.gif) no-repeat 3px 7px;
           line-height: 30px; }
+
+#success {
+  width: 1308px;
+  height: 150px;
+  text-align: center;
+  margin: 100px auto;
+  color: #000;
+  font-size: 20px;
+  display: none; }
+  #success p {
+    padding-bottom: 20px; }
 
 #footer {
   height: 112px;

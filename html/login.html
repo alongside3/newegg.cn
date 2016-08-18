@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js"></script>
 	</head>
 	<body>
 		<div id="topbar">
@@ -77,7 +78,7 @@
 		
 		
 		<div id="header">
-			<a href="#"></a>
+			<a href="../index.html"></a>
 			<h1>欢迎登录</h1>
 		</div>
 		
@@ -88,22 +89,22 @@
 				<div class="login_top">
 					<div class="login_title">
 						<h2>登录新蛋</h2>
-						<a href="#">注册新用户&gt;&gt;</a>
+						<a href="register.html">注册新用户&gt;&gt;</a>
 					</div>
 					<div class="login_center">
 						<ul>
 							<li><span class="toux"></span>
 						<p class="name"><input type="text" name="username" id="username" value="用户名/已验证手机或邮箱" /></p>
-							<em>请输入正确的账户</em>
+							<em class="namefault">请输入正确的账户</em>
 							</li>
 							<li><span class="mima"></span>
-						<p class="password"><input type="text" name="password" id="password" /></p>
-						<em>请输入正确的密码</em></li>
+						<p class="password"><input type="password" name="password" id="password" /></p>
+						<em class="passwordfault">请输入正确的密码</em></li>
 						</ul>
 					</div>
 					<div class="login_footer">
 						<a href="#" class="zhanghu">账户安全</a><a href="#" class="wangji">忘记密码？</a>
-						<a href="#" class="liji">立即登录</a>
+						<a href="javascript:;" class="liji">立即登录</a>
 					</div>
 				</div>
 				<div class="login_bottom">
@@ -126,6 +127,55 @@
 				</div>
 			</div>
 		</div>
+		
+		<div id="success">
+			<p>注册成功</p>
+			<a href="../index.html">前往首页</a>
+		</div>
+
+<script type="text/javascript">
+	$(function(){
+		var re1=/^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/;//邮箱
+		var re2=/^\w{8,20}$/;//密码
+		
+		$(".login_center input").click(function(){
+			
+			$(this).val("").css({"color":"#f60"})
+		})
+		
+		$(".login_center .name input").change(function(){
+			if(re1.test($(this).val())){
+				$(".namefault").hide()
+			}else{
+				$(".namefault").show()
+			}		
+		});
+		
+		$("login_footer .password input").change(function(){
+			if(re2.test($(this).val())){
+				$(".passwordfault").hide()
+			}else{
+				$(".passwordfault").show()
+			}		
+		});
+		
+		
+		$(".login_footer .liji").click(function(){
+			$.cookie("username", $(".login_center .name input").val(), {
+				expires: 10,
+				path: "/"
+			});	
+			$.cookie("password", $(".login_center .password input").val(), {
+				expires: 10,
+				path: "/"
+			});
+		  	$("#main").hide();
+		  	$("#success").show();
+		});
+			
+	})
+</script>
+		
 		
 		
 		<div id="footer">

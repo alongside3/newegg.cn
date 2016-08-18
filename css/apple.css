@@ -33,6 +33,9 @@ b {
 a:visited {
   color: #666; }
 
+em {
+  font-style: normal; }
+
 a:hover, a:active, a:focus {
   text-decoration: underline; }
 
@@ -432,6 +435,44 @@ a:hover, a:active, a:focus {
     padding-top: 10px;
     float: right; }
 
+#tabshead_fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: none;
+  width: 1200px;
+  padding: 0 54px 0 54px;
+  height: 39px;
+  background: #606982;
+  overflow: hidden; }
+  #tabshead_fixed ul {
+    float: left;
+    height: 39px; }
+    #tabshead_fixed ul li {
+      height: 36px;
+      padding: 0 23px;
+      line-height: 36px;
+      float: left;
+      color: #fff;
+      font: normal 14px/36px "microsoft yahei";
+      border-top: 3px solid #606982;
+      border-radius: 3px 3px 0 0; }
+    #tabshead_fixed ul .fixed_active {
+      background: #fff;
+      border-top: 3px solid #f87500;
+      color: #000;
+      font-weight: bold; }
+  #tabshead_fixed .addToCart {
+    float: right;
+    background: url(../images/apple/btns.png) no-repeat 37px -223px #ff6600;
+    width: 200px;
+    padding-left: 14px;
+    height: 39px;
+    text-align: center;
+    line-height: 37px;
+    color: #fff;
+    font: 16px/37px "microsoft yahei"; }
+
 #applamain {
   width: 1200px;
   margin: 0 54px; }
@@ -468,12 +509,61 @@ a:hover, a:active, a:focus {
                 float: left;
                 width: 80px;
                 height: 64px;
-                border: 2px solid #f7661f;
+                border: 2px solid #fff;
                 margin: 0 16px 10px 0;
                 cursor: pointer; }
                 #applamain #appleTab1 .goods_all .goods_prev dl dd ul li img {
                   width: 80px;
                   height: 64px; }
+              #applamain #appleTab1 .goods_all .goods_prev dl dd ul .goodsimg_active {
+                border: 2px solid #f7661f; }
+        #applamain #appleTab1 .goods_all .goods_prev .goods_fixed {
+          height: 100%;
+          width: 100%;
+          position: fixed;
+          overflow: hidden;
+          z-index: 999;
+          left: 0;
+          top: 0;
+          background: #fff;
+          display: none; }
+          #applamain #appleTab1 .goods_all .goods_prev .goods_fixed span {
+            cursor: pointer; }
+          #applamain #appleTab1 .goods_all .goods_prev .goods_fixed .goodsimg_prev {
+            width: 22px;
+            height: 53px;
+            margin: 7px 16px 1px 1px;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            background: url(../images/apple/btns.png) no-repeat left -686px; }
+          #applamain #appleTab1 .goods_all .goods_prev .goods_fixed .goodsimg_next {
+            width: 22px;
+            height: 53px;
+            margin: 7px 16px 1px 1px;
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            background: url(../images/apple/btns.png) no-repeat -21px -686px; }
+          #applamain #appleTab1 .goods_all .goods_prev .goods_fixed .goodsimg_close {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            background: url(../images/apple/close_detail_2.gif) no-repeat 0 0; }
+          #applamain #appleTab1 .goods_all .goods_prev .goods_fixed .goodsimg_open {
+            width: 640px;
+            height: 480px;
+            position: absolute;
+            left: 300px;
+            top: 20%; }
+          #applamain #appleTab1 .goods_all .goods_prev .goods_fixed .goodsimg_big {
+            width: 800px;
+            height: 600px;
+            position: absolute;
+            left: 250px;
+            top: 15%; }
       #applamain #appleTab1 .goods_all .goods_intro {
         float: left;
         width: 710px;
@@ -495,198 +585,269 @@ a:hover, a:active, a:focus {
             height: 19px;
             color: #777;
             font: bold 14px/19px "microsoft yahei"; }
-      #applamain #appleTab1 .goods_all .intro_left {
-        width: 511px;
-        height: 507px; }
-        #applamain #appleTab1 .goods_all .intro_left li {
-          margin-bottom: 10px;
-          line-height: 18px;
-          width: 508px; }
-          #applamain #appleTab1 .goods_all .intro_left li em {
-            font-style: normal; }
-          #applamain #appleTab1 .goods_all .intro_left li strong {
-            width: 72px;
-            height: 18px;
-            float: left;
-            font: normal 12px/18px arial,simsun; }
-        #applamain #appleTab1 .goods_all .intro_left .intro_price {
-          height: 46px;
-          line-height: 46px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_price strong {
+        #applamain #appleTab1 .goods_all .goods_intro .intro_left {
+          width: 511px;
+          height: 507px;
+          float: left; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_left li {
+            margin-bottom: 10px;
+            line-height: 18px;
+            width: 508px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left li strong {
+              width: 72px;
+              height: 18px;
+              float: left;
+              font: normal 12px/18px arial,simsun; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_price {
+            height: 46px;
             line-height: 46px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_price p {
-            float: left;
-            width: 409px;
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_price strong {
+              line-height: 46px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_price p {
+              float: left;
+              width: 409px;
+              height: 36px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_price p em {
+                color: #F7661F;
+                font: bolder 16px "microsoft yahei"; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_price span {
+              font: bolder 30px tahoma;
+              color: #F7661F; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_zhichi {
+            height: 63px;
+            margin-bottom: 5px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_zhichi strong {
+              line-height: 63px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_zhichi a {
+              float: left;
+              width: 84px;
+              height: 16px;
+              padding: 46px 14px 0 0;
+              background: url(../images/apple/promise_logoV2.png) no-repeat 20px -472px;
+              color: #2d2d2d;
+              font-size: 11px; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_disk, #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_color {
             height: 36px; }
-            #applamain #appleTab1 .goods_all .intro_left .intro_price p em {
-              color: #F7661F;
-              font: bolder 16px "microsoft yahei"; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_price span {
-            font: bolder 30px tahoma;
-            color: #F7661F; }
-        #applamain #appleTab1 .goods_all .intro_left .intro_zhichi {
-          height: 63px;
-          margin-bottom: 5px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_zhichi strong {
-            line-height: 63px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_zhichi a {
-            float: left;
-            width: 84px;
-            height: 16px;
-            padding: 46px 14px 0 0;
-            background: url(../images/apple/promise_logoV2.png) no-repeat 20px -472px;
-            color: #2d2d2d;
-            font-size: 11px; }
-        #applamain #appleTab1 .goods_all .intro_left .intro_disk, #applamain #appleTab1 .goods_all .intro_left .intro_color {
-          height: 36px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_disk strong, #applamain #appleTab1 .goods_all .intro_left .intro_color strong {
-            line-height: 36px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_disk span, #applamain #appleTab1 .goods_all .intro_left .intro_color span {
-            float: left;
-            padding: 8px 10px 8px 6px;
-            border: 1px solid #BFBFBF;
-            border-radius: 2px;
-            margin-right: 10px;
-            line-height: 13px;
-            color: #666;
-            position: relative;
-            cursor: pointer; }
-            #applamain #appleTab1 .goods_all .intro_left .intro_disk span .active, #applamain #appleTab1 .goods_all .intro_left .intro_color span .active {
-              background: url(../images/list/pro.png) no-repeat -67px -122px;
-              position: absolute;
-              right: 0;
-              bottom: 0;
-              width: 11px;
-              height: 11px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_disk .intro_active, #applamain #appleTab1 .goods_all .intro_left .intro_color .intro_active {
-            border: 1px solid #ff6600; }
-        #applamain #appleTab1 .goods_all .intro_left .intro_num {
-          height: 36px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_num strong {
-            line-height: 36px; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_num span {
-            border: 1px solid #BFBFBF;
-            width: 24px;
-            height: 28px;
-            float: left;
-            line-height: 28px;
-            text-align: center;
-            color: #BFBFBF; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_num input {
-            float: left;
-            width: 70px;
-            height: 26px;
-            padding: 1px 0;
-            border-top: 1px solid #BFBFBF;
-            border-bottom: 1px solid #BFBFBF;
-            font: 12px/26px "microsoft yahei";
-            color: #484848;
-            text-align: center;
-            outline: medium; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_num em {
-            float: left;
-            height: 14px;
-            padding: 8px 0 0 20px;
-            color: green; }
-        #applamain #appleTab1 .goods_all .intro_left .intro_answer {
-          width: 436px;
-          padding-left: 72px;
-          color: #ff6600; }
-          #applamain #appleTab1 .goods_all .intro_left .intro_answer span {
-            font: bold 14px simsun; }
-        #applamain #appleTab1 .goods_all .intro_left .goods_btns {
-          width: 448px;
-          height: 115px;
-          padding: 19px 19px 3px 19px; }
-          #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top {
-            width: 486px;
-            height: 47px;
-            padding-bottom: 18px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top a {
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_disk strong, #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_color strong {
+              line-height: 36px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_disk span, #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_color span {
               float: left;
+              padding: 8px 10px 8px 6px;
+              border: 1px solid #BFBFBF;
+              border-radius: 2px;
+              margin-right: 10px;
+              line-height: 13px;
+              color: #666;
+              position: relative;
+              cursor: pointer; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_disk span .active, #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_color span .active {
+                background: url(../images/list/pro.png) no-repeat -67px -122px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 11px;
+                height: 11px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_disk .intro_active, #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_color .intro_active {
+              border: 1px solid #ff6600; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_num {
+            height: 36px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_num strong {
+              line-height: 36px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_num span {
+              border: 1px solid #BFBFBF;
+              width: 24px;
+              height: 28px;
+              float: left;
+              line-height: 28px;
+              text-align: center;
+              color: #BFBFBF;
+              cursor: pointer; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_num input {
+              float: left;
+              width: 70px;
+              height: 26px;
+              padding: 1px 0;
+              border-top: 1px solid #BFBFBF;
+              border-bottom: 1px solid #BFBFBF;
+              font: 12px/26px "microsoft yahei";
+              color: #484848;
+              text-align: center;
+              outline: medium; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_num em {
+              float: left;
+              height: 14px;
+              padding: 8px 0 0 20px;
+              color: green; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_answer {
+            width: 436px;
+            padding-left: 72px;
+            color: #ff6600; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .intro_answer span {
+              font: bold 14px simsun; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns {
+            width: 448px;
+            height: 115px;
+            padding: 19px 19px 3px 19px; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_top {
+              width: 486px;
               height: 47px;
-              width: 214px;
-              text-align: center;
-              line-height: 47px;
-              color: #fff;
-              font: 18px/47px "microsoft yahei"; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .quickBuy {
-              background: #f60;
-              margin-right: 20px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .quickBuy {
-              background: #ff971c; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .addToCart {
-              background: url(../images/apple/btns.png) no-repeat 39px -220px #1c429a;
-              width: 200px;
-              padding-left: 14px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .addToCart:hover {
-              background-color: #295dd7; }
-          #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom {
-            width: 486px;
-            height: 34px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .collect {
-              float: left;
-              width: 81px;
-              height: 32px;
-              border: 1px solid #bfbfbf;
-              margin-right: 8px;
-              color: #000;
-              text-align: center;
-              line-height: 32px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom p {
-              float: left;
-              width: 32px;
-              height: 32px;
-              border: 1px solid #bfbfbf;
-              margin-right: 8px;
-              padding-left: 49px;
-              background: url(../images/list/pro.png) no-repeat -154px -449px;
-              overflow: hidden; }
-              #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom p span {
-                display: inline-block;
-                height: 32px;
-                width: 32px;
-                line-height: 32px;
-                text-align: center;
-                color: #ac1816; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul {
-              float: left;
-              width: 146px;
-              height: 50px;
-              padding: 4px 8px 3px 9px;
-              border: 1px solid #bfbfbf;
-              overflow: hidden; }
-              #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul li {
+              padding-bottom: 18px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_top a {
                 float: left;
-                width: 24px;
-                height: 24px;
-                margin: 0 5px 5px 0; }
-                #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul li a {
-                  display: block;
+                height: 47px;
+                width: 214px;
+                text-align: center;
+                line-height: 47px;
+                color: #fff;
+                font: 18px/47px "microsoft yahei"; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_top .quickBuy {
+                background: #f60;
+                margin-right: 20px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_top .quickBuy {
+                background: #ff971c; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_top .addToCart {
+                background: url(../images/apple/btns.png) no-repeat 39px -220px #1c429a;
+                width: 200px;
+                padding-left: 14px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_top .addToCart:hover {
+                background-color: #295dd7; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom {
+              width: 486px;
+              height: 34px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .collect {
+                float: left;
+                width: 81px;
+                height: 32px;
+                border: 1px solid #bfbfbf;
+                margin-right: 8px;
+                color: #000;
+                text-align: center;
+                line-height: 32px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom p {
+                float: left;
+                width: 32px;
+                height: 32px;
+                border: 1px solid #bfbfbf;
+                margin-right: 8px;
+                padding-left: 49px;
+                background: url(../images/list/pro.png) no-repeat -154px -449px;
+                overflow: hidden; }
+                #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom p span {
+                  display: inline-block;
+                  height: 32px;
+                  width: 32px;
+                  line-height: 32px;
+                  text-align: center;
+                  color: #ac1816; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom ul {
+                float: left;
+                width: 146px;
+                height: 25px;
+                padding: 4px 8px 3px 9px;
+                border: 1px solid #bfbfbf;
+                overflow: hidden;
+                position: relative; }
+                #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom ul li {
+                  float: left;
                   width: 24px;
                   height: 24px;
-                  background: url(../images/apple/sshare_icons.png) no-repeat;
-                  opacity: 0.7;
-                  filter: alpha(opacity=70); }
-              #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul .txwb_btn {
-                background-position: 0 -24px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .db_btn {
-              background-position: 0 -48px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .kx_btn {
-              background-position: 0 -96px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .rr_btn {
-              background-position: 0 -120px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .tb_btn {
-              background-position: 0 -144px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .control_btn {
-              background: url(../images/list/pro.png) no-repeat -148px -123px;
-              width: 17px;
-              height: 7px;
-              vertical-align: middle; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .xg_btn {
-              background-position: 0 -168px; }
-            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .dg_btn {
-              background-position: 0 -192px; }
+                  margin: 0 8px 5px 0; }
+                  #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom ul li a {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url(../images/apple/sshare_icons.png) no-repeat;
+                    opacity: 0.7;
+                    filter: alpha(opacity=70); }
+                #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom ul .txwb_btn {
+                  background-position: 0 -24px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .db_btn {
+                background-position: 0 -48px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .kx_btn {
+                background-position: 0 -96px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .rr_btn {
+                background-position: 0 -120px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .tb_btn {
+                background-position: 0 -144px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .control_btn {
+                background: url(../images/list/pro.png) no-repeat -148px -123px;
+                width: 17px;
+                height: 7px;
+                position: absolute;
+                right: 8px;
+                top: 12px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .xg_btn {
+                background-position: 0 -168px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_left .goods_btns .btns_bottom .dg_btn {
+                background-position: 0 -192px; }
+        #applamain #appleTab1 .goods_all .goods_intro .intro_right {
+          width: 188px;
+          height: 507px;
+          padding-left: 10px;
+          border-left: 1px solid #ddd;
+          float: left; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_right h3 {
+            width: 168px;
+            height: 18px;
+            padding: 0 10px 10px 10px;
+            border-bottom: 1px solid #f0f0f0; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_right h3 a {
+              display: block;
+              color: #039;
+              border: 1px solid #e8e8e8;
+              padding: 2px 2px 2px 19px;
+              margin-right: 7px;
+              background: url(../images/list/pro.png) no-repeat -183px -150px;
+              font: normal 12px tahoma;
+              width: 50px; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment {
+            width: 188px;
+            height: 239px;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment .comment_score {
+              width: 150px;
+              height: 34px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment .comment_score strong {
+                float: left;
+                width: 40px;
+                height: 34px;
+                color: #F7661F;
+                font: bolder 24px/34px tahoma; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment .comment_score a {
+                float: left;
+                width: 94px;
+                height: 19px;
+                margin: 7px 0 0 11px;
+                background: url(../images/list/pro.png) no-repeat 1px 0; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment dl {
+              width: 188px;
+              height: 203px; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment dl dt {
+                width: 188px;
+                height: 20px;
+                padding-bottom: 3px;
+                font: bolder 12px/20px tahoma,simsun;
+                color: #666;
+                overflow: hidden; }
+                #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment dl dt a {
+                  color: #039;
+                  font-weight: normal; }
+              #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment dl dd {
+                width: 188px;
+                height: 180px;
+                overflow: hidden; }
+                #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_comment dl dd a {
+                  color: #ff6600; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_code {
+            width: 123px;
+            height: 106px;
+            padding: 20px 0 0 65px;
+            overflow: hidden; }
+            #applamain #appleTab1 .goods_all .goods_intro .intro_right .goods_code img {
+              width: 75px;
+              height: 75px;
+              padding-bottom: 10px; }
     #applamain #appleTab1 .goods_detail {
       width: 1200px;
       margin-top: 15px;

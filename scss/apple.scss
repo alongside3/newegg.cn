@@ -3,18 +3,19 @@ $color_org:#ff6600;
 
 
 html,body,ul,li,ol,dl,dd,dt,p,b,input,select,em,i,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,span,strong { margin:0; padding:0; } 
-fieldset, img,input { border:none; } 
-img{display: block;} 
+fieldset, img,input { border:none; }; 
+img{display: block;} ;
 address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; } 
-ul,li,ol { list-style:none; } 
+ul,li,ol { list-style:none; } ;
 body { color:#484848; padding:5px 0; font:12px/20px tahoma,"SimSun","microsoft yahei","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
-a,b{ color:#666;text-decoration: none;} 
-b{font-weight: normal;}
-a:visited { color:#666; } 
-a:hover, a:active, a:focus { text-decoration: underline;} 
+a,b{ color:#666;text-decoration: none;}; 
+b{font-weight: normal;};
+a:visited { color:#666; } ;
+em{font-style: normal;};
+a:hover, a:active, a:focus { text-decoration: underline;} ;
 .mainbtn{display: inline-block;text-align:center;background: #f7661f;height:23px;width: 44px;border: 1px solid #f7661f;
-    border-radius:2px ;color: #fff;font: normal 12px/23px simsun;cursor: pointer;}
-.mainbtn:hover{text-decoration: none;background: #ff971c;border: 1px solid #ff971c}    
+    border-radius:2px ;color: #fff;font: normal 12px/23px simsun;cursor: pointer;};
+.mainbtn:hover{text-decoration: none;background: #ff971c;border: 1px solid #ff971c}  ;  
    
 
 
@@ -106,6 +107,17 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     .tabshead_right{width: 105px;height: 18px;padding-top: 10px;float: right;}
 }
 
+#tabshead_fixed{position: fixed;top: 0;z-index: 100;display: none;
+    width:1200px;padding:0 54px 0 54px;height: 39px;background: rgb(96,105,130);overflow: hidden;
+    ul{float: left;height: 39px;
+        li{height: 36px;padding: 0 23px;line-height:36px ;float: left;color: #fff;font:normal 14px/36px "microsoft yahei";border-top: 3px solid rgb(96,105,130);border-radius:  3px 3px 0 0;}
+        .fixed_active{background: #fff;border-top: 3px solid #f87500;color:#000; font-weight: bold;}
+    }
+    .addToCart{float: right;background: url(../images/apple/btns.png) no-repeat 37px -223px $color_org;width: 200px;padding-left: 14px;height: 39px;
+    text-align: center;line-height: 37px;color: #fff;font: 16px/37px "microsoft yahei";}
+    
+}
+
 #applamain{
     width:1200px;margin:0 54px;
     #appleTab1{width:1200px;overflow: hidden;
@@ -115,18 +127,30 @@ a:hover, a:active, a:focus { text-decoration: underline;}
      dt{width:490px;height: 335px;padding-bottom: 70px;img{width: 450px;height: 338px;}}
      dd{width: 490px;height: 75px;
      ul{width: 401px;height: 73px;
-     li{float: left;width: 80px;height: 64px;border: 2px solid #f7661f ; margin: 0 16px 10px 0;cursor: pointer;
-     img{width: 80px;height: 64px;}}}}
-     }}
+     li{float: left;width: 80px;height: 64px;border: 2px solid #fff ; margin: 0 16px 10px 0;cursor: pointer;
+     img{width: 80px;height: 64px;}};
+     .goodsimg_active{border: 2px solid #f7661f ;};}}
+     };
+     .goods_fixed{height: 100%;width: 100%;position: fixed;overflow: hidden;z-index: 999;left: 0;top: 0;background: #fff;display: none;
+     span{cursor: pointer;};
+     .goodsimg_prev{width: 22px;height: 53px;margin: 7px 16px 1px 1px;position: absolute;top: 50%;left: 50px;background: url(../images/apple/btns.png) no-repeat left -686px;};
+     .goodsimg_next{width: 22px;height: 53px;margin: 7px 16px 1px 1px;position: absolute;top: 50%;right: 50px;background: url(../images/apple/btns.png) no-repeat -21px -686px;};
+    .goodsimg_close{width: 30px;height: 30px;position: absolute; left: 30px;top: 30px;background: url(../images/apple/close_detail_2.gif) no-repeat 0 0;}
+    .goodsimg_open{width: 640px;height: 480px;position: absolute;left: 300px;top: 20%;}
+    .goodsimg_big{width: 800px;height: 600px;position: absolute;left: 250px;top:15%;}
+    };
+     }
+     
+     
      .goods_intro{float: left;width: 710px;height: 588px;overflow: hidden;
      .intro_title{width: 710px;height: 74px;margin-bottom: 7px;
      h2{width: 710px;height: 52px;margin-bottom: 3px;color: #000;font: bolder 20px/26px "microsoft yahei";overflow: hidden;};
      span{width: 710px;height: 19px;color: #777;font: bold 14px/19px "microsoft yahei";};}
        
- }
+
      
-     .intro_left{width: 511px;height: 507px ;
-     li{margin-bottom: 10px;line-height: 18px;width: 508px;em{font-style: normal;}
+     .intro_left{width: 511px;height: 507px ;float: left;
+     li{margin-bottom: 10px;line-height: 18px;width: 508px;
      
      strong{width: 72px;height: 18px;float: left;font: normal 12px/18px arial,simsun;}};
      .intro_price{height: 46px;line-height: 46px;strong{line-height: 46px;}
@@ -143,7 +167,7 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     }
     
     .intro_num{height: 36px;strong{line-height: 36px;}
-    span{border: 1px solid #BFBFBF;width: 24px;height: 28px;float: left;line-height: 28px;text-align: center;color: #BFBFBF;}
+    span{border: 1px solid #BFBFBF;width: 24px;height: 28px;float: left;line-height: 28px;text-align: center;color: #BFBFBF;cursor: pointer;}
     input{float: left;width: 70px;height: 26px;padding: 1px 0;border-top: 1px solid #BFBFBF;border-bottom: 1px solid #BFBFBF;font:  12px/26px "microsoft yahei";color: #484848;text-align: center;outline: medium;}
     em{float: left;height: 14px;padding: 8px 0 0 20px;color:green;}
     
@@ -164,8 +188,8 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     .collect{float:left;width: 81px;height: 32px;border: 1px solid #bfbfbf;margin-right: 8px;color: #000;text-align: center;line-height: 32px;}
     p{float: left;width: 32px;height: 32px;border: 1px solid #bfbfbf;margin-right: 8px;padding-left: 49px;background: url(../images/list/pro.png) no-repeat -154px -449px;overflow: hidden;
     span{display: inline-block;height: 32px;width: 32px;line-height: 32px;text-align: center;color: #ac1816;}}
-    ul{float:left;width: 146px;height: 50px;padding: 4px 8px 3px 9px;border: 1px solid #bfbfbf;overflow: hidden;
-    li{float: left;width: 24px;height: 24px;margin: 0 5px 5px 0;
+    ul{float:left;width: 146px;height: 25px;padding: 4px 8px 3px 9px;border: 1px solid #bfbfbf;overflow: hidden;position: relative;
+    li{float: left;width: 24px;height: 24px;margin: 0 8px 5px 0;
     a{display: block;width: 24px;height: 24px;background: url(../images/apple/sshare_icons.png) no-repeat; @include opacity(70);}};
     .txwb_btn{background-position:0 -24px ;}}
     .db_btn{background-position:0 -48px ;}
@@ -173,11 +197,28 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     .rr_btn{background-position:0 -120px ;}
     .tb_btn{background-position:0 -144px ;}
     
-    .control_btn{background:url(../images/list/pro.png) no-repeat -148px -123px;width: 17px;height: 7px;vertical-align: middle;}
+    .control_btn{background:url(../images/list/pro.png) no-repeat -148px -123px;width: 17px;height: 7px;position:absolute;right: 8px;top: 12px;}
     .xg_btn{background-position:0 -168px ;}
     .dg_btn{background-position:0 -192px ;}
+}} };
+    
+    .intro_right{width: 188px;height: 507px;padding-left: 10px;border-left: 1px solid #ddd;float: left;
+    
+    h3{width: 168px;height: 18px;padding:0 10px 10px 10px;border-bottom: 1px solid #f0f0f0;
+    a{display: block;color: #039;border: 1px solid #e8e8e8;padding: 2px 2px 2px 19px ;margin-right: 7px;background: url(../images/list/pro.png) no-repeat -183px -150px;font: normal 12px tahoma;width: 50px;}};
+    .goods_comment{width: 188px;height: 239px;padding: 12px 0;border-bottom: 1px solid #f0f0f0;
+    .comment_score{width: 150px;height: 34px;
+    strong{float: left;width: 40px;height: 34px ;color: #F7661F;font: bolder 24px/34px tahoma;};
+    a{float: left;width: 94px;height: 19px;margin: 7px 0 0 11px;background: url(../images/list/pro.png) no-repeat 1px 0}};
+    dl{width: 188px;height: 203px;
+    dt{width: 188px;height: 20px;padding-bottom: 3px;font: bolder 12px/20px tahoma,simsun;color: #666;overflow: hidden;
+    a{color: #039;font-weight: normal;};
+};dd{width: 188px;height: 180px;overflow: hidden;a{color: $color_org;}}
+}};
+    .goods_code {width: 123px;height: 106px;padding: 20px 0 0 65px;overflow: hidden;
+    img{width: 75px;height: 75px;padding-bottom: 10px;}}
     }
-    }
+    
     
      }
      

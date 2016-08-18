@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
 		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.cookie.js"></script>
 	</head>
 	<body>
 		<div id="topbar">
@@ -77,7 +78,7 @@
 		
 		
 		<div id="header">
-			<a href="#"></a>
+			<a href="../index.html"></a>
 			<h1>新用户注册</h1>
 		</div>
 		
@@ -89,21 +90,27 @@
 					<div class="formleft">
 						<ul>
 							<li class="email"><strong>常用邮箱： </strong><input type="text" />
+							<img src="../images/ok.jpg" class="ok" />
 							<span>您的输入有误!</span></li>
 						
 							<li class="mima"><strong>输入密码： </strong><input type="password" />
-							<span>您的输入有误!</span></li>
+							<img src="../images/ok.jpg" class="ok" />
+							<span>请输入8-20位密码</span></li>
 						
 							<li class="angin"><strong>再次输入： </strong><input type="password" />
+							<img src="../images/ok.jpg" class="ok" />
 							<span>您的输入有误!</span></li>
 					
 							<li class="yzm"><strong>验  证  码： </strong><input type="text" />
 							<em>1234</em>
-							<span>看不清楚，换一张</span></li>
+							<span>看不清楚，换一张</span>
+							<img src="../images/ok.jpg" class="ok" />
+							<span class="yzmspan">您的输入有误!</span>
+							</li>
 						</ul>
 						<div class="formleft_bottom">
 							<span><input type="checkbox" name="dingyue" />订阅蛋哥省钱快报</span>
-							<a href="#">同意以下协议并提交注册</a>
+							<a href="javascript:;">同意以下协议并提交注册</a>
 						
 							<div class="tiaokuan">
 							
@@ -117,7 +124,7 @@
 					<div class="formright">
 						<dl class="formright_top">
 							<dt>已是新蛋会员</dt>
-							<dd><a href="#">现在登录</a></dd>
+							<dd><a href="login.html">现在登录</a></dd>
 						</dl>
 						<dl class="formright_bottom">
 							<dt>注册即享受</dt>
@@ -130,6 +137,101 @@
 			</div>
 			
 		</div>
+		<div id="success">
+			<p>注册成功</p>
+			<a href="login.html">前往登录</a>
+		</div>
+		
+<script type="text/javascript">
+	function randomColor(){
+		var R=  Math.round(Math.random()*255).toString(16);
+		var G=  Math.round(Math.random()*255).toString(16);
+		var B=  Math.round(Math.random()*255).toString(16);
+		return "#"+(R=R.length>1?R:"0"+R)+(G=G.length>1?G:"0"+G)+(B=B.length>1?B:"0"+B);
+	}
+	
+	$(function(){
+		var arr=['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'] 
+		yanzheng()
+		var num=yanzheng()
+		var re1=/^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/;//邮箱
+		var re2=/^\w{8,20}$/;//密码
+		
+	$(".formleft .yzm span").click(function(){
+		num=yanzheng()
+	})
+	function yanzheng(){
+		var a="";
+		$(".formleft .yzm em").html("");
+		for(i=0;i<4;i++){
+			a+=arr[Math.floor(Math.random()*62)];
+		}	
+		$(".formleft .yzm em").html(a);
+		for(var i=0;i<200;i++){
+			var x=Math.floor(Math.random()*115);
+			var y=Math.floor(Math.random()*30);
+			var strong=$("<strong style='left:"+x+"px;top:"+y+"px;background:"+randomColor()+"'></strong>");
+			$(".formleft .yzm em").append(strong);
+		}
+		return a;
+	}	
+	
+	$(".formleft .email input").change(function(){
+		if(re1.test($(this).val())){
+			$(this).next().show().next().hide();
+		}else{
+			$(this).next().hide().next().show();
+		}		
+	});
+	
+	
+	$(".formleft .mima input").change(function(){
+		if(re2.test($(this).val())){
+			$(this).next().show().next().hide();
+		}else{
+			$(this).next().hide().next().show();
+		}		
+	});	
+	
+	$(".formleft .angin input").change(function(){
+		if($(this).val()==$(".formleft .mima input").val()){
+			$(this).next().show().next().hide();
+		}else{
+			$(this).next().hide().next().show();
+		}		
+	});
+	
+	$(".formleft .yzm input").change(function(){
+		if( $(this).val()==num){
+			$(this).parent().find(".ok").show().next().hide();
+		}else{
+			$(this).parent().find(".yzmspan").show().prev().hide();
+		}
+	});
+	$(".formleft_bottom a").click(function(){
+		$.cookie("username", $(".formleft .email input").val(), {
+			expires: 10,
+			path: "/"
+		});	
+		$.cookie("password", $(".formleft .mima input").val(), {
+			expires: 10,
+			path: "/"
+		});
+	  	$("#main").hide();
+	  	$("#success").show();
+	});
+		
+		
+	})
+	
+	
+	
+</script>		
+		
+		
+		
+		
+		
 		
 		<div id="footer">
 				

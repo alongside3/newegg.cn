@@ -209,6 +209,10 @@ a:hover, a:active, a:focus {
             height: 32px;
             padding-bottom: 18px;
             width: 742px; }
+            #main .register .form .formleft ul li img {
+              float: left;
+              padding: 5px 0 0 10px;
+              display: none; }
             #main .register .form .formleft ul li strong {
               float: left;
               width: 68px;
@@ -225,11 +229,12 @@ a:hover, a:active, a:focus {
               padding-left: 5px; }
             #main .register .form .formleft ul li span {
               float: left;
-              width: 268px;
+              width: 200px;
               height: 32px;
               font: normal 12px/32px simsun;
               color: #f60;
-              padding-left: 10px; }
+              padding-left: 10px;
+              display: none; }
           #main .register .form .formleft ul .yzm input {
             width: 57px; }
           #main .register .form .formleft ul .yzm em {
@@ -237,11 +242,23 @@ a:hover, a:active, a:focus {
             float: left;
             width: 115px;
             height: 30px;
-            border: 1px solid #fff;
-            margin-left: 5px; }
+            border: 1px solid #ccc;
+            margin-left: 5px;
+            text-align: center;
+            position: relative;
+            font: bolder 16px/30px arial; }
+            #main .register .form .formleft ul .yzm em strong {
+              width: 1px;
+              height: 1px;
+              position: absolute; }
           #main .register .form .formleft ul .yzm span {
             color: #039;
-            cursor: pointer; }
+            cursor: pointer;
+            width: 100px;
+            display: block; }
+          #main .register .form .formleft ul .yzm .yzmspan {
+            color: #f60;
+            display: none; }
         #main .register .form .formleft .formleft_bottom {
           padding: 26px 0 0 88px;
           width: 650px;
@@ -304,6 +321,17 @@ a:hover, a:active, a:focus {
           padding-top: 46px; }
           #main .register .form .formright .formright_bottom dt {
             padding-bottom: 10px; }
+
+#success {
+  width: 1308px;
+  height: 150px;
+  text-align: center;
+  margin: 100px auto;
+  color: #000;
+  font-size: 20px;
+  display: none; }
+  #success p {
+    padding-bottom: 20px; }
 
 #footer {
   height: 112px;
