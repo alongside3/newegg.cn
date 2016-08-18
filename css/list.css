@@ -1,4 +1,4 @@
-html, body, ul, li, ol, dl, dd, dt, p, b, input, select, em, i, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+html, body, ul, li, ol, dl, dd, dt, p, b, input, select, em, i, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, span, strong {
   margin: 0;
   padding: 0; }
 
@@ -35,6 +35,23 @@ a:visited {
 
 a:hover, a:active, a:focus {
   text-decoration: underline; }
+
+.mainbtn {
+  display: inline-block;
+  text-align: center;
+  background: #f7661f;
+  height: 23px;
+  width: 44px;
+  border: 1px solid #f7661f;
+  border-radius: 2px;
+  color: #fff;
+  font: normal 12px/23px simsun;
+  cursor: pointer; }
+
+.mainbtn:hover {
+  text-decoration: none;
+  background: #ff971c;
+  border: 1px solid #ff971c; }
 
 #topbar {
   width: 1308px;
@@ -333,6 +350,8 @@ a:hover, a:active, a:focus {
         padding-left: 25px; }
       #menu .utility .favor span {
         right: 12px; }
+    #menu .utility a:hover {
+      text-decoration: none; }
 
 #crumb {
   width: 1200px;
@@ -356,7 +375,8 @@ a:hover, a:active, a:focus {
   overflow: hidden; }
   #main #left {
     width: 179px;
-    overflow: hidden; }
+    overflow: hidden;
+    float: left; }
     #main #left .leftmenu {
       width: 177px;
       overflow: hidden;
@@ -371,6 +391,454 @@ a:hover, a:active, a:focus {
         padding-left: 23px;
         background: url(../images/list/leftmenu.png) no-repeat 9px -35px #ffdc93;
         color: #845400; }
+      #main #left .leftmenu dd {
+        width: 177px;
+        overflow: hidden;
+        padding: 5px 0;
+        background: #fffff2; }
+        #main #left .leftmenu dd li {
+          width: 143px;
+          height: 24px;
+          line-height: 24px;
+          padding-left: 34px;
+          background: url(../images/list/search_menu.png) no-repeat 24px -46px; }
+          #main #left .leftmenu dd li a {
+            color: #666; }
+        #main #left .leftmenu dd .active {
+          background-position: 24px -76px; }
+          #main #left .leftmenu dd .active a {
+            font-weight: bold;
+            color: #ff6600; }
+    #main #left .hot_sales {
+      width: 177px;
+      height: 495px;
+      margin: 10px 0;
+      border: 1px solid #e6e6e6;
+      overflow: hidden; }
+      #main #left .hot_sales h3 {
+        width: 89px;
+        height: 29px;
+        padding: 0 10px;
+        border-bottom: 1px solid #e6e6e6; }
+      #main #left .hot_sales ul {
+        width: 177px;
+        height: 466px;
+        overflow: hidden; }
+        #main #left .hot_sales ul li {
+          height: 162px;
+          height: 60px;
+          padding: 16px 8px 16px 7px;
+          border-bottom: 1px solid #e6e6e6; }
+          #main #left .hot_sales ul li img {
+            width: 60px;
+            height: 45px;
+            float: left; }
+          #main #left .hot_sales ul li dl {
+            width: 95px;
+            height: 60px;
+            float: left;
+            overflow: hidden;
+            padding-left: 5px; }
+            #main #left .hot_sales ul li dl dt {
+              width: 95px;
+              height: 35px;
+              padding-bottom: 4px;
+              overflow: hidden;
+              white-space: normal;
+              word-break: break-all; }
+              #main #left .hot_sales ul li dl dt a {
+                color: #000; }
+            #main #left .hot_sales ul li dl dd {
+              width: 95px;
+              height: 21px;
+              color: #ff6600;
+              font: bolder 14px/21px arial; }
+    #main #left .vote {
+      width: 177px;
+      height: 395px;
+      border: 1px solid #e6e6e6;
+      overflow: hidden; }
+      #main #left .vote h3 {
+        width: 157px;
+        height: 21px;
+        padding: 10px;
+        background: url(../images/list/vote.png) left bottom repeat-x;
+        font: bolder 14px/21px tahoma; }
+      #main #left .vote p {
+        width: 157px;
+        height: 36px;
+        padding: 0 10px;
+        margin-top: 5px;
+        font-weight: bolder;
+        line-height: 18px; }
+      #main #left .vote ul {
+        width: 177px;
+        height: 272px; }
+        #main #left .vote ul li {
+          width: 157px;
+          height: 18px;
+          padding: 8px 10px;
+          line-height: 18px;
+          color: #484848; }
+          #main #left .vote ul li span {
+            padding-left: 5px; }
+        #main #left .vote ul li:nth-child(2n) {
+          background: #f2f2f2; }
+      #main #left .vote .action {
+        width: 142px;
+        height: 25px;
+        padding: 8px 0 8px 35px;
+        line-height: 25px;
+        font-weight: normal;
+        margin: 0;
+        background: url(../images/list/vote_b.png) repeat-x; }
+        #main #left .vote .action .mainbtn {
+          margin-right: 10px;
+          color: #fff; }
+        #main #left .vote .action .result {
+          color: #039; }
+  #main #right {
+    float: right;
+    width: 1010px;
+    overflow: hidden; }
+    #main #right .righttop {
+      width: 1008px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      color: #484848; }
+      #main #right .righttop dt {
+        width: 986px;
+        height: 18px;
+        padding: 6px 0 6px 22px;
+        font: 14px/18px tahoma;
+        background: #edf3fa;
+        border-bottom: 1px solid #ccc; }
+      #main #right .righttop dd {
+        width: 953px;
+        overflow: hidden;
+        padding: 9px 0 6px 55px;
+        font-size: 12px;
+        font-family: tahoma; }
+        #main #right .righttop dd h3 {
+          float: left;
+          height: 18px;
+          width: 35px;
+          line-height: 18px;
+          padding-bottom: 26px;
+          font-weight: bolder; }
+        #main #right .righttop dd ul li {
+          float: left;
+          line-height: 18px;
+          padding: 0 15px 4px 15px; }
+          #main #right .righttop dd ul li span {
+            color: #ccc; }
+          #main #right .righttop dd ul li a:hover {
+            color: #ff6600;
+            text-decoration: none; }
+            #main #right .righttop dd ul li a:hover span {
+              color: #666; }
+      #main #right .righttop .brand {
+        height: 44px;
+        width: 780px;
+        overflow: hidden;
+        width: 953px; }
+      #main #right .righttop .price {
+        width: 953px;
+        height: 30px;
+        line-height: 30px;
+        border-top: 1px solid #e6e6e6;
+        padding: 9px 0 6px 55px; }
+        #main #right .righttop .price h3, #main #right .righttop .price li {
+          padding-top: 5px; }
+        #main #right .righttop .price .priceSearch {
+          display: inline-block;
+          height: 30px;
+          overflow: hidden; }
+          #main #right .righttop .price .priceSearch .mainbtn {
+            margin: 0 0 2px 0;
+            color: #fff; }
+        #main #right .righttop .price input {
+          width: 36px;
+          height: 23px;
+          padding: 0 3px;
+          border: 1px solid #ccc;
+          margin: 0 5px 2px 5px;
+          outline: medium; }
+        #main #right .righttop .price em {
+          font-style: normal;
+          font-family: arial; }
+        #main #right .righttop .price strong {
+          float: right;
+          width: 48px;
+          height: 26px;
+          margin-right: 14px;
+          padding-left: 14px;
+          background: url(../images/list/arrow.png) no-repeat -30px -23px;
+          color: #039;
+          cursor: pointer;
+          font-weight: normal; }
+    #main #right .select_point {
+      width: 1010px;
+      height: 118px;
+      margin: 10px 0 40px 0; }
+      #main #right .select_point .point_top {
+        width: 1010px;
+        height: 39px;
+        overflow: hidden; }
+        #main #right .select_point .point_top ul {
+          float: left; }
+          #main #right .select_point .point_top ul li {
+            float: left;
+            height: 37px;
+            border: 1px solid #ccc;
+            margin-right: -1px;
+            position: relative;
+            text-align: center;
+            cursor: pointer; }
+        #main #right .select_point .point_top .prorank {
+          width: 268px;
+          height: 39px; }
+          #main #right .select_point .point_top .prorank li {
+            padding: 0 24px 0 12px; }
+          #main #right .select_point .point_top .prorank em {
+            display: block;
+            position: absolute;
+            top: 18px;
+            right: 12px;
+            width: 6px;
+            height: 4px;
+            background: url(../images/list/icon_prorank.png) -40px top no-repeat; }
+          #main #right .select_point .point_top .prorank a {
+            display: block;
+            height: 37px;
+            line-height: 37px; }
+          #main #right .select_point .point_top .prorank .pro_price {
+            background-position: -40px -20px; }
+          #main #right .select_point .point_top .prorank .pro_active {
+            z-index: 1;
+            color: #ff6c00;
+            border: 1px solid #f9ae45;
+            background: #fff0d9; }
+            #main #right .select_point .point_top .prorank .pro_active em {
+              background-position: -40px -10px; }
+        #main #right .select_point .point_top .layout {
+          width: 78px;
+          height: 39px; }
+          #main #right .select_point .point_top .layout li {
+            width: 38px; }
+            #main #right .select_point .point_top .layout li a {
+              width: 18px;
+              height: 18px;
+              display: block;
+              position: absolute;
+              top: 10px;
+              left: 10px; }
+            #main #right .select_point .point_top .layout li .chuc {
+              background: url(../images/list/icon_prorank.png) no-repeat left top; }
+            #main #right .select_point .point_top .layout li .chuc_active {
+              background: url(../images/list/icon_prorank.png) no-repeat left -18px; }
+            #main #right .select_point .point_top .layout li .lieb {
+              background: url(../images/list/icon_prorank.png) no-repeat -18px top; }
+            #main #right .select_point .point_top .layout li .lieb_active {
+              background: url(../images/list/icon_prorank.png) no-repeat -18px -18px; }
+          #main #right .select_point .point_top .layout .layout_active {
+            z-index: 1;
+            border: 1px solid #f9ae45;
+            background: #fff0d9; }
+        #main #right .select_point .point_top .displaynum {
+          width: 117px;
+          height: 39px; }
+          #main #right .select_point .point_top .displaynum li {
+            width: 38px; }
+            #main #right .select_point .point_top .displaynum li a {
+              display: block;
+              height: 37px;
+              line-height: 37px; }
+          #main #right .select_point .point_top .displaynum .num_active {
+            z-index: 1;
+            background: #fff0d9;
+            border: 1px solid #f9ae45; }
+            #main #right .select_point .point_top .displaynum .num_active a {
+              color: #ff6c00; }
+        #main #right .select_point .point_top p {
+          width: 279px;
+          height: 37px;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          float: left; }
+        #main #right .select_point .point_top .prosearch {
+          width: 259px;
+          height: 31px;
+          border: 1px solid #ccc;
+          float: left;
+          padding: 6px  0 0 7px; }
+          #main #right .select_point .point_top .prosearch input {
+            display: inline-block;
+            float: left;
+            width: 180px;
+            height: 13px;
+            padding: 5px 10px;
+            border: 1px solid #d8d8d8;
+            background: #f3f3f3;
+            color: #B7B7B7;
+            outline: medium;
+            margin-right: 5px;
+            font-family: tahoma,arial; }
+          #main #right .select_point .point_top .prosearch .mainbtn {
+            float: left;
+            color: #fff; }
+      #main #right .select_point .point_center {
+        width: 1001px;
+        height: 38px;
+        border: 1px solid #ccc;
+        border-top: none;
+        padding-right: 7px; }
+        #main #right .select_point .point_center ul {
+          float: left;
+          width: 612px;
+          height: 18px;
+          padding: 10px; }
+          #main #right .select_point .point_center ul li {
+            float: left;
+            padding-left: 14px; }
+            #main #right .select_point .point_center ul li input {
+              display: inline-block;
+              margin-right: 3px;
+              height: 12px;
+              line-height: 12px; }
+      #main #right .select_point .point_bottom {
+        width: 1008px;
+        border: 1px solid #ccc;
+        border-top: none;
+        height: 39px; }
+        #main #right .select_point .point_bottom li {
+          float: left;
+          width: 42px;
+          font: bold 24px/39px "microsoft yahei",arial;
+          color: #e5e5e5;
+          border-left: 1px solid #ccc;
+          height: 39px;
+          text-align: center;
+          line-height: 39px; }
+        #main #right .select_point .point_bottom .first {
+          width: 66px;
+          font: normal 12px/39px tahoma;
+          color: #484848;
+          border-left: none; }
+        #main #right .select_point .point_bottom .last {
+          width: 716px;
+          height: 32px;
+          padding: 7px 0 0 10px; }
+          #main #right .select_point .point_bottom .last .mainbtn {
+            margin-right: 10px;
+            float: left; }
+          #main #right .select_point .point_bottom .last a {
+            float: left;
+            font: normal 12px/25px tahoma;
+            color: #039; }
+    #main #right #listbody {
+      width: 1010px;
+      overflow: hidden; }
+      #main #right #listbody ul {
+        color: #484848;
+        font-family: tahoma;
+        font-size: 12px; }
+        #main #right #listbody ul li {
+          float: left;
+          width: 221px;
+          height: 340px;
+          padding: 0px 15px 20px 15px; }
+          #main #right #listbody ul li .listimg {
+            width: 221px;
+            height: 168px;
+            margin: 20px 0 5px 0; }
+            #main #right #listbody ul li .listimg img {
+              width: 180px;
+              height: 135px;
+              margin: 0 auto; }
+            #main #right #listbody ul li .listimg .seven {
+              display: block;
+              width: 37px;
+              height: 34px;
+              background: url(../images/list/pro.png) no-repeat -68px -376px; }
+          #main #right #listbody ul li .listtext {
+            width: 221px;
+            height: 147px;
+            overflow: hidden; }
+            #main #right #listbody ul li .listtext .jianjie {
+              width: 221px;
+              height: 57px; }
+              #main #right #listbody ul li .listtext .jianjie a {
+                display: block;
+                background: url(../images/list/overseashopping.png) no-repeat left 4px;
+                text-indent: 70px;
+                width: 221px;
+                height: 36px;
+                overflow: hidden;
+                line-height: 18px; }
+              #main #right #listbody ul li .listtext .jianjie span {
+                display: block;
+                height: 221px;
+                height: 18px;
+                padding-top: 3px;
+                line-height: 18px;
+                overflow: hidden;
+                color: #84984f; }
+            #main #right #listbody ul li .listtext dl {
+              width: 221px;
+              height: 45px;
+              padding-top: 5px; }
+              #main #right #listbody ul li .listtext dl dt {
+                width: 221px;
+                height: 18px;
+                padding-bottom: 3px; }
+                #main #right #listbody ul li .listtext dl dt a {
+                  display: block;
+                  background: url(../images/index/flat_rank.gif) no-repeat left -121px;
+                  color: #039;
+                  height: 12px;
+                  line-height: 18px;
+                  width: 21px;
+                  padding-left: 65px; }
+                #main #right #listbody ul li .listtext dl dt a:hover {
+                  text-decoration: none;
+                  color: #ff6600; }
+              #main #right #listbody ul li .listtext dl dd {
+                width: 221px;
+                height: 24px;
+                line-height: 24px; }
+                #main #right #listbody ul li .listtext dl dd span {
+                  color: #ff6600;
+                  font: bold 16px/24px arial; }
+                #main #right #listbody ul li .listtext dl dd del {
+                  color: #999; }
+            #main #right #listbody ul li .listtext .listinput {
+              width: 191px;
+              height: 25px;
+              padding: 15px 0 0 30px; }
+              #main #right #listbody ul li .listtext .listinput .mainbtn {
+                float: left;
+                color: #fff; }
+              #main #right #listbody ul li .listtext .listinput .shouc {
+                width: 44px;
+                height: 23px;
+                text-align: center;
+                float: left;
+                border: 1px solid #838383;
+                border-radius: 2px;
+                color: #000;
+                margin: 0 8px 0 5px; }
+              #main #right #listbody ul li .listtext .listinput .bijiao {
+                width: 52px;
+                height: 23px;
+                text-align: center;
+                float: left;
+                border: 1px solid #838383;
+                border-radius: 2px;
+                color: #000; }
+              #main #right #listbody ul li .listtext .listinput .shouc:hover, #main #right #listbody ul li .listtext .listinput .bijiao:hover {
+                text-decoration: none;
+                border: 1px solid #E3E3E3; }
 
 #footer {
   width: 1200px;

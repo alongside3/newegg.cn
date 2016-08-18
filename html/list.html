@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>笔记本电脑|全球领先的IT、数码网上购物商城</title>
 		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
 		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		
@@ -50,7 +50,7 @@
 		<div id="header">
 			<p class="ad"> <img src="../images/index_04.jpg"/><a href="javascript:;"></a></p>
 			<div class="wraper">
-				<a href="newegg.cn" class="log" title="新蛋中国  - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货 "></a>
+				<a href="../index.html" class="log" title="新蛋中国  - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货 "></a>
 				<a href="#" title="七天无理由退换货" class="days7"></a>
 				<div class="search">
 					<p> <input type="text" class="searchText" value="荣耀品牌日 爆款立减300元！" autocomplete="off" maxlength="50"/></p>
@@ -139,6 +139,11 @@
 				</dl>
 			</div>
 		</div>
+		
+		<!------------------------------	头部结束-------------------------------------------->
+		
+		
+		
 		<div id="crumb">
 				<a href="#">首页</a><span>&gt;</span><a href="#">海外直购</a><span>&gt;</span>
 				<strong>笔记本电脑</strong>
@@ -147,15 +152,77 @@
 		<div id="main">
 			<div id="left">
 				<dl class="leftmenu">
-					<dt>电脑平板</dt>
+					<!--<dt>电脑平板</dt>
 					<dd><ul>
+						<li class="active"><a href="#">笔记本电脑</a></li>
 						<li><a href="#">笔记本电脑</a></li>
 						<li><a href="#">笔记本电脑</a></li>
 						<li><a href="#">笔记本电脑</a></li>
 						<li><a href="#">笔记本电脑</a></li>
-						<li><a href="#">笔记本电脑</a></li>
-					</ul></dd>
+					</ul></dd>-->
 				</dl>
+				
+				<div class="hot_sales">
+					<h3>
+						热销榜
+					</h3>
+					<ul>
+						<li>
+							<img src="../images/list/hot_sales01.jpg"/>
+							<dl>
+								<dt><strong>1.</strong><a href="#">翻新: ThinkPad X200 Tablet PC SL9400 120 GB HDD Windows 7</a></dt>
+								<dd>¥1049.00</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../images/list/hot_sales02.jpg"/>
+							<dl>
+								<dt><strong>2.</strong><a href="#">翻新品: DELL Latitude E7240 Ultrabook i5 4310U (2.00 GHz) 256 GB SSD 12.5"笔记本电脑</a></dt>
+								<dd>¥2749.00</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../images/list/hot_sales03.jpg"/>
+							<dl>
+								<dt><strong>3.</strong><a href="#">翻新: Acer 宏基 Aspire SW5-173-648Z M 5Y10c 128 GB SSD 11.6" Win10</a></dt>
+								<dd>¥2179.00</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../images/list/hot_sales04.jpg"/>
+							<dl>
+								<dt><strong>4.</strong><a href="#">联想Flex3 15.6英寸触控笔记本电脑 Windows 10 Home</a></dt>
+								<dd>¥6519.00</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="../images/list/hot_sales05.jpg"/>
+							<dl>
+								<dt><strong>5.</strong><a href="#">DELL Ultrabook N3050 2 GB/ 32 GB eMMC/触摸屏/win10</a></dt>
+								<dd>¥1669.00</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="vote">
+					<h3>投票</h3>
+					<p>您希望在新蛋能购买到以下哪个品牌的笔记本电脑</p>
+					<ul>
+						<li><input type="radio" name="vote" /><span>三星</span></li>
+						<li><input type="radio" name="vote" /><span>神舟</span></li>
+						<li><input type="radio" name="vote" /><span>海尔</span></li>
+						<li><input type="radio" name="vote" /><span>清华同方</span></li>
+						<li><input type="radio" name="vote" /><span>富士通</span></li>
+						<li><input type="radio" name="vote" /><span>雷蛇</span></li>
+						<li><input type="radio" name="vote" /><span>外星人</span></li>
+						<li><input type="radio" name="vote" /><span>微星</span></li>
+					</ul>
+					<p class="action"><a href="#" class="mainbtn">投票</a>
+						<a href="#" class="result">查看结果</a>
+					</p>
+				</div>
+				
 			</div>
 <script type="text/javascript">
 	$.ajax({
@@ -179,29 +246,239 @@
 					 var $li=$('<li><a href="#">'+json["catlist"][j]+'</a></li>')
 					 
 					 $ul.append($li)
+				};
+				
+				$dd.append($ul);
+				$("#main #left .leftmenu").append($dt);
+				$("#main #left .leftmenu").append($dd);
+				
+				
+				
+			};
+			
+			$("#main #left .leftmenu dd").css({"display":"none"})
+			$("#main #left .leftmenu dd").eq(1).css({"display":"block"})
+			$("#main #left .leftmenu dd").eq(1).find("li").eq(0).addClass("active")
+			
+			$("#main #left .leftmenu dt").click(
+				function(){
+					clearTimeout(this.timer);
+					var _this=this;
+					
+					if($(this).hasClass("block")){
+						this.timer=setTimeout(function(){
+							
+							$(_this).removeClass("block").next().slideUp();
+						},50)
+						
+					}else{
+						this.timer=setTimeout(function(){
+							$("#main #left .leftmenu dd").slideUp();
+							$(_this).addClass("block").next().slideDown();
+						},50)
+							
+					};
 				}
-				
-				$dd.append($ul)
-				$("#main #left .leftmenu").append($dt)
-				$("#main #left .leftmenu").append($dd)
-				
-
-				
-			}
-		}
-		
+			)	
+		}	
 	});
 </script>			
-			
+			<!------------------------------	主体左边结束-------------------------------------------->
 			
 			<div id="right">
+				<dl class="righttop">
+					<dt>共<strong>82个</strong>产品</dt>
+					<dd class="brand">
+						<h3>品牌:</h3>
+						<ul>
+						<li><a href="#">Hewlett-Packard<span>(22)</span></a></li>
+						<li><a href="#">DEll<span>(19)</span></a></li>
+						<li><a href="#">ASUS 华硕<span>(15)</span></a></li>
+						<li><a href="#">Lenovo<span>(11)</span></a></li>
+						<li><a href="#">Acer America<span>(6)</span></a></li>
+						<li><a href="#">MSI 微星<span>(5)</span></a></li>
+						<li><a href="#">AORUS<span>(1)</span></a></li>
+						<li><a href="#">GIGABYTE<span>(1)</span></a></li>
+						<li><a href="#">Toshiba<span>(1)</span></a></li>
+						<li><a href="#">美国直邮<span>(1)</span></a></li>
+						</ul>
+						
+					</dd>
+					<dd class="price">
+						<h3>价格:</h3>
+						<ul>
+						<li><a href="#">400-800<span>(1)</span></a></li>
+						<li><a href="#">800-1600<span>(10)</span></a></li>
+						<li><a href="#">1600-3200<span>(30)</span></a></li>
+						<li><a href="#">3200-5600<span>(17)</span></a></li>
+						<li><a href="#">5600-8000<span>(15)</span></a></li>
+						<li style="display: none;"><a href="#">8000以上<span>(9)</span></a></li>
+						</ul>
+						<span class="priceSearch">
+							<em>¥</em><input type="text"/><b>-</b><input type="text"/>
+							<i class="mainbtn">筛选</i>
+						</span>
+						
+						<strong>展开更多</strong>
+					</dd>
+					
+				</dl>
 				
+				<div class="select_point">
+					<div class="point_top">
+						<ul class="prorank">
+							<li><a href="javascript:;">销量</a><em></em></li>
+							<li><a href="javascript:;">价格</a><em class="pro_price"></em></li>
+							<li><a href="javascript:;">评分</a><em></em></li>
+							<li class="pro_active"><a href="#">上架时间</a><em></em></li>
+						</ul>
+						<ul class="layout">
+							<li class="layout_active"><a href="javascript:;" title="橱窗"  class="chuc_active"></a></li>
+							<li><a href="javascript:;" title="列表"  class="lieb"></a></li>
+						</ul>
+						<ul class="displaynum">
+							<li  class="num_active"><a href="javascript:;" >24</a></li>
+							<li><a href="javascript:;">48</a></li>
+							<li><a href="javascript:;">96</a></li>
+						</ul>
+						<p></p>
+						<div class="prosearch">
+							<input type="text" value="在结果中搜索" /><span class="mainbtn">搜索</span>
+						</div>
+					</div>
+					<div class="point_center">
+						<ul class="proselect">
+							<li><input type="checkbox" name="proselect" />有返现</li>
+							<li><input type="checkbox" name="proselect" />送积分</li>
+							<li><input type="checkbox" name="proselect" />有赠品</li>
+							<li><input type="checkbox" name="proselect" />限时抢</li>
+							<li><input type="checkbox" name="proselect" />有库存</li>
+							<li><input type="checkbox" name="proselect" />支持礼品包装</li>
+							<li><input type="checkbox" name="proselect" />二手品</li>
+							<li><input type="checkbox" name="proselect" />海外直购</li>
+						</ul>
+					</div>
+					
+					<ul class="point_bottom">
+						<li class="first">对比商品</li>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li class="last"><span class="mainbtn">比较</span><a href="javascript:;">清除全部</a></li>
+					</ul>
+					
+					
+				</div>
+				<div id="listbody">
+					<ul>
+						<li>
+							<div class="listimg">
+								<a href="#" title=""><img src="../images/list/list01.jpg" alt="" /></a>
+								<!--<span><img src="../images/list/flat_xinpin.png"/></span>-->
+								<a href="#" title="不支持7天无理由退换货" class="seven"></a>
+							</div>
+							<div class="listtext">
+								<p class="jianjie">
+									<a href="#" title="MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10">
+									MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10	
+									</a>
+									<span>i7 6700HQ 8 GB Memory 1 TB HDD GeForce GTX 960M</span>
+								</p>
+								<dl>
+									<dt><a href="#">[0]</a></dt>
+									<dd><del>¥13019.00</del><span>¥9619.00</span></dd>
+								</dl>
+								<p class="listinput">
+									<a href="#" class="mainbtn">购买</a>
+									<a href="#" class="shouc">收藏</a>
+									<a href="javascript:;" class="bijiao"><input type="checkbox" /> 比较</a>
+								</p>
+							</div>
+						</li>
+						
+						<li>
+							<div class="listimg">
+								<a href="#" title=""><img src="../images/list/list01.jpg" alt="" /></a>
+								<!--<span><img src="../images/list/flat_xinpin.png"/></span>-->
+								<a href="#" title="不支持7天无理由退换货" class="seven"></a>
+							</div>
+							<div class="listtext">
+								<p class="jianjie">
+									<a href="#" title="MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10">
+									MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10	
+									</a>
+									<span>i7 6700HQ 8 GB Memory 1 TB HDD GeForce GTX 960M</span>
+								</p>
+								<dl>
+									<dt><a href="#">[0]</a></dt>
+									<dd><del>¥13019.00</del><span>¥9619.00</span></dd>
+								</dl>
+								<p class="listinput">
+									<a href="#" class="mainbtn">购买</a>
+									<a href="#" class="shouc">收藏</a>
+									<a href="javascript:;" class="bijiao"><input type="checkbox" /> 比较</a>
+								</p>
+							</div>
+						</li>
+						
+						<li>
+							<div class="listimg">
+								<a href="#" title=""><img src="../images/list/list01.jpg" alt="" /></a>
+								<!--<span><img src="../images/list/flat_xinpin.png"/></span>-->
+								<a href="#" title="不支持7天无理由退换货" class="seven"></a>
+							</div>
+							<div class="listtext">
+								<p class="jianjie">
+									<a href="#" title="MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10">
+									MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10	
+									</a>
+									<span>i7 6700HQ 8 GB Memory 1 TB HDD GeForce GTX 960M</span>
+								</p>
+								<dl>
+									<dt><a href="#">[0]</a></dt>
+									<dd><del>¥13019.00</del><span>¥9619.00</span></dd>
+								</dl>
+								<p class="listinput">
+									<a href="#" class="mainbtn">购买</a>
+									<a href="#" class="shouc">收藏</a>
+									<a href="javascript:;" class="bijiao"><input type="checkbox" /> 比较</a>
+								</p>
+							</div>
+						</li>
+						
+						<li>
+							<div class="listimg">
+								<a href="#" title=""><img src="../images/list/list01.jpg" alt="" /></a>
+								<!--<span><img src="../images/list/flat_xinpin.png"/></span>-->
+								<a href="#" title="不支持7天无理由退换货" class="seven"></a>
+							</div>
+							<div class="listtext">
+								<p class="jianjie">
+									<a href="#" title="MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10">
+									MSI 微信 GS Series GS72 Stealth Pro-425 i7 6700HQ 16 GB 1 TB 512 GB SSD 17.3" Win10	
+									</a>
+									<span>i7 6700HQ 8 GB Memory 1 TB HDD GeForce GTX 960M</span>
+								</p>
+								<dl>
+									<dt><a href="#">[0]</a></dt>
+									<dd><del>¥13019.00</del><span>¥9619.00</span></dd>
+								</dl>
+								<p class="listinput">
+									<a href="#" class="mainbtn">购买</a>
+									<a href="#" class="shouc">收藏</a>
+									<a href="javascript:;" class="bijiao"><input type="checkbox" /> 比较</a>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		
-		
-		
-		
+	
+		<!------------------------------	主体右部结束-------------------------------------------->
 		<div id="footer">
 			<div class="helpcenter">
 				<dl class="hc1">

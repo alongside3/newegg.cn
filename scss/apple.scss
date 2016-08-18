@@ -1,0 +1,228 @@
+$color_org:#ff6600;
+@mixin opacity($opacity:50){opacity: $opacity/100;filter: alpha(opacity=$opacity);}
+
+
+html,body,ul,li,ol,dl,dd,dt,p,b,input,select,em,i,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,span,strong { margin:0; padding:0; } 
+fieldset, img,input { border:none; } 
+img{display: block;} 
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; } 
+ul,li,ol { list-style:none; } 
+body { color:#484848; padding:5px 0; font:12px/20px tahoma,"SimSun","microsoft yahei","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a,b{ color:#666;text-decoration: none;} 
+b{font-weight: normal;}
+a:visited { color:#666; } 
+a:hover, a:active, a:focus { text-decoration: underline;} 
+.mainbtn{display: inline-block;text-align:center;background: #f7661f;height:23px;width: 44px;border: 1px solid #f7661f;
+    border-radius:2px ;color: #fff;font: normal 12px/23px simsun;cursor: pointer;}
+.mainbtn:hover{text-decoration: none;background: #ff971c;border: 1px solid #ff971c}    
+   
+
+
+#topbar{width:1308px;height: 24px;background: #f1f1f1;border-bottom: 1px solid #e2e2e2;position: relative;
+    ul{padding-left: 60px; line-height:24px;float: left;width: 200px;
+    li{width: 50px;padding: 0 15px;float:left;};
+    li:nth-child(2n+1){background: url(../images/topbar.png) no-repeat left 7px;};
+    li:nth-child(2n+1):hover{background: url(../images/topbar.png) no-repeat left -13px;}
+    li:nth-child(2n){background: url(../images/topbar.png) no-repeat left -127px;padding-left: 22px;};
+    li:nth-child(2n):hover{background: url(../images/topbar.png) no-repeat left -152px;};
+    };
+    p{float: right;a{width:44px;text-align: center;line-height: 24px;}};
+    dl{float:right;line-height: 24px;padding: 0 58px 0 15px;
+    dd{float: left;width:62px;padding: 0 8px;a{float: left;};a:hover { text-decoration: none;};img{float: left;padding:10px 0 0 8px;}};
+    dt{float: left;width:50px;padding: 0 8px;}};
+    .myegg{position: absolute;top:24px;left:987px;width: 101px;line-height: 35px;height:35px;background: #fff;border: 1px solid #000;clear: both;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);display: none;
+    border: 1px solid #eee;z-index:5;padding-left: 17px;a{text-decoration: underline;display: inline;float: none;color: #039;};a:hover{text-decoration: underline;}}
+    .sevice{position: absolute;top:24px;left:1103px;width:126px;height: 93px;padding: 3px 10px 6px 10px;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);background:#fff;border: 1px solid #eee;z-index:5;display: none;
+    dl{height: 36px;padding: 5px 0 0 10px;width: 115px;overflow: hidden;dt{color:#fe7b23;font:bold 14px/18px tahoma;width: 115px;padding: 0;};dd{font:bold 12px/18px tahoma;width: 115px;padding: 0;}};
+    span{display:inline-block;height: 18px;padding:0 0 8px 10px;width: 115px;line-height: 18px;font-family: tahoma;clear: both;}
+    a{display: block;float: left;background: #4f9ee7;height: 25px;width: 60px;line-height: 25px;color: #fff;text-align: center;}
+    a:hover{text-decoration: none;};
+    .youj{margin-left:4px;}; 
+    };.active{background-color: #fff;border: 1px solid #fff;}
+}
+    
+#header{width:1308px;
+    .ad{margin: 0 54px;position: relative;width: 1200px;height: 60px;display: block;
+    a{background: url(../images/index_06.jpg) no-repeat left top;width: 20px;height: 20px;position: absolute;right: 5px;top: 5px;}};
+    .wraper{margin: 0 54px;width: 1200px;height:86px;position: relative;
+    .log{background: url(../images/logo.png);width:319px;height: 65px;position: absolute;left: 4px;top: 11px;};
+    .days7{background: url(../images/all.gif);position: absolute;width: 225px;height: 86px;top: 0;right: 0;};
+    .search{position: absolute;left: 368px;top: 18px;
+        p{width:337px;height:30px;border: solid 2px $color_org;float: left;
+        input{width:330px;border:0 solid #000;height: 30px;text-indent: 6px;color:#b7b7b7;outline:medium;}};
+
+        em{float:left;a{float: left;background: $color_org;color:#fff;text-align: center;width: 98px;height: 34px;font:bolder 14px/34px simsun;border-radius: 0px 3px 3px 0;}
+        a:hover{text-decoration: none;}};
+        span{display: block;clear: both;line-height: 29px;padding-left: 5px;
+            a{float: left;line-height: 29px;};b{float: left;margin: 0 15px;line-height: 29px;};};
+    };};}
+#menu{width: 1308px;height: 40px;background: #10286c;position: relative;
+    .innermenu{
+        position: absolute;left:54px;top:0;
+        h3{line-height: 40px;width:179px;text-indent: 20px;background: url(../images/bg.png) no-repeat 120px -1252px $color_org;
+        a{color:#fff;display: block;font:14px/40px "microsoft yahei"};
+        a:hover{text-decoration: none;};}
+        .menulist{position: absolute;top:40px;left:0;width: 174px;height: 467px;border:2px solid $color_org;border-top:none;display: none;}
+    };
+    .nav{position: absolute;left:243px;top:0;width: 520px;height: 40px;
+    li{float: left;}; a{color:#fff;display: block;font:14px/40px "microsoft yahei";padding: 0 20px;};
+    a:hover{text-decoration: none;background: #295dd7;};};
+    
+    .utility{width: 230px;height: 40px;position: absolute;right: 54px;top: 0;
+    .mycart{width: 112px ;height: 36px;border:2px solid $color_org;background: $color_org;position: absolute;left: 0;top: 0;}
+    dt{width: 70px;height: 22px;margin-top: 8px;padding: 0px 29px 0 13px;
+    a{color: #fff;width: 70px;height: 22px;line-height: 22px;
+    strong{display:inline-block;margin: 0 3px;width: 16px;height: 22px;color: #ffb380;font-weight: bold;text-align: center;line-height: 22px;};
+    span{background: url(../images/bg.png) no-repeat left -1242px;width: 8px;height: 4px;display: inline-block;position: absolute;top: 18px;right: 8px;}
+}};
+    .favor{position: absolute;right: 0;top: 0;border:2px solid $color_org;background: $color_org;width: 112px ;height: 36px;
+    dt{border-left: 1px solid #fa8b29;padding-left: 25px;};span{right:12px}}
+    a:hover{text-decoration: none;}
+    }
+};
+
+
+#applecrumb{width:1200px;padding:0 54px 0 54px;height: 42px;background: #f0f0f0;overflow: hidden;
+    .crumbleft{width: 359px;height: 29px;float: left;line-height: 29px;
+    span{font-family: tahoma;width: 9px;height: 29px;padding: 0 5px;}
+    strong{color: #333;font-weight: normal;padding: 0;};};
+    .crumbright{float: right;width: 414px;height: 34px;padding-top: 8px;
+    span{float: left;color: #767676;padding:  0 5px;line-height: 29px;height: 29px;width: 91px;}
+    ul{float:left;
+    li{float: left;width: 40px;height: 30px;margin-right: 5px;border: 1px dashed #bfbfbf;}
+    };
+    a{float: right;width: 65px;height: 32px;border: 1px solid #bfbfbf;text-align: center;line-height: 32px;color: #777;background: url(../images/apple/bijiao.png) repeat-x ;}
+}
+
+};
+
+
+
+#tabshead{width:1200px;padding:18px 54px 0 54px;height: 39px;background: #f0f0f0;overflow: hidden;
+    .tabshead_left{float: left;height: 39px;
+        li{height: 36px;padding: 0 23px;line-height:36px ;float: left;color: #787878;font:normal 14px/36px "microsoft yahei";border-top: 3px solid #f0f0f0;border-radius:  3px 3px 0 0;}
+        .active{background: #fff;border-top: 3px solid #f87500;color:#000; font-weight: bold;}
+    }
+    .tabshead_right{width: 105px;height: 18px;padding-top: 10px;float: right;}
+}
+
+#applamain{
+    width:1200px;margin:0 54px;
+    #appleTab1{width:1200px;overflow: hidden;
+     .goods_all{width: 1200px;height: 588px;padding-top: 23px;overflow: hidden;
+     .goods_prev{width: 490px;height: 547px;float: left;
+     dl{width: 490px;height: 490px;padding-top: 57px;
+     dt{width:490px;height: 335px;padding-bottom: 70px;img{width: 450px;height: 338px;}}
+     dd{width: 490px;height: 75px;
+     ul{width: 401px;height: 73px;
+     li{float: left;width: 80px;height: 64px;border: 2px solid #f7661f ; margin: 0 16px 10px 0;cursor: pointer;
+     img{width: 80px;height: 64px;}}}}
+     }}
+     .goods_intro{float: left;width: 710px;height: 588px;overflow: hidden;
+     .intro_title{width: 710px;height: 74px;margin-bottom: 7px;
+     h2{width: 710px;height: 52px;margin-bottom: 3px;color: #000;font: bolder 20px/26px "microsoft yahei";overflow: hidden;};
+     span{width: 710px;height: 19px;color: #777;font: bold 14px/19px "microsoft yahei";};}
+       
+ }
+     
+     .intro_left{width: 511px;height: 507px ;
+     li{margin-bottom: 10px;line-height: 18px;width: 508px;em{font-style: normal;}
+     
+     strong{width: 72px;height: 18px;float: left;font: normal 12px/18px arial,simsun;}};
+     .intro_price{height: 46px;line-height: 46px;strong{line-height: 46px;}
+     p{float: left;width: 409px;height: 36px;em{color: #F7661F;font: bolder 16px "microsoft yahei";};
+    }span{font: bolder 30px tahoma;color: #F7661F;}};
+    
+    .intro_zhichi{height: 63px;margin-bottom: 5px;strong{line-height: 63px;}
+    a{float: left;width:84px;height:16px;padding: 46px 14px 0 0;background: url(../images/apple/promise_logoV2.png) no-repeat 20px -472px;color: #2d2d2d;font-size: 11px;}
+};
+    .intro_disk,.intro_color{height: 36px;strong{line-height: 36px;}
+    span{float:left;padding: 8px 10px 8px 6px ;border: 1px solid #BFBFBF;border-radius: 2px;margin-right: 10px;line-height: 13px;color: #666;position: relative;cursor: pointer;
+    .active{background: url(../images/list/pro.png) no-repeat -67px -122px ;position: absolute;right: 0;bottom:0 ;width: 11px;height: 11px;}};
+    .intro_active{border: 1px solid $color_org;}
+    }
+    
+    .intro_num{height: 36px;strong{line-height: 36px;}
+    span{border: 1px solid #BFBFBF;width: 24px;height: 28px;float: left;line-height: 28px;text-align: center;color: #BFBFBF;}
+    input{float: left;width: 70px;height: 26px;padding: 1px 0;border-top: 1px solid #BFBFBF;border-bottom: 1px solid #BFBFBF;font:  12px/26px "microsoft yahei";color: #484848;text-align: center;outline: medium;}
+    em{float: left;height: 14px;padding: 8px 0 0 20px;color:green;}
+    
+    }
+    
+    .intro_answer{width: 436px;padding-left: 72px;color: $color_org;
+    span{font:bold 14px simsun;}}
+    
+    .goods_btns{width: 448px;height: 115px;padding: 19px 19px 3px 19px;
+    .btns_top{width: 486px;height: 47px;padding-bottom: 18px;
+    a{float: left;height: 47px;width: 214px;text-align: center;line-height: 47px;color: #fff;font: 18px/47px "microsoft yahei";};
+    .quickBuy{background: #f60;margin-right: 20px;}
+    .quickBuy{background:#ff971c ;}
+    .addToCart{background: url(../images/apple/btns.png) no-repeat 39px -220px #1c429a;width: 200px;padding-left: 14px;}
+    .addToCart:hover{background-color: #295dd7;}
+};
+    .btns_bottom{width: 486px;height: 34px;
+    .collect{float:left;width: 81px;height: 32px;border: 1px solid #bfbfbf;margin-right: 8px;color: #000;text-align: center;line-height: 32px;}
+    p{float: left;width: 32px;height: 32px;border: 1px solid #bfbfbf;margin-right: 8px;padding-left: 49px;background: url(../images/list/pro.png) no-repeat -154px -449px;overflow: hidden;
+    span{display: inline-block;height: 32px;width: 32px;line-height: 32px;text-align: center;color: #ac1816;}}
+    ul{float:left;width: 146px;height: 50px;padding: 4px 8px 3px 9px;border: 1px solid #bfbfbf;overflow: hidden;
+    li{float: left;width: 24px;height: 24px;margin: 0 5px 5px 0;
+    a{display: block;width: 24px;height: 24px;background: url(../images/apple/sshare_icons.png) no-repeat; @include opacity(70);}};
+    .txwb_btn{background-position:0 -24px ;}}
+    .db_btn{background-position:0 -48px ;}
+    .kx_btn{background-position:0 -96px ;}
+    .rr_btn{background-position:0 -120px ;}
+    .tb_btn{background-position:0 -144px ;}
+    
+    .control_btn{background:url(../images/list/pro.png) no-repeat -148px -123px;width: 17px;height: 7px;vertical-align: middle;}
+    .xg_btn{background-position:0 -168px ;}
+    .dg_btn{background-position:0 -192px ;}
+    }
+    }
+    
+     }
+     
+     
+     }   
+        
+        
+        
+    .goods_detail{width: 1200px;margin-top: 15px;border-top: 1px solid #ddd;
+    span{float: right;width: 219px;height: 18px;padding-top: 5px;color: #999;line-height: 18px;
+    a{display:inline-block;padding-left: 15px;background: url(../images/list/pro.png) no-repeat -184px -303px;color: #1c429a;height: 18px;line-height: 18px;}};
+    .adcc{width:480px;height: 205px;clear: both;};
+    h2{width: 980px;height: 78px;padding: 20px 10px;font: bold 20pt/39px "microsoft yahei";overflow: hidden; }
+    .gaishu img{width: 1000px;height: 69px;}
+    }
+    
+    
+    
+    
+    .appleImg{width: 1000px;overflow: hidden;li{width: 980px;padding: 10px;}} 
+    }
+    
+    
+}
+
+
+
+#footer{width:1200px;margin:100px 54px 0 54px;height: 407px;
+    .helpcenter{height: 185px;width: 1200px;padding-left: 18px;
+    .hc1,.hc2,.hc3,.hc4,.hc5{float: left;width: 208px;height: 185px;padding: 0 10px 0 18px;border-right:1px solid #dbdbdb ;
+    dt{padding:0 0 10px 28px;background: url(../images/helpcenter.gif) no-repeat;height:20px;font:bolder 14px/20px tahoma;}};
+    dd{height: 22px;line-height: 22px;padding-left: 28px;background: url(../images/list.jpg) no-repeat 16px center;};
+    .hc2 dt{background-position-y:-113px ;}
+    .hc3 dt{background: url(../images/SpecialServies.png) no-repeat 1px 3px ;}
+    .hc4 dt{background-position-y:-152px ;}
+    .hc5{border-right: none;dt{background-position-y:-190px;}} 
+    ;}
+    .footer{height: 112px;width: 1200px;padding: 80px 0 30px 0;text-align: center;color:#484848;
+    a{color:#484848;};
+    .ft1{width: 123px;height: 45px;background:url(../images/logo_02.png) no-repeat left top;display: inline-block;};
+    .ft2{width: 116px;height: 45px;background: url(../images/logo_02.png) no-repeat left -92px;display: inline-block;};
+    .ft3{width: 130px;height: 45px;background: url(../images/logo_02.png) no-repeat left -276px;display: inline-block;};
+    .ft4{width: 127px;height: 45px;background: url(../images/logo_02.png) no-repeat left -326px;display: inline-block;};
+    .ft5{width: 106px;height: 45px;background: url(../images/logo_02.png) no-repeat left -376px;display: inline-block;};
+    p{padding: 5px 0 10px 0;};
+    span{color:#484848;font: 12px tahoma};
+    }
+}

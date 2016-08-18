@@ -57,13 +57,37 @@ a:hover, a:active, a:focus { text-decoration: underline;}
         h3{line-height: 40px;width:179px;text-indent: 20px;background: url(../images/bg.png) no-repeat 120px -1252px $color_org;
         a{color:#fff;display: block;font:14px/40px "microsoft yahei"};
         a:hover{text-decoration: none;};}
-        .menulist{position: absolute;top:40px;left:0;width: 174px;height: 467px;border:2px solid $color_org;border-top:none;}
+        .menulist{position: absolute;top:40px;left:0;width: 175px;height: 467px;border:2px solid $color_org;border-top:none;
+        dl{width: 140px;height: 62px;padding: 10px 15px 0 20px;overflow:hidden;border-bottom: 1px solid #E5E5E5;text-indent: 0px;position: relative;
+        a{color:#666;float: left;font-size: 12px;padding: 0;margin: 0;padding-left: 5px;}
+        dt{height: 22px;background: url(../images/bg.png) no-repeat 125px -1549px;padding-bottom:2px;width: 140px;color:#000;text-indent:2px;font: bolder 14px/22px "microsoft yahei";a{font: bolder 14px/22px "microsoft yahei";color:#000;}};
+        dd{height: 18px;width: 160px;a{color:#666;font: normal 12px/18px "microsoft yahei" ;}}
+        };
+        .orange{color:$color_org};
+        span{background: url(../images/banner_sprit.png) no-repeat;width: 14px;height: 13px;position: absolute;left: 4px;top: 15px;};
+        .overseas span{background-position: left top;};
+        .mobil span{background-position: left -21px;};
+        .computer span{background-position: left -43px;};
+        .appliances span{background-position: left -64px;};
+        .living span{background-position: left -84px;};
+        .living{height: 175px;border-bottom: none;dd{line-height: 27px;height: 27px;}}
+        }
     };
     .nav{position: absolute;left:243px;top:0;width: 520px;height: 40px;
     li{float: left;}; a{color:#fff;display: block;font:14px/40px "microsoft yahei";padding: 0 20px;};
     a:hover{text-decoration: none;background: #295dd7;};};
     
-    .utility{}
+   .utility{width: 230px;height: 40px;position: absolute;right: 54px;top: 0;
+    .mycart{width: 112px ;height: 36px;border:2px solid $color_org;background: $color_org;position: absolute;left: 0;top: 0;}
+    dt{width: 70px;height: 22px;margin-top: 8px;padding: 0px 29px 0 13px;
+    a{color: #fff;width: 70px;height: 22px;line-height: 22px;
+    strong{display:inline-block;margin: 0 3px;width: 16px;height: 22px;color: #ffb380;font-weight: bold;text-align: center;line-height: 22px;};
+    span{background: url(../images/bg.png) no-repeat left -1242px;width: 8px;height: 4px;display: inline-block;position: absolute;top: 18px;right: 8px;}
+}};
+    .favor{position: absolute;right: 0;top: 0;border:2px solid $color_org;background: $color_org;width: 112px ;height: 36px;
+    dt{border-left: 1px solid #fa8b29;padding-left: 25px;};span{right:12px}};
+    a:hover{text-decoration: none;}
+    }
 }
 
 #body{width:1200px;margin:0 54px;
@@ -166,7 +190,7 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     span{float: right;line-height: 38px;}};
     .goods{width: 1198px;height:275px;border:1px solid #dadada;position: relative;overflow: hidden;}
     .goods1,.goods2,.goods3,.goods4{position: absolute;top:0;left:0;overflow: hidden;}
-    .chlid1{width: 675px;height: 240px;padding-top: 35px;border-right: 1px solid #dadada;display: none;
+    .chlid1{width: 675px;height: 240px;padding-top: 35px;display: none;
     .left{width: 250px;height: 239px;margin: 0 30px ;float: left;img{width: 250px;height: 185px;}};
     .right{float: left;width: 338px;height: 208px;
     strong{display:inline-block;width: 360px;height:19px;color:$color_org;font:bold 14px "microsoft yahei";white-space: nowrap;line-height: 14px;
@@ -181,9 +205,11 @@ a:hover, a:active, a:focus { text-decoration: underline;}
     dd{color: $color_org;line-height: 18px;};
     img{width:220px;height: 165px;}};
     .goods1 .chlid1{display: block;};
-    .goods2{left:675px;width: 175px;.chlid2{display: block;}};
-    .goods3{left:850px;width: 175px;border-left: 1px solid #dadada;.chlid2{display: block;}};
-    .goods4{left:1025px;width: 175px;border-left: 1px solid #dadada;.chlid2{display: block;}};
+    .goods2{left:676px;width: 175px;border-left: 1px solid #dadada;.chlid2{display: block;}};
+    .goods3{left:851px;width: 175px;border-left: 1px solid #dadada;.chlid2{display: block;}};
+    .goods4{left:1026px;width: 175px;border-left: 1px solid #dadada;.chlid2{display: block;}};
+    
+    
     
     }
     

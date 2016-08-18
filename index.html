@@ -7,6 +7,10 @@
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/slide.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+	
+	
+	
+	
 	<body>
 		<div id="topbar">
 			<ul>
@@ -46,6 +50,10 @@
 			<p>
 	
 		</div>	
+		
+	<!------------------------------	顶部结束-------------------------------------------->
+		
+		
 		
 		<div id="header">
 			<p class="ad"> <img src="images/index_04.jpg"/><a href="javascript:;"></a></p>
@@ -114,8 +122,102 @@
 			<div class="innermenu">
 				<h3><a href="newegg.cn" title="首页"> 全部商品分类</a></h>
 				<div class="menulist">
+					<dl class="overseas">
+						<dt><a href="#"> <span></span>海外直购</a></dt>
+						<dd><a href="#" class="orange">影音</a><a href="#" class="orange">固态硬盘</a>&nbsp;<a href="#">奶粉</a></dd>
+					</dl>
+					<dl class="mobil">
+						<dt><a href="#"> <span></span>手机</a>&nbsp;<a href="#">摄影</a>&nbsp;<a href="#"> 苹果</a></dt>
+						<dd><a href="#" class="orange">智能手机</a>&nbsp;<a href="#">微单</a>&nbsp;<a href="#" class="orange">上网卡</a></dd>
+					</dl>
+					<dl class="compu">
+						<dt><a href="#"> <span></span>电脑</a>&nbsp;<a href="#">外设</a>&nbsp;<a href="#">办公</a></dt>
+						<dd><a href="#" class="orange">笔记本</a>&nbsp;<a href="#" class="orange">路由器</a>&nbsp;<a href="#">耳机</a></dd>
+					</dl>
+					<dl class="appliances">
+						<dt><a href="#"> <span></span>家用电器</a></dt>
+						<dd><a href="#">电饭煲</a>&nbsp;<a href="#" class="orange">电视</a>&nbsp;<a href="#">净水器</a></dd>
+					</dl>
+					<dl class="living">
+						<dt><span></span> 生活百货</dt>
+						<dd><a href="#" class="orange">汽车用品</a>&nbsp;<a href="#">个护清洁</a></dd>
+						<dd><a href="#">家居</a>&nbsp;<a href="#">厨用</a>&nbsp;<a href="#">钟表</a>&nbsp;<a href="#">礼品</a></dd>
+						<dd><a href="#">男装</a>&nbsp;<a href="#">女装</a>&nbsp;<a href="#">内衣</a>&nbsp;<a href="#">珠宝</a></dd>
+						<dd><a href="#">母婴</a>&nbsp;<a href="#">玩具</a>&nbsp;<a href="#">食品</a>&nbsp;<a href="#">酒饮</a></dd>
+						<dd><a href="#">鞋靴</a>&nbsp;<a href="#">箱包</a>&nbsp;<a href="#">运动</a>&nbsp;<a href="#">户外</a></dd>
+					</dl>
+				</div>
+				
+				<div class="menulist_right">
 					
 				</div>
+<script type="text/javascript">
+	
+//	$.ajax({
+//		type:"GET",
+//		url:"json/list.txt",
+//		async:true,
+//		cache:false,
+//		error:function(xhr){
+//			alert("错误码"+xhr.state)
+//		},
+//		success:function(str){
+//			var arr=eval(str);
+//			for(var i=0;i<arr.length;i++){
+//				var json=arr[i];
+//				
+//				var $li=$("<li></li>")
+//			
+//				for(var j=0;j<json["catname"].length;j++){
+//				var $liA=$('<a href="#">'+json["catname"][j]+'</a>');
+//				
+//					$li.append($liA)
+//				}
+//				$("#list .left ul").append($li)
+//				
+//				
+//				var $div=$("<div></div>")
+//				
+//				
+//				
+//				for(var k=0;k<json["list"].length;k++){
+//					var json01= json["list"][k];
+//					var $dt=$('<dt>'+json01["cattitle"]+'</dt>')
+//					var $dd=$('<dd></dd>')
+//					var $ul=$('<ul></ul>')
+//					
+//					for (var j = 0; j < json01["catlist"].length; j++) {
+//						
+//						 var $li=$('<li><a href="#">'+json01["catlist"][j]+'</a></li>')
+//						 
+//						 $ul.append($li)
+//					};
+//					
+//					$dd.append($ul);
+//					$("#main #left .leftmenu").append($dt);
+//					$("#main #left .leftmenu").append($dd);
+//				}
+//			
+//				
+//				
+//				
+//			
+//			
+//			
+//			
+//			
+//			
+//			
+//			$("#list .right").append($div)
+//			}
+//		}
+//	});
+	
+	
+</script>			
+
+				
+				
 			</div>
 			
 			<ul class="nav">
@@ -127,9 +229,22 @@
 				<li><a href="newegg.cn" title="二手宝库">二手宝库</a></li>
 			</ul>
 			<div class="utility">
-				
+				<dl class="mycart">
+					<dt><a href="#" target="_blank">购物车<strong>1</strong>件   <span></span></a></dt>
+					
+					<dd></dd>
+				</dl>
+				<dl class="favor">
+					<dt><a href="#" target="_blank">收藏提醒  <span></span></a></dt>
+					
+					<dd></dd>
+				</dl>
 			</div>
 		</div>
+		
+		<!------------------------------	头部结束-------------------------------------------->
+		
+		
 		<div id="body">
 			
 		<div id="section">
@@ -311,6 +426,10 @@
 				
 			</div>
 		</div>
+		
+		
+		<!------------------------------	轮播区结束-------------------------------------------->
+		
 		<div id="hot_sale">
 			<div class="hot">
 				<div class="title">
@@ -397,6 +516,9 @@
 				</div>
 			</div>
 		</div>
+		
+		<!------------------------------	热卖区结束-------------------------------------------->
+		
 		<div id="good_reviews">
 			<div class="title">
 				<h2>好评热品</h2>
@@ -495,7 +617,66 @@
 			
 		</div>
 		
+<script type="text/javascript">
+	$("#good_reviews .goods2").mouseover(function(){
 		
+		$("#good_reviews  .chlid2").css({"display":"block"});
+		$("#good_reviews .chlid1").css({"display":"none"});
+		
+		$("#good_reviews .goods2").css({"width":675,"left":175});
+		$("#good_reviews .goods2 .chlid2").css({"display":"none"});
+		$("#good_reviews .goods2 .chlid1").css({"display":"block"});
+			
+		$("#good_reviews .goods1").css({"width":175,"left":0});
+		$("#good_reviews .goods3").css({"width":175,"left":851});
+		$("#good_reviews .goods4").css({"width":175,"left":1025});		
+	});
+	
+	$("#good_reviews .goods1").mouseover(function(){
+		
+		$("#good_reviews  .chlid2").css({"display":"block"});
+		$("#good_reviews .chlid1").css({"display":"none"});
+		
+		$("#good_reviews .goods1").css({"width":675,"left":0});
+		$("#good_reviews .goods1 .chlid2").css({"display":"none"});
+		$("#good_reviews .goods1 .chlid1").css({"display":"block"});
+			
+		$("#good_reviews .goods2").css({"width":175,"left":676});
+		$("#good_reviews .goods3").css({"width":175,"left":851});
+		$("#good_reviews .goods4").css({"width":175,"left":1026});		
+	});
+	
+	$("#good_reviews .goods3").mouseover(function(){
+		
+		$("#good_reviews  .chlid2").css({"display":"block"});
+		$("#good_reviews .chlid1").css({"display":"none"});
+		
+		$("#good_reviews .goods3").css({"width":675,"left":350});
+		$("#good_reviews .goods3 .chlid2").css({"display":"none"});
+		$("#good_reviews .goods3 .chlid1").css({"display":"block"});
+			
+		$("#good_reviews .goods1").css({"width":175,"left":0});
+		$("#good_reviews .goods2").css({"width":175,"left":175});
+		$("#good_reviews .goods4").css({"width":175,"left":1025});		
+	});
+	
+	$("#good_reviews .goods4").mouseover(function(){
+		
+		$("#good_reviews  .chlid2").css({"display":"block"});
+		$("#good_reviews .chlid1").css({"display":"none"});
+		
+		$("#good_reviews .goods4").css({"width":675,"left":525});
+		$("#good_reviews .goods4 .chlid2").css({"display":"none"});
+		$("#good_reviews .goods4 .chlid1").css({"display":"block"});
+			
+		$("#good_reviews .goods1").css({"width":175,"left":0});
+		$("#good_reviews .goods2").css({"width":175,"left":175});
+		$("#good_reviews .goods3").css({"width":175,"left":350});		
+	});
+	
+</script>			
+		
+		<!------------------------------	好评区结束-------------------------------------------->
 		
 		<div id="select_goods">
 			<div class="goodsTab">
@@ -552,7 +733,6 @@ $.ajax({
 			var $ul=$("<ul></ul>")
 			var $span=$("<span>"+jsonArr["catname"]+"</span>")
 			
-			console.log(jsonArr["main"])
 			
 			for(var j=0;j<jsonArr["main"].length;j++){
 				var json= jsonArr["main"][j];
@@ -599,6 +779,10 @@ $.ajax({
 				
 			</div>
 		</div>
+		
+		<!------------------------------选项卡区结束-------------------------------------------->
+		
+		
 		<div id="subject">
 			<!--<div class="subject01">
 				<h2>手机   • 摄影</h2>
@@ -858,8 +1042,8 @@ $.ajax({
 
 					var $li=$("<li></li>")
 				
-					var $liP=$('<p><a href="'+main["catHref"]+'" title="'+main["catDd"]+'"><img src="'+main["catImg"]+'" alt="'+main["catDd"]+'"/></a><strong><img src="'+main["catSpan"]+'"/></strong></p>');	
-					var $liDl=$('<dl><dt><a href="'+main["catHref"]+'" title="'+main["catDd"]+'">'+main["catDt"]+'</a></dt><dd>'+main["catDd"]+'</dd></dl>')
+					var $liP=$('<p><a href="'+main["catHref"]+'" title="'+main["catDt"]+'"><img src="'+main["catImg"]+'" alt="'+main["catDt"]+'"/></a><strong><img src="'+main["catSpan"]+'"/></strong></p>');	
+					var $liDl=$('<dl><dt><a href="'+main["catHref"]+'" title="'+main["catDt"]+'">'+main["catDt"]+'</a></dt><dd>'+main["catDd"]+'</dd></dl>')
 					$li.append($liP)
 					$li.append($liDl)
 					
@@ -891,6 +1075,9 @@ $.ajax({
 
 	
 </script>	
+		<!------------------------------	主卖区结束-------------------------------------------->
+		
+		
 		
 		<div id="color">
 			<ul>
@@ -940,6 +1127,9 @@ $.ajax({
 		
 		
 		</div>
+		
+		<!------------------------------	主体区结束-------------------------------------------->
+		
 		<div id="footer">
 			<div class="helpcenter">
 				<dl class="hc1">

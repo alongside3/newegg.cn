@@ -258,10 +258,67 @@ a:hover, a:active, a:focus {
       position: absolute;
       top: 40px;
       left: 0;
-      width: 174px;
+      width: 175px;
       height: 467px;
       border: 2px solid #ff6600;
       border-top: none; }
+      #menu .innermenu .menulist dl {
+        width: 140px;
+        height: 62px;
+        padding: 10px 15px 0 20px;
+        overflow: hidden;
+        border-bottom: 1px solid #E5E5E5;
+        text-indent: 0px;
+        position: relative; }
+        #menu .innermenu .menulist dl a {
+          color: #666;
+          float: left;
+          font-size: 12px;
+          padding: 0;
+          margin: 0;
+          padding-left: 5px; }
+        #menu .innermenu .menulist dl dt {
+          height: 22px;
+          background: url(../images/bg.png) no-repeat 125px -1549px;
+          padding-bottom: 2px;
+          width: 140px;
+          color: #000;
+          text-indent: 2px;
+          font: bolder 14px/22px "microsoft yahei"; }
+          #menu .innermenu .menulist dl dt a {
+            font: bolder 14px/22px "microsoft yahei";
+            color: #000; }
+        #menu .innermenu .menulist dl dd {
+          height: 18px;
+          width: 160px; }
+          #menu .innermenu .menulist dl dd a {
+            color: #666;
+            font: normal 12px/18px "microsoft yahei"; }
+      #menu .innermenu .menulist .orange {
+        color: #ff6600; }
+      #menu .innermenu .menulist span {
+        background: url(../images/banner_sprit.png) no-repeat;
+        width: 14px;
+        height: 13px;
+        position: absolute;
+        left: 4px;
+        top: 15px; }
+      #menu .innermenu .menulist .overseas span {
+        background-position: left top; }
+      #menu .innermenu .menulist .mobil span {
+        background-position: left -21px; }
+      #menu .innermenu .menulist .computer span {
+        background-position: left -43px; }
+      #menu .innermenu .menulist .appliances span {
+        background-position: left -64px; }
+      #menu .innermenu .menulist .living span {
+        background-position: left -84px; }
+      #menu .innermenu .menulist .living {
+        height: 175px;
+        border-bottom: none; }
+        #menu .innermenu .menulist .living dd {
+          line-height: 27px;
+          height: 27px; }
   #menu .nav {
     position: absolute;
     left: 243px;
@@ -278,6 +335,62 @@ a:hover, a:active, a:focus {
     #menu .nav a:hover {
       text-decoration: none;
       background: #295dd7; }
+  #menu .utility {
+    width: 230px;
+    height: 40px;
+    position: absolute;
+    right: 54px;
+    top: 0; }
+    #menu .utility .mycart {
+      width: 112px;
+      height: 36px;
+      border: 2px solid #ff6600;
+      background: #ff6600;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    #menu .utility dt {
+      width: 70px;
+      height: 22px;
+      margin-top: 8px;
+      padding: 0px 29px 0 13px; }
+      #menu .utility dt a {
+        color: #fff;
+        width: 70px;
+        height: 22px;
+        line-height: 22px; }
+        #menu .utility dt a strong {
+          display: inline-block;
+          margin: 0 3px;
+          width: 16px;
+          height: 22px;
+          color: #ffb380;
+          font-weight: bold;
+          text-align: center;
+          line-height: 22px; }
+        #menu .utility dt a span {
+          background: url(../images/bg.png) no-repeat left -1242px;
+          width: 8px;
+          height: 4px;
+          display: inline-block;
+          position: absolute;
+          top: 18px;
+          right: 8px; }
+    #menu .utility .favor {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 2px solid #ff6600;
+      background: #ff6600;
+      width: 112px;
+      height: 36px; }
+      #menu .utility .favor dt {
+        border-left: 1px solid #fa8b29;
+        padding-left: 25px; }
+      #menu .utility .favor span {
+        right: 12px; }
+    #menu .utility a:hover {
+      text-decoration: none; }
 
 #body {
   width: 1200px;
@@ -682,7 +795,6 @@ a:hover, a:active, a:focus {
       width: 675px;
       height: 240px;
       padding-top: 35px;
-      border-right: 1px solid #dadada;
       display: none; }
       #body #good_reviews .chlid1 .left {
         width: 250px;
@@ -762,18 +874,19 @@ a:hover, a:active, a:focus {
     #body #good_reviews .goods1 .chlid1 {
       display: block; }
     #body #good_reviews .goods2 {
-      left: 675px;
-      width: 175px; }
+      left: 676px;
+      width: 175px;
+      border-left: 1px solid #dadada; }
       #body #good_reviews .goods2 .chlid2 {
         display: block; }
     #body #good_reviews .goods3 {
-      left: 850px;
+      left: 851px;
       width: 175px;
       border-left: 1px solid #dadada; }
       #body #good_reviews .goods3 .chlid2 {
         display: block; }
     #body #good_reviews .goods4 {
-      left: 1025px;
+      left: 1026px;
       width: 175px;
       border-left: 1px solid #dadada; }
       #body #good_reviews .goods4 .chlid2 {

@@ -1,0 +1,801 @@
+html, body, ul, li, ol, dl, dd, dt, p, b, input, select, em, i, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, span, strong {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img, input {
+  border: none; }
+
+img {
+  display: block; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, li, ol {
+  list-style: none; }
+
+body {
+  color: #484848;
+  padding: 5px 0;
+  font: 12px/20px tahoma,"SimSun","microsoft yahei","Arial Narrow",HELVETICA;
+  background: #fff;
+  /* overflow-y:scroll;*/
+  overflow-x: hidden; }
+
+a, b {
+  color: #666;
+  text-decoration: none; }
+
+b {
+  font-weight: normal; }
+
+a:visited {
+  color: #666; }
+
+a:hover, a:active, a:focus {
+  text-decoration: underline; }
+
+.mainbtn {
+  display: inline-block;
+  text-align: center;
+  background: #f7661f;
+  height: 23px;
+  width: 44px;
+  border: 1px solid #f7661f;
+  border-radius: 2px;
+  color: #fff;
+  font: normal 12px/23px simsun;
+  cursor: pointer; }
+
+.mainbtn:hover {
+  text-decoration: none;
+  background: #ff971c;
+  border: 1px solid #ff971c; }
+
+#topbar {
+  width: 1308px;
+  height: 24px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e2e2e2;
+  position: relative; }
+  #topbar ul {
+    padding-left: 60px;
+    line-height: 24px;
+    float: left;
+    width: 200px; }
+    #topbar ul li {
+      width: 50px;
+      padding: 0 15px;
+      float: left; }
+    #topbar ul li:nth-child(2n+1) {
+      background: url(../images/topbar.png) no-repeat left 7px; }
+    #topbar ul li:nth-child(2n+1):hover {
+      background: url(../images/topbar.png) no-repeat left -13px; }
+    #topbar ul li:nth-child(2n) {
+      background: url(../images/topbar.png) no-repeat left -127px;
+      padding-left: 22px; }
+    #topbar ul li:nth-child(2n):hover {
+      background: url(../images/topbar.png) no-repeat left -152px; }
+  #topbar p {
+    float: right; }
+    #topbar p a {
+      width: 44px;
+      text-align: center;
+      line-height: 24px; }
+  #topbar dl {
+    float: right;
+    line-height: 24px;
+    padding: 0 58px 0 15px; }
+    #topbar dl dd {
+      float: left;
+      width: 62px;
+      padding: 0 8px; }
+      #topbar dl dd a {
+        float: left; }
+      #topbar dl dd a:hover {
+        text-decoration: none; }
+      #topbar dl dd img {
+        float: left;
+        padding: 10px 0 0 8px; }
+    #topbar dl dt {
+      float: left;
+      width: 50px;
+      padding: 0 8px; }
+  #topbar .myegg {
+    position: absolute;
+    top: 24px;
+    left: 987px;
+    width: 101px;
+    line-height: 35px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #000;
+    clear: both;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    border: 1px solid #eee;
+    z-index: 5;
+    padding-left: 17px; }
+    #topbar .myegg a {
+      text-decoration: underline;
+      display: inline;
+      float: none;
+      color: #039; }
+    #topbar .myegg a:hover {
+      text-decoration: underline; }
+  #topbar .sevice {
+    position: absolute;
+    top: 24px;
+    left: 1103px;
+    width: 126px;
+    height: 93px;
+    padding: 3px 10px 6px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border: 1px solid #eee;
+    z-index: 5;
+    display: none; }
+    #topbar .sevice dl {
+      height: 36px;
+      padding: 5px 0 0 10px;
+      width: 115px;
+      overflow: hidden; }
+      #topbar .sevice dl dt {
+        color: #fe7b23;
+        font: bold 14px/18px tahoma;
+        width: 115px;
+        padding: 0; }
+      #topbar .sevice dl dd {
+        font: bold 12px/18px tahoma;
+        width: 115px;
+        padding: 0; }
+    #topbar .sevice span {
+      display: inline-block;
+      height: 18px;
+      padding: 0 0 8px 10px;
+      width: 115px;
+      line-height: 18px;
+      font-family: tahoma;
+      clear: both; }
+    #topbar .sevice a {
+      display: block;
+      float: left;
+      background: #4f9ee7;
+      height: 25px;
+      width: 60px;
+      line-height: 25px;
+      color: #fff;
+      text-align: center; }
+    #topbar .sevice a:hover {
+      text-decoration: none; }
+    #topbar .sevice .youj {
+      margin-left: 4px; }
+  #topbar .active {
+    background-color: #fff;
+    border: 1px solid #fff; }
+
+#header {
+  width: 1308px; }
+  #header .ad {
+    margin: 0 54px;
+    position: relative;
+    width: 1200px;
+    height: 60px;
+    display: block; }
+    #header .ad a {
+      background: url(../images/index_06.jpg) no-repeat left top;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 5px;
+      top: 5px; }
+  #header .wraper {
+    margin: 0 54px;
+    width: 1200px;
+    height: 86px;
+    position: relative; }
+    #header .wraper .log {
+      background: url(../images/logo.png);
+      width: 319px;
+      height: 65px;
+      position: absolute;
+      left: 4px;
+      top: 11px; }
+    #header .wraper .days7 {
+      background: url(../images/all.gif);
+      position: absolute;
+      width: 225px;
+      height: 86px;
+      top: 0;
+      right: 0; }
+    #header .wraper .search {
+      position: absolute;
+      left: 368px;
+      top: 18px; }
+      #header .wraper .search p {
+        width: 337px;
+        height: 30px;
+        border: solid 2px #ff6600;
+        float: left; }
+        #header .wraper .search p input {
+          width: 330px;
+          border: 0 solid #000;
+          height: 30px;
+          text-indent: 6px;
+          color: #b7b7b7;
+          outline: medium; }
+      #header .wraper .search em {
+        float: left; }
+        #header .wraper .search em a {
+          float: left;
+          background: #ff6600;
+          color: #fff;
+          text-align: center;
+          width: 98px;
+          height: 34px;
+          font: bolder 14px/34px simsun;
+          border-radius: 0px 3px 3px 0; }
+        #header .wraper .search em a:hover {
+          text-decoration: none; }
+      #header .wraper .search span {
+        display: block;
+        clear: both;
+        line-height: 29px;
+        padding-left: 5px; }
+        #header .wraper .search span a {
+          float: left;
+          line-height: 29px; }
+        #header .wraper .search span b {
+          float: left;
+          margin: 0 15px;
+          line-height: 29px; }
+
+#menu {
+  width: 1308px;
+  height: 40px;
+  background: #10286c;
+  position: relative; }
+  #menu .innermenu {
+    position: absolute;
+    left: 54px;
+    top: 0; }
+    #menu .innermenu h3 {
+      line-height: 40px;
+      width: 179px;
+      text-indent: 20px;
+      background: url(../images/bg.png) no-repeat 120px -1252px #ff6600; }
+      #menu .innermenu h3 a {
+        color: #fff;
+        display: block;
+        font: 14px/40px "microsoft yahei"; }
+      #menu .innermenu h3 a:hover {
+        text-decoration: none; }
+    #menu .innermenu .menulist {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 174px;
+      height: 467px;
+      border: 2px solid #ff6600;
+      border-top: none;
+      display: none; }
+  #menu .nav {
+    position: absolute;
+    left: 243px;
+    top: 0;
+    width: 520px;
+    height: 40px; }
+    #menu .nav li {
+      float: left; }
+    #menu .nav a {
+      color: #fff;
+      display: block;
+      font: 14px/40px "microsoft yahei";
+      padding: 0 20px; }
+    #menu .nav a:hover {
+      text-decoration: none;
+      background: #295dd7; }
+  #menu .utility {
+    width: 230px;
+    height: 40px;
+    position: absolute;
+    right: 54px;
+    top: 0; }
+    #menu .utility .mycart {
+      width: 112px;
+      height: 36px;
+      border: 2px solid #ff6600;
+      background: #ff6600;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    #menu .utility dt {
+      width: 70px;
+      height: 22px;
+      margin-top: 8px;
+      padding: 0px 29px 0 13px; }
+      #menu .utility dt a {
+        color: #fff;
+        width: 70px;
+        height: 22px;
+        line-height: 22px; }
+        #menu .utility dt a strong {
+          display: inline-block;
+          margin: 0 3px;
+          width: 16px;
+          height: 22px;
+          color: #ffb380;
+          font-weight: bold;
+          text-align: center;
+          line-height: 22px; }
+        #menu .utility dt a span {
+          background: url(../images/bg.png) no-repeat left -1242px;
+          width: 8px;
+          height: 4px;
+          display: inline-block;
+          position: absolute;
+          top: 18px;
+          right: 8px; }
+    #menu .utility .favor {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 2px solid #ff6600;
+      background: #ff6600;
+      width: 112px;
+      height: 36px; }
+      #menu .utility .favor dt {
+        border-left: 1px solid #fa8b29;
+        padding-left: 25px; }
+      #menu .utility .favor span {
+        right: 12px; }
+    #menu .utility a:hover {
+      text-decoration: none; }
+
+#applecrumb {
+  width: 1200px;
+  padding: 0 54px 0 54px;
+  height: 42px;
+  background: #f0f0f0;
+  overflow: hidden; }
+  #applecrumb .crumbleft {
+    width: 359px;
+    height: 29px;
+    float: left;
+    line-height: 29px; }
+    #applecrumb .crumbleft span {
+      font-family: tahoma;
+      width: 9px;
+      height: 29px;
+      padding: 0 5px; }
+    #applecrumb .crumbleft strong {
+      color: #333;
+      font-weight: normal;
+      padding: 0; }
+  #applecrumb .crumbright {
+    float: right;
+    width: 414px;
+    height: 34px;
+    padding-top: 8px; }
+    #applecrumb .crumbright span {
+      float: left;
+      color: #767676;
+      padding: 0 5px;
+      line-height: 29px;
+      height: 29px;
+      width: 91px; }
+    #applecrumb .crumbright ul {
+      float: left; }
+      #applecrumb .crumbright ul li {
+        float: left;
+        width: 40px;
+        height: 30px;
+        margin-right: 5px;
+        border: 1px dashed #bfbfbf; }
+    #applecrumb .crumbright a {
+      float: right;
+      width: 65px;
+      height: 32px;
+      border: 1px solid #bfbfbf;
+      text-align: center;
+      line-height: 32px;
+      color: #777;
+      background: url(../images/apple/bijiao.png) repeat-x; }
+
+#tabshead {
+  width: 1200px;
+  padding: 18px 54px 0 54px;
+  height: 39px;
+  background: #f0f0f0;
+  overflow: hidden; }
+  #tabshead .tabshead_left {
+    float: left;
+    height: 39px; }
+    #tabshead .tabshead_left li {
+      height: 36px;
+      padding: 0 23px;
+      line-height: 36px;
+      float: left;
+      color: #787878;
+      font: normal 14px/36px "microsoft yahei";
+      border-top: 3px solid #f0f0f0;
+      border-radius: 3px 3px 0 0; }
+    #tabshead .tabshead_left .active {
+      background: #fff;
+      border-top: 3px solid #f87500;
+      color: #000;
+      font-weight: bold; }
+  #tabshead .tabshead_right {
+    width: 105px;
+    height: 18px;
+    padding-top: 10px;
+    float: right; }
+
+#applamain {
+  width: 1200px;
+  margin: 0 54px; }
+  #applamain #appleTab1 {
+    width: 1200px;
+    overflow: hidden; }
+    #applamain #appleTab1 .goods_all {
+      width: 1200px;
+      height: 588px;
+      padding-top: 23px;
+      overflow: hidden; }
+      #applamain #appleTab1 .goods_all .goods_prev {
+        width: 490px;
+        height: 547px;
+        float: left; }
+        #applamain #appleTab1 .goods_all .goods_prev dl {
+          width: 490px;
+          height: 490px;
+          padding-top: 57px; }
+          #applamain #appleTab1 .goods_all .goods_prev dl dt {
+            width: 490px;
+            height: 335px;
+            padding-bottom: 70px; }
+            #applamain #appleTab1 .goods_all .goods_prev dl dt img {
+              width: 450px;
+              height: 338px; }
+          #applamain #appleTab1 .goods_all .goods_prev dl dd {
+            width: 490px;
+            height: 75px; }
+            #applamain #appleTab1 .goods_all .goods_prev dl dd ul {
+              width: 401px;
+              height: 73px; }
+              #applamain #appleTab1 .goods_all .goods_prev dl dd ul li {
+                float: left;
+                width: 80px;
+                height: 64px;
+                border: 2px solid #f7661f;
+                margin: 0 16px 10px 0;
+                cursor: pointer; }
+                #applamain #appleTab1 .goods_all .goods_prev dl dd ul li img {
+                  width: 80px;
+                  height: 64px; }
+      #applamain #appleTab1 .goods_all .goods_intro {
+        float: left;
+        width: 710px;
+        height: 588px;
+        overflow: hidden; }
+        #applamain #appleTab1 .goods_all .goods_intro .intro_title {
+          width: 710px;
+          height: 74px;
+          margin-bottom: 7px; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_title h2 {
+            width: 710px;
+            height: 52px;
+            margin-bottom: 3px;
+            color: #000;
+            font: bolder 20px/26px "microsoft yahei";
+            overflow: hidden; }
+          #applamain #appleTab1 .goods_all .goods_intro .intro_title span {
+            width: 710px;
+            height: 19px;
+            color: #777;
+            font: bold 14px/19px "microsoft yahei"; }
+      #applamain #appleTab1 .goods_all .intro_left {
+        width: 511px;
+        height: 507px; }
+        #applamain #appleTab1 .goods_all .intro_left li {
+          margin-bottom: 10px;
+          line-height: 18px;
+          width: 508px; }
+          #applamain #appleTab1 .goods_all .intro_left li em {
+            font-style: normal; }
+          #applamain #appleTab1 .goods_all .intro_left li strong {
+            width: 72px;
+            height: 18px;
+            float: left;
+            font: normal 12px/18px arial,simsun; }
+        #applamain #appleTab1 .goods_all .intro_left .intro_price {
+          height: 46px;
+          line-height: 46px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_price strong {
+            line-height: 46px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_price p {
+            float: left;
+            width: 409px;
+            height: 36px; }
+            #applamain #appleTab1 .goods_all .intro_left .intro_price p em {
+              color: #F7661F;
+              font: bolder 16px "microsoft yahei"; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_price span {
+            font: bolder 30px tahoma;
+            color: #F7661F; }
+        #applamain #appleTab1 .goods_all .intro_left .intro_zhichi {
+          height: 63px;
+          margin-bottom: 5px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_zhichi strong {
+            line-height: 63px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_zhichi a {
+            float: left;
+            width: 84px;
+            height: 16px;
+            padding: 46px 14px 0 0;
+            background: url(../images/apple/promise_logoV2.png) no-repeat 20px -472px;
+            color: #2d2d2d;
+            font-size: 11px; }
+        #applamain #appleTab1 .goods_all .intro_left .intro_disk, #applamain #appleTab1 .goods_all .intro_left .intro_color {
+          height: 36px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_disk strong, #applamain #appleTab1 .goods_all .intro_left .intro_color strong {
+            line-height: 36px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_disk span, #applamain #appleTab1 .goods_all .intro_left .intro_color span {
+            float: left;
+            padding: 8px 10px 8px 6px;
+            border: 1px solid #BFBFBF;
+            border-radius: 2px;
+            margin-right: 10px;
+            line-height: 13px;
+            color: #666;
+            position: relative;
+            cursor: pointer; }
+            #applamain #appleTab1 .goods_all .intro_left .intro_disk span .active, #applamain #appleTab1 .goods_all .intro_left .intro_color span .active {
+              background: url(../images/list/pro.png) no-repeat -67px -122px;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 11px;
+              height: 11px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_disk .intro_active, #applamain #appleTab1 .goods_all .intro_left .intro_color .intro_active {
+            border: 1px solid #ff6600; }
+        #applamain #appleTab1 .goods_all .intro_left .intro_num {
+          height: 36px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_num strong {
+            line-height: 36px; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_num span {
+            border: 1px solid #BFBFBF;
+            width: 24px;
+            height: 28px;
+            float: left;
+            line-height: 28px;
+            text-align: center;
+            color: #BFBFBF; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_num input {
+            float: left;
+            width: 70px;
+            height: 26px;
+            padding: 1px 0;
+            border-top: 1px solid #BFBFBF;
+            border-bottom: 1px solid #BFBFBF;
+            font: 12px/26px "microsoft yahei";
+            color: #484848;
+            text-align: center;
+            outline: medium; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_num em {
+            float: left;
+            height: 14px;
+            padding: 8px 0 0 20px;
+            color: green; }
+        #applamain #appleTab1 .goods_all .intro_left .intro_answer {
+          width: 436px;
+          padding-left: 72px;
+          color: #ff6600; }
+          #applamain #appleTab1 .goods_all .intro_left .intro_answer span {
+            font: bold 14px simsun; }
+        #applamain #appleTab1 .goods_all .intro_left .goods_btns {
+          width: 448px;
+          height: 115px;
+          padding: 19px 19px 3px 19px; }
+          #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top {
+            width: 486px;
+            height: 47px;
+            padding-bottom: 18px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top a {
+              float: left;
+              height: 47px;
+              width: 214px;
+              text-align: center;
+              line-height: 47px;
+              color: #fff;
+              font: 18px/47px "microsoft yahei"; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .quickBuy {
+              background: #f60;
+              margin-right: 20px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .quickBuy {
+              background: #ff971c; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .addToCart {
+              background: url(../images/apple/btns.png) no-repeat 39px -220px #1c429a;
+              width: 200px;
+              padding-left: 14px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_top .addToCart:hover {
+              background-color: #295dd7; }
+          #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom {
+            width: 486px;
+            height: 34px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .collect {
+              float: left;
+              width: 81px;
+              height: 32px;
+              border: 1px solid #bfbfbf;
+              margin-right: 8px;
+              color: #000;
+              text-align: center;
+              line-height: 32px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom p {
+              float: left;
+              width: 32px;
+              height: 32px;
+              border: 1px solid #bfbfbf;
+              margin-right: 8px;
+              padding-left: 49px;
+              background: url(../images/list/pro.png) no-repeat -154px -449px;
+              overflow: hidden; }
+              #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom p span {
+                display: inline-block;
+                height: 32px;
+                width: 32px;
+                line-height: 32px;
+                text-align: center;
+                color: #ac1816; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul {
+              float: left;
+              width: 146px;
+              height: 50px;
+              padding: 4px 8px 3px 9px;
+              border: 1px solid #bfbfbf;
+              overflow: hidden; }
+              #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul li {
+                float: left;
+                width: 24px;
+                height: 24px;
+                margin: 0 5px 5px 0; }
+                #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul li a {
+                  display: block;
+                  width: 24px;
+                  height: 24px;
+                  background: url(../images/apple/sshare_icons.png) no-repeat;
+                  opacity: 0.7;
+                  filter: alpha(opacity=70); }
+              #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom ul .txwb_btn {
+                background-position: 0 -24px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .db_btn {
+              background-position: 0 -48px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .kx_btn {
+              background-position: 0 -96px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .rr_btn {
+              background-position: 0 -120px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .tb_btn {
+              background-position: 0 -144px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .control_btn {
+              background: url(../images/list/pro.png) no-repeat -148px -123px;
+              width: 17px;
+              height: 7px;
+              vertical-align: middle; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .xg_btn {
+              background-position: 0 -168px; }
+            #applamain #appleTab1 .goods_all .intro_left .goods_btns .btns_bottom .dg_btn {
+              background-position: 0 -192px; }
+    #applamain #appleTab1 .goods_detail {
+      width: 1200px;
+      margin-top: 15px;
+      border-top: 1px solid #ddd; }
+      #applamain #appleTab1 .goods_detail span {
+        float: right;
+        width: 219px;
+        height: 18px;
+        padding-top: 5px;
+        color: #999;
+        line-height: 18px; }
+        #applamain #appleTab1 .goods_detail span a {
+          display: inline-block;
+          padding-left: 15px;
+          background: url(../images/list/pro.png) no-repeat -184px -303px;
+          color: #1c429a;
+          height: 18px;
+          line-height: 18px; }
+      #applamain #appleTab1 .goods_detail .adcc {
+        width: 480px;
+        height: 205px;
+        clear: both; }
+      #applamain #appleTab1 .goods_detail h2 {
+        width: 980px;
+        height: 78px;
+        padding: 20px 10px;
+        font: bold 20pt/39px "microsoft yahei";
+        overflow: hidden; }
+      #applamain #appleTab1 .goods_detail .gaishu img {
+        width: 1000px;
+        height: 69px; }
+    #applamain #appleTab1 .appleImg {
+      width: 1000px;
+      overflow: hidden; }
+      #applamain #appleTab1 .appleImg li {
+        width: 980px;
+        padding: 10px; }
+
+#footer {
+  width: 1200px;
+  margin: 100px 54px 0 54px;
+  height: 407px; }
+  #footer .helpcenter {
+    height: 185px;
+    width: 1200px;
+    padding-left: 18px; }
+    #footer .helpcenter .hc1, #footer .helpcenter .hc2, #footer .helpcenter .hc3, #footer .helpcenter .hc4, #footer .helpcenter .hc5 {
+      float: left;
+      width: 208px;
+      height: 185px;
+      padding: 0 10px 0 18px;
+      border-right: 1px solid #dbdbdb; }
+      #footer .helpcenter .hc1 dt, #footer .helpcenter .hc2 dt, #footer .helpcenter .hc3 dt, #footer .helpcenter .hc4 dt, #footer .helpcenter .hc5 dt {
+        padding: 0 0 10px 28px;
+        background: url(../images/helpcenter.gif) no-repeat;
+        height: 20px;
+        font: bolder 14px/20px tahoma; }
+    #footer .helpcenter dd {
+      height: 22px;
+      line-height: 22px;
+      padding-left: 28px;
+      background: url(../images/list.jpg) no-repeat 16px center; }
+    #footer .helpcenter .hc2 dt {
+      background-position-y: -113px; }
+    #footer .helpcenter .hc3 dt {
+      background: url(../images/SpecialServies.png) no-repeat 1px 3px; }
+    #footer .helpcenter .hc4 dt {
+      background-position-y: -152px; }
+    #footer .helpcenter .hc5 {
+      border-right: none; }
+      #footer .helpcenter .hc5 dt {
+        background-position-y: -190px; }
+  #footer .footer {
+    height: 112px;
+    width: 1200px;
+    padding: 80px 0 30px 0;
+    text-align: center;
+    color: #484848; }
+    #footer .footer a {
+      color: #484848; }
+    #footer .footer .ft1 {
+      width: 123px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left top;
+      display: inline-block; }
+    #footer .footer .ft2 {
+      width: 116px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -92px;
+      display: inline-block; }
+    #footer .footer .ft3 {
+      width: 130px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -276px;
+      display: inline-block; }
+    #footer .footer .ft4 {
+      width: 127px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -326px;
+      display: inline-block; }
+    #footer .footer .ft5 {
+      width: 106px;
+      height: 45px;
+      background: url(../images/logo_02.png) no-repeat left -376px;
+      display: inline-block; }
+    #footer .footer p {
+      padding: 5px 0 10px 0; }
+    #footer .footer span {
+      color: #484848;
+      font: 12px tahoma; }
+
+/*# sourceMappingURL=apple.css.map */
