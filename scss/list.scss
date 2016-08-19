@@ -122,13 +122,14 @@ a:hover, a:active, a:focus { text-decoration: underline;}
      a:hover{color: $color_org;text-decoration: none;span{color:#666}}
      }}};
      .brand{height: 44px;width: 780px;overflow: hidden;width:953px;}
-     .price{width:953px;height: 30px;line-height: 30px;border-top: 1px solid #e6e6e6;padding: 9px 0 6px 55px;
+     .price{width:953px;overflow:hidden;line-height: 30px;border-top: 1px solid #e6e6e6;padding: 9px 0 6px 55px;position: relative;
      h3,li{padding-top: 5px;}
      .priceSearch{display: inline-block;height: 30px;overflow: hidden;
      .mainbtn{margin:0 0 2px 0;color: #fff;}}
      input{width: 36px;height: 23px;padding: 0 3px;border: 1px solid #ccc;margin: 0 5px 2px 5px;outline: medium;}
      em{font-style: normal;font-family: arial;}
-     strong{float: right;width: 48px;height: 26px;margin-right: 14px;padding-left: 14px;background: url(../images/list/arrow.png) no-repeat -30px -23px;color: #039;cursor: pointer;font-weight: normal;}}};
+     strong,b{width: 48px;height: 26px;position:absolute;right: 14px;top:5px;padding-left: 14px;background: url(../images/list/arrow.png) no-repeat -30px -23px;color: #039;cursor: pointer;font-weight: normal;};
+     b{display: none;float：right;color: #039;}}};
      
      .select_point{width: 1010px;height: 118px;margin: 10px 0 40px 0;
      .point_top{width: 1010px;height: 39px;overflow: hidden;

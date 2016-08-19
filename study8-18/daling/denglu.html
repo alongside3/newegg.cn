@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>当前网页标题</title>
+ <link rel="stylesheet" type="text/css" href="css/denglu.css">
+  <script type="text/javascript" src="js/jq.js"></script>
+  <script type="text/javascript" src="js/tool.js"> 
+  </script>
+  <!--<script src="tool.js">  	
+  </script>-->
+
+  <script type="text/javascript">
+     $(function(){ 
+   	    $("#main").find("#dl").addClass("active").find("#zc").removeClass("active")
+        $("#main").find(".mainbox1").fadeIn().find(".mainbox2").fadeOut()
+        
+        $("#main").find("#zc").click(function(){
+      	$("#main").find("#zc").addClass("active").parent().find("#dl").removeClass("active")
+      	$("#main").find(".mainbox2").stop(true,true).fadeIn().find(".mainbox1").fadeOut()
+      })
+        $("#main").find("#dl").click(function(){
+       	$("#main").find("#dl").addClass("active").parent().find($("#zc")).removeClass("active")
+      	$("#main").find(".mainbox2").stop(true,true).fadeOut().find(".mainbox1").fadeIn()
+      })
+           
+    /////////////////////////登录页面代码/////////////////////////////    
+        $("#main .mainbox1").find(".last").click(function(){
+        	var	re=/^[1-9]\d{11,11}$/
+        	
+        	if($(".mainbox1 #te1").val()==null){
+        		alert("请输入手机号码!")
+        	}else{
+        		if(re.test($(".mainbox1 #te1").val())){
+        			alert("登录成功！")
+        		}else{
+        			alert("请正确输入手机号码")
+      		}
+      	}      	
+       })
+    ///////////////////////////////////注册页面////////////////////    
+        
+      $("#main #right2").find("#zc").click(function(){  
+        
+        var $num=parseInt(Math.random()*10000)
+        $("#ym1").html($num)
+        console.log($num);
+     })   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+ })  
+     
+  </script>
+  
+ </head>
+  <body>
+   <div id="top">
+   	 <img src="denglu/top01.jpg" />
+   </div>
+   <div id="main">
+   	 <div id="left">
+   	  	<img src="denglu/main_02.jpg" />
+   	 </div>
+   	 <div id="right">
+   	 	 <div id="right2">
+   	 	 	 <p>达令会员</p>
+   	 	 	 <h2>
+   	 	 	 	 <div id="dl">登录</div>
+   	 	 	 	 <div id="zc">注册</div>  	 	 	 	 
+   	 	 	 </h2>
+ 	 	 	 <div class="mainbox1"> 
+		   	 	 	<ul >
+		   	 	 	 		<li>
+			   	 	 	 		<div class="box">
+			   	 	 	 		<img src="denglu/main11_03.jpg" />
+			   	 	 	 		<input type="text" placeholder="请输入您的手机号码" id="te1" value="" />  	 	 	 			
+			   	 	 	 		</div>
+		   	 	 	 		</li>
+		   	 	 	 		<li>
+			   	 	 	 		<div class="box">
+			   	 	 	 		<img src="denglu/main11_06.jpg" />
+			        	 	<input type="text" placeholder="请输入密码" id="te2" value="" />  	 	 	 			
+			   	 	 	 		</div>   	 	 	 		
+		   	 	 	 		</li>
+		   	 	 	 	</ul>
+		   	 	 	 	<div id="btn">
+		   	 	 	 			<a href="javascript:;">忘记密码？</a>   
+		   	 	 	 	</div>
+		   	 	 	    	<button class="last">登录</button> 
+	     </div> 
+	   <div class="mainbox2">     
+	   	 	 	<ul>
+	   	 	 	 	<li>
+	   	 	 	 		<div class="box">
+	   	 	 	 		<img src="denglu/main11_03.jpg" />
+	   	 	 	 		<input type="text" placeholder="请输入您的手机号码" value="" />  	 	 	 			
+	   	 	 	 		</div>
+	   	 	 	 	</li>
+	   	 	 	 	<li id="te1">
+	   	 	 	 		<div class="box">
+	   	 	 	 		<img src="denglu/main11_06.jpg" />
+	        	 	<input type="text" placeholder="请输入验证码"  value="" />
+	        	 	<div id="ym1">
+	        	 		
+	        	 	</div>
+	   	 	 	 		</div>   	 	 	 		
+	   	 	 	 	</li>
+	   	 	 	 	 	<li id="te2">
+	   	 	 	 		<div class="box">
+	   	 	 	 		<img src="denglu/main12_08.jpg" />
+	        	 	<input type="text" placeholder="请输入短信验证码"  value="" /> 
+	        	 	<div id="ym2">获取验证码</div>        	 
+	   	 	 	 		</div>   	 	 	 		
+	   	 	 	 	</li>
+	   	 	 	 	 	<li>
+	   	 	 	 		<div class="box">
+	   	 	 	 		<img src="denglu/main11_06.jpg" />
+	        	 	<input type="text" placeholder="请输入密码"  value="" />  	 	 	 			
+	   	 	 	 		</div>   	 	 	 		
+	   	 	 	 	</li>
+	   	 	 	</ul>
+	   	 	 	<div id="btn">
+	   	 	 	 			<input type="checkbox" />我已阅读并同意<a href="javascript:;">《达令用户注册协议》</a>
+	   	 	 	</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+	   	 	 	    <button class="last">注册</button>
+   	 	 	</div> 
+   	 	 	    
+   	 	 </div>
+   	 </div>
+   </div>
+   <div id="main2">
+   	 <ul>
+   	 	<li id="first"><a href="javascript:;">为什么选择达令</a><span>&nbsp;></span></li>
+   	 	<li><img src="denglu/main2_03.jpg" /><a href="javascript:;">100多个品牌授权</a></li>
+   	 	<li><img src="denglu/main2_05.jpg" /><a href="javascript:;">24小时内发货</a></li>
+   	 	<li><img src="denglu/main2_07.jpg" /><a href="javascript:;">保税区正品</a></li>
+   	 </ul>
+   </div>
+   <div id="main3">
+   	 	 <ul>
+   	 	 	<li>
+   	 	 		<dl>
+   	 	 			<dt>投资人说达令</dt>
+   	 	 			<dd>"hi,达令,我是鹿晗,达令投资人,投资比影响力更重要的是责任。"</dd>
+   	 	 		</dl>
+   	 	 	</li>
+   	 	 	<li>
+   	 	 		<dl>
+   	 	 			<dt>投资人说达令</dt>
+   	 	 			<dd>"达令一手全球好货--带您购全球,教您神马值得买。连续两年荣获App store编辑推荐最佳购物类应用！"</dd>
+   	 	 		</dl>
+   	 	 	</li>
+   	 	 </ul>
+   </div>
+   <div id="foot">
+   	  <ul>
+   	  	<li><a href="javascript:;">首页</a></li>
+   	  	<li><a href="javascript:;">网站地图</a></li>
+   	  	<li><a href="javascript:;">消费者告知书</a></li>
+   	  	<li><a href="javascript:;">关于我们</a></li>
+   	  	<li id="last"><a href="javascript:;">联系我们</a></li>
+   	  </ul>
+   	  <p>北京普缇客科技有限公司</p>
+   	  <div>Copyright 2007-2014 北京普缇客科技有限公司 京ICP备12003911号-3 京公网安备11010802011455号 站长统计 百度统计</div>
+   </div>
+  </body>
+</html>

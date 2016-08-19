@@ -885,6 +885,119 @@ a:hover, a:active, a:focus {
       #applamain #appleTab1 .appleImg li {
         width: 980px;
         padding: 10px; }
+  #applamain #appleTab2 {
+    width: 1200px;
+    overflow: hidden;
+    background: #fff;
+    display: none; }
+    #applamain #appleTab2 cite {
+      font-style: normal;
+      float: right; }
+    #applamain #appleTab2 .box {
+      width: 728px;
+      margin: 10px;
+      border: solid 1px #e6e6e6;
+      background: #f3f3f3;
+      position: relative;
+      padding-bottom: 60px; }
+    #applamain #appleTab2 .box ul {
+      padding: 0 34px; }
+    #applamain #appleTab2 .box ul li {
+      border-bottom: solid 1px #e6e6e6;
+      position: relative;
+      padding-top: 30px; }
+    #applamain #appleTab2 .box li .right {
+      padding-left: 64px; }
+    #applamain #appleTab2 .box li .left {
+      position: absolute;
+      left: 0;
+      top: 30px;
+      width: 64px;
+      overflow: hidden; }
+    #applamain #appleTab2 .box li .left span {
+      display: block;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px; }
+    #applamain #appleTab2 .box li .left span img {
+      width: 100%; }
+    #applamain #appleTab2 .userinfo span, #applamain #appleTab2 .userinfo cite {
+      padding-right: 10px;
+      line-height: 30px;
+      color: #999; }
+    #applamain #appleTab2 .userinfo .name {
+      color: #ff8b3d; }
+    #applamain #appleTab2 .callback {
+      background: #f3f3f3;
+      padding: 10px 18px; }
+    #applamain #appleTab2 .callback .noname {
+      color: #ff6600;
+      font-size: 12px; }
+    #applamain #appleTab2 .callback p {
+      margin: 0;
+      padding: 0;
+      line-height: 22px;
+      font-size: 15px; }
+    #applamain #appleTab2 .msg {
+      padding: 8px 0;
+      line-height: 22px;
+      font-size: 15px; }
+    #applamain #appleTab2 .func {
+      overflow: hidden;
+      line-height: 33px; }
+    #applamain #appleTab2 .func a {
+      text-decoration: none;
+      padding-left: 10px;
+      color: #999; }
+    #applamain #appleTab2 .box .input textarea {
+      display: block;
+      resize: none; }
+    #applamain #appleTab2 .msg_input {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 728px;
+      background: #f5f5f5;
+      overflow: hidden; }
+    #applamain #appleTab2 .msg_input .input {
+      padding: 10px 23px 10px 12px;
+      float: left; }
+    #applamain #appleTab2 .msg_input .input input {
+      width: 526px;
+      height: 38px;
+      border: solid 1px #e6e6e6;
+      outline: none;
+      text-indent: 20px; }
+    #applamain #appleTab2 .msg_input .btn {
+      padding: 10px 0;
+      float: left; }
+    #applamain #appleTab2 .msg_input .btn button {
+      width: 140px;
+      height: 38px;
+      box-sizing: border-box;
+      border: solid 1px #e6e6e6;
+      background: #FFF;
+      outline: none; }
+  #applamain #appleTab3 {
+    width: 1180px;
+    overflow: hidden;
+    display: none;
+    padding: 10px; }
+    #applamain #appleTab3 .appleImg {
+      width: 1200px;
+      overflow: hidden; }
+  #applamain #appleTab4 {
+    width: 1180px;
+    overflow: hidden;
+    display: none;
+    padding: 10px; }
+  #applamain #appleTab5 {
+    width: 1200px;
+    overflow: hidden;
+    display: none; }
+    #applamain #appleTab5 p {
+      padding: 20px; }
 
 #footer {
   width: 1200px;

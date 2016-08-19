@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/slide.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	
 	
@@ -75,7 +76,7 @@
 			</div>
 		</div>
 		
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
 	$("#topbar .topsevice").mouseover(function(){	
 		$("#topbar .sevice").css({"display":"block"});
@@ -111,11 +112,9 @@
 	$(function(){
 		$("#infobook .email .emailText").click(function(){
 			$(this).val("")
-		}
-			
-		)
+		})
 	})
-</script>		
+</script>		-->
 		
 		
 		<div id="menu">
@@ -152,99 +151,6 @@
 					</div>	
 				</div>
 				
-				
-<script type="text/javascript">
-	
-	$.ajax({
-		type:"GET",
-		url:"json/list.txt",
-		async:true,
-		cache:false,
-		error:function(xhr){
-			alert("错误码"+xhr.state)
-		},
-		success:function(str){
-			var arr=eval(str);
-			
-			for(var i=0;i<arr.length;i++){
-				var json=arr[i];
-				var $div=$("<div></div>")
-				var $ul=$("<ul class='menu_img'></ul>")
-				var $ulh4=$("<h4>热门品牌</h4>")
-				
-				  
-				  	$ul.append($ulh4)
-				
-				for(var j=0;j<json["brand"].length;j++){
-				var $li=$('<li><a href="#"><img src="'+json["brand"][j]+'"/></a></li>');
-				
-					$ul.append($li)
-				}
-				
-				
-				var $dl=$("<dl></dl>")	
-				for(var k=0;k<json["list"].length;k++){
-					var json01= json["list"][k];
-					
-					var $dt=$('<dt>'+json01["cattitle"]+'</dt>')
-					
-					var $dd=$('<dd></dd>')
-					var $dul=$('<ul></ul>')
-					
-					for (var j = 0; j < json01["catlist"].length; j++) {
-						
-						 var $li=$('<li><a href="html/list.html">'+json01["catlist"][j]+'</a></li>')
-						 
-						 $dul.append($li)
-					};
-					
-					$dd.append($dul);
-					
-					$dl.append($dt);
-					$dl.append($dd);
-					
-				}
-			
-			
-				
-				$div.append($dl)
-				$div.append($ul)	
-			
-				$("#menu .menulist_right").append($div)
-			}
-			
-			$(function(){
-				
-				
-				$("#menu .menulist").mouseover(function(){
-			
-					$("#menu .menulist_right").show();
-				}).find(".menulistdd").mouseover(function(){
-					$(this).parent().addClass("menuactive")
-					
-					$("#menu .menulist_right div").eq($(this).index()).show().siblings().hide();
-				})
-				
-				$("#menu .menulist .menulistdd").mouseout(function(){
-					$(this).parent().removeClass("menuactive")
-				})
-				
-				
-				$("#menu .menulist").mouseout(function(){
-					$("#menu .menulist_right").hide();
-				})
-				
-				
-				
-			})
-			
-			
-		}
-	});
-	
-	
-</script>			
-
 				
 				
 			</div>
@@ -297,37 +203,37 @@
 				</div>
 				
 				
-<script>
+<!--<script>
 	$(function(){
-		var slide = new Slide("#section .leftSlide");
+		var leftSlide = new Slide("#section .leftSlide");
 		
-		slide.box.find("li").fadeOut().eq(0).fadeIn();
-		slide.timer = setInterval(function(){
-			slide.fnNext().fnChange();
+		leftSlide.box.find("li").fadeOut().eq(0).fadeIn();
+		leftSlide.timer = setInterval(function(){
+			leftSlide.fnNext().fnChange();
 		},2000);
 		$("#section .leftSlide .prev").click(function(){
-			slide.fnPrev().fnChange();
+			leftSlide.fnPrev().fnChange();
 		});
 		$("#section .leftSlide .next").click(function(){
-			slide.fnNext().fnChange();
+			leftSlide.fnNext().fnChange();
 		});
 		$("#section .leftSlide").mouseover(function(){
-			clearInterval(slide.timer);
+			clearInterval(leftSlide.timer);
 		})
 		$("#section .leftSlide").mouseout(function(){
-			slide.timer = setInterval(function(){
-				slide.fnNext().fnChange();
+			leftSlide.timer = setInterval(function(){
+				leftSlide.fnNext().fnChange();
 			},2000);
 		});
 		$("#section .leftSlide .dot span").mouseover(function(){
-			slide.numChange(this);
+			leftSlide.numChange(this);
 		});
 		
 		
 		
 		
 	});
-</script>
+</script>-->
 				
 				
 <!--<script>
@@ -357,7 +263,7 @@
 </script>	-->
 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	function codeslide(obj){
 		var slide = new Slide(obj);
 		
@@ -385,7 +291,7 @@
 		codeslide("#subject .subject01 .mainslide");
 	})
 		
-</script>
+</script>-->
 				
 				
 				<div class="timer">
@@ -408,7 +314,7 @@
 					<div class="next"></div>
 				</div>
 				
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$.ajax({
 	type:"GET",
 	url:"json/timer.txt",
@@ -478,20 +384,8 @@
 			
 		
 	})
-</script>				
-				
-				
-<script type="text/javascript">
-		window.onload=function(){
-				
-				var oBox=$("#box")
-				var oText1=$("#text1")
-				var oText2=$("#text2")
-				var oBtn=$("#btn")
-				
-				
-			}
-</script>				
+</script>				-->
+							
 				
 				
 				
@@ -554,7 +448,7 @@
 					</li>
 					-->
 			</div>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$.ajax({
 	type:"GET",
 	url:"json/hot_sales.txt",
@@ -579,20 +473,20 @@
 	});
 	
 	$(function(){
-		var num=0
+		var changenum=0
 		$("#hot_sale .hot .title .change").click(
 			function(){
-				num++
-				if(num>3){
-					num=0
+				changenum++
+				if(changenum>3){
+					changenum=0
 					return $("#hot_sale .hot ul").css({"left":0})
 				}
-				$("#hot_sale .hot ul").animate({"left":(num*-958)},500)	
+				$("#hot_sale .hot ul").animate({"left":(changenum*-958)},500)	
 			}
 		);
 		
 	})
-</script>			
+</script>			-->
 			<div class="hotright">
 				<dl class="new">
 					<dt><span>新蛋动态</span> <a href="#">更多>></a></dt>
@@ -711,7 +605,7 @@
 			
 		</div>
 		
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$("#good_reviews .goods2").mouseover(function(){
 		
 		$("#good_reviews  .chlid2").css({"display":"block"});
@@ -768,7 +662,7 @@
 		$("#good_reviews .goods3").css({"width":175,"left":350});		
 	});
 	
-</script>			
+</script>			-->
 		
 		<!------------------------------	好评区结束-------------------------------------------->
 		
@@ -796,20 +690,7 @@
 				</div>
 			</div>
 			
-<script type="text/javascript">
-
-function Tag(ele){
-	$(ele).find('.goodsTop > span').mouseover(function(){
-		var $index= $(this).index();
-		
-	$(ele).find('.goodsTop > span').removeClass("active").eq($index).addClass("active")	
-	$(ele).find('.goodsList > ul').css({"display":"none"}).eq($index).css({"display":"block"})
-	
-	
-	})
-	
-}
-
+<!--<script type="text/javascript">
 
 
 $.ajax({
@@ -822,6 +703,19 @@ $.ajax({
 	},
 	success:function(str){
 		var arr=eval(str);
+		
+		function Tag(ele){
+			$(ele).find('.goodsTop > span').mouseover(function(){
+				var $index= $(this).index();
+				
+			$(ele).find('.goodsTop > span').removeClass("active").eq($index).addClass("active")	
+			$(ele).find('.goodsList > ul').css({"display":"none"}).eq($index).css({"display":"block"})
+			
+			
+			})
+			
+		}
+		
 		for(var i=0;i<arr.length;i++){
 			var jsonArr=arr[i];
 			var $ul=$("<ul></ul>")
@@ -853,7 +747,7 @@ $.ajax({
 	
 
 	
-</script>			
+</script>			-->
 			
 			
 			
@@ -1087,7 +981,7 @@ $.ajax({
 		</div>
 		
 		
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$.ajax({
 	type:"GET",
 	url:"json/subject.txt",
@@ -1168,7 +1062,7 @@ $.ajax({
 	
 
 	
-</script>	
+</script>	-->
 		<!------------------------------	主卖区结束-------------------------------------------->
 		
 		

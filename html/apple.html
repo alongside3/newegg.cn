@@ -191,6 +191,56 @@
 			<a href="javascript:;" class="addToCart">加入购物车</a>
 		</div>	
 		
+<script type="text/javascript">
+	$(function(){
+		$("#tabshead .tabshead_left li").click(function(){
+			$(this).addClass("active").siblings().removeClass("active")
+			
+			
+			$("#tabshead_fixed  li").eq($(this).index()).addClass("fixed_active").siblings().removeClass("fixed_active");
+			
+			if($(this).index()==0){
+				$("#appleTab1").show().siblings().hide();
+			}else if($(this).index()==1){
+				$("#appleTab2").show().siblings().hide();
+			}else if($(this).index()==2){
+				$("#appleTab3").show().siblings().hide();
+			}else if($(this).index()==3){
+				$("#appleTab4").show().siblings().hide();
+			}else if($(this).index()==4){
+				$("#appleTab5").show().siblings().hide();
+			}
+			
+			
+		})
+		
+		$("#tabshead_fixed  li").click(function(){
+			
+			
+			
+			$(this).addClass("fixed_active").siblings().removeClass("fixed_active");
+			$("#tabshead .tabshead_left li").eq($(this).index()).addClass("active").siblings().removeClass("active");
+			
+			if($(this).index()==0){
+				$("#appleTab1").show().siblings().hide();
+			}else if($(this).index()==1){
+				$("#appleTab2").show().siblings().hide();
+			}else if($(this).index()==2){
+				$("#appleTab3").show().siblings().hide();
+			}else if($(this).index()==3){
+				$("#appleTab4").show().siblings().hide();
+			}else if($(this).index()==4){
+				$("#appleTab5").show().siblings().hide();
+			}
+			
+			
+		})
+	})
+</script>
+		
+		
+		
+		
 		
 		
 		<div id="applamain">
@@ -258,6 +308,24 @@
 			return "a"
 			
 		}	
+		
+	})
+	
+	var imgNum=1
+	$("#appleTab1 .goods_prev .goods_fixed .goodsimg_next").click(function(){
+		imgNum++
+		if(imgNum>=3){
+			imgNum=3
+		}
+		$("#appleTab1 .goods_prev .goods_fixed img").attr("src","../images/apple/goods_prev0"+imgNum+".jpg")
+		
+	})
+	$("#appleTab1 .goods_prev .goods_fixed .goodsimg_prev").click(function(){
+		imgNum--
+		if(imgNum<=1){
+			imgNum=1
+		}
+		$("#appleTab1 .goods_prev .goods_fixed img").attr("src","../images/apple/goods_prev0"+imgNum+".jpg")
 		
 	})
 	
@@ -450,6 +518,117 @@
 						<li><img src="../images/apple/Apple22.jpg"/ width="100%"></li>
 					</ul>
 				</div>
+			</div>
+			
+			<div id="appleTab2">
+				<div class="box">
+				<ul>
+					<li>
+						<div class="left"><span><img src="../images/apple/head003.jpg"/></span></div>
+						<div class="right">
+							<div class="userinfo"><cite>4#</cite><span class="name">becky0224</span><span class="info">青铜会员  &nbsp; &nbsp; &nbsp; &nbsp;2016-08-05 12:12</span></div>
+							<div class="callback">
+								<!--<p>米TUO‖ posted on 2016-08-01 20:43:36</p>
+								<p>报名 报名</p>-->
+							</div>
+							<div class="msg">最轻巧的笔记本电脑，屏幕非常清晰。玫瑰金色很吸引眼球。</div>
+							<div class="func"><cite><a href="#">举报</a><a href="#">回复</a></cite></div>
+						</div>
+					</li>
+					<li>
+						<div class="left"><span><img src="../images/apple/userAvtar_2.png"/></span></div>
+						<div class="right">
+							<div class="userinfo"><cite>3#</cite><span class="name">mengwen6688</span><span class="info">青铜会员 &nbsp; &nbsp; &nbsp; &nbsp;2016-06-30 21:58</span></div>
+							<div class="callback">
+								<!--<p>米TUO‖ posted on 2016-08-01 20:43:36</p>
+								<p>报名 报名</p>-->
+							</div>
+							<div class="msg">很薄很喜欢，玫瑰金很时尚。</div>
+							<div class="func"><cite><a href="#">举报</a><a href="#">回复</a></cite></div>
+						</div>
+					</li>
+					<li>
+						<div class="left"><span><img src="../images/apple/userAvtar_4.png"/></span></div>
+						<div class="right">
+							<div class="userinfo"><cite>2#</cite><span class="name">Pingan</span><span class="info">黄金会员 &nbsp; &nbsp; &nbsp; &nbsp;2016-05-21 12:04</span></div>
+							<div class="callback">
+								<!--<p>米TUO‖ posted on 2016-08-01 20:43:36</p>
+								<p>报名 报名</p>-->
+							</div>
+							<div class="msg">轻巧无比，配置升级后性价比更高了！</div>
+							<div class="func"><cite><a href="#">举报</a><a href="#">回复</a></cite></div>
+						</div>
+					</li>
+					<li>
+						<div class="left"><span><img src="../images/apple/userAvtar_4.png"/></span></div>
+						<div class="right">
+							<div class="userinfo"><cite>1#</cite><span class="name">潘多多</span><span class="info">黄金会员 &nbsp; &nbsp; &nbsp; &nbsp;2016-05-20 10:47</span></div>
+							<div class="callback">
+								<!--<p>米TUO‖ posted on 2016-08-01 20:43:36</p>
+								<p>报名 报名</p>-->
+							</div>
+							<div class="msg">到打开后，真的太棒的感觉！近乎完美的外观设计，超薄机身配备12寸Retina显示屏。全新的键盘和触摸板设置，先进的usb－c接口，完全引领潮流。不用多说，New Macbook绝对吸引眼球！玫瑰金颜色也真的好看！</div>
+							<div class="func"><cite><a href="#">举报</a><a href="#">回复</a></cite></div>
+						</div>
+					</li>
+				</ul>
+				<div class="msg_input">
+					<div class="input">
+						<input type="text"/>
+					</div>
+					<div class="btn">
+						<button class="huifu" style="display:none">回复</button>
+						<button class="pinglun">评论</button>
+					</div>
+				</div>
+				</div>
+			
+			<script>
+$(function(){
+	$(".btn .pinglun").click(function(){
+		var $value = $(".msg_input input").val();
+		$(".msg_input input").val("");
+		$("#appleTab2 ul").prepend("<li/>");
+		$("#appleTab2 ul li:first").append('<div class="left"><span><img src="../images/apple/userAvtar_2.png"/></span></div><div class="right"><div class="userinfo"><cite>5#</cite><span class="name">匿名用户</span><span class="info">青铜会员 &nbsp;&nbsp;&nbsp;&nbsp;2016-08-19 16:47</span></div><div class="msg">'+$value+'</div><div class="func"><cite><a href="#">举报</a><a class="huifu" href="#">回复</a></cite></div></div>');
+		$("#appleTab2 ul li:first").find("a.huifu").click(function(){
+			$(".msg_input input").val("");
+			$("button.pinglun").hide();
+			$("button.huifu").show();
+			var $this=this
+			$("button.huifu").unbind("click")
+			$("button.huifu").click(function(e){
+				$("button.pinglun").show();
+				$("button.huifu").hide();
+				var $val = $(".msg_input input").val();
+				$(".msg_input input").val("");
+				$($this).parents(".func").prev().before('<div class="callback"><p class="noname">匿名用户</p><p>'+$val+'</p></div>');
+				e.stopPropagation()
+			});
+		});
+	});
+});
+</script>
+			
+			
+			</div>
+			<div id="appleTab3">
+				<div class="appleImg">
+					<ul>
+						<li><img src="../images/apple/tag3_01.png"/ width="100%"></li>
+						<li><img src="../images/apple/tag3_02.png"/ width="100%"></li>
+						<li><img src="../images/apple/tag3_03.png"/ width="100%"></li>
+					</ul>
+				</div>	
+			</div>
+			<div id="appleTab4">
+				
+					<img src="../images/apple/tag4_01.png"/ width="100%">
+					
+			</div>
+			<div id="appleTab5">
+				
+				<p>没有找到相关咨询。</p>
+					
 			</div>
 		</div>	
 			

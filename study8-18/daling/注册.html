@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>当前网页标题</title>
+ <link rel="stylesheet" type="text/css" href="css/denglu.css">
+  <script type="text/javascript" src="js/jq.js">
+  	
+  </script>
+  <script type="text/javascript">
+     $(function(){
+     	var	re=/^[1-9]\d{4,11}$/
+     	$("#main .last").click(function(){
+     		
+//   		if($("#te1").value==null){
+//   			alert("请输入您的手机号码！")
+//   		}else{
+
+     			if(re.test($("#te1").value)){
+						alert("是qq号")
+					}
+     			
+     			
+//   			else{
+//						alert("不是qq号")
+//					}
+//   			
+     			
+     			
+     
+//   		}
+//   		if($("#te2").value==null){
+//   			alert("请输入您的密码！")
+//   		}
+     	})
+     	
+     	
+     	
+     	
+     	
+     })
+  
+  </script>
+  
+  
+  
+ </head>
+  <body>
+   <div id="top">
+   	 <img src="denglu/top01.jpg" />
+   </div>
+   <div id="main">
+   	 <div id="left">
+   	  	<img src="denglu/main_02.jpg" />
+   	 </div>
+   	 <div id="right">
+   	 	 <div id="right2">
+   	 	 	 <p>达令会员</p>
+   	 	 	 <h2>
+   	 	 	 	 <div id="dl">登录</div>
+   	 	 	 	 <div id="zc">注册</div>  	 	 	 	 
+   	 	 	 </h2>
+   	 	 	 <ul>
+   	 	 	 	<li>
+   	 	 	 		<div class="box">
+   	 	 	 		<img src="denglu/main11_03.jpg" />
+   	 	 	 		<input type="text" placeholder="请输入您的手机号码" id="te1" value="" />  	 	 	 			
+   	 	 	 		</div>
+   	 	 	 	</li>
+   	 	 	 	<li>
+   	 	 	 		<div class="box">
+   	 	 	 		<img src="denglu/main11_06.jpg" />
+        	 	<input type="text" placeholder="请输入密码" id="te2" value="" />  	 	 	 			
+   	 	 	 		</div>   	 	 	 		
+   	 	 	 	</li>
+   	 	 	 	</ul>
+   	 	 	 		<div id="btn">
+   	 	 	 			<a href="javascript:;">忘记密码？</a>   
+   	 	 	 		</div>
+   	 	 	    <button class="last">登录</button> 	 	 	 
+   	 	 </div>
+   	 </div>
+   </div>
+   <div id="main2">
+   	 <ul>
+   	 	<li id="first"><a href="javascript:;">为什么选择达令</a><span>&nbsp;></span></li>
+   	 	<li><img src="denglu/main2_03.jpg" /><a href="javascript:;">100多个品牌授权</a></li>
+   	 	<li><img src="denglu/main2_05.jpg" /><a href="javascript:;">24小时内发货</a></li>
+   	 	<li><img src="denglu/main2_07.jpg" /><a href="javascript:;">保税区正品</a></li>
+   	 </ul>
+   </div>
+   <div id="main3">
+   	 	 <ul>
+   	 	 	<li>
+   	 	 		<dl>
+   	 	 			<dt>投资人说达令</dt>
+   	 	 			<dd>"hi,达令,我是鹿晗,达令投资人,投资比影响力更重要的是责任。"</dd>
+   	 	 		</dl>
+   	 	 	</li>
+   	 	 	<li>
+   	 	 		<dl>
+   	 	 			<dt>投资人说达令</dt>
+   	 	 			<dd>"达令一手全球好货--带您购全球,教您神马值得买。连续两年荣获App store编辑推荐最佳购物类应用！"</dd>
+   	 	 		</dl>
+   	 	 	</li>
+   	 	 </ul>
+   </div>
+   <div id="foot">
+   	  <ul>
+   	  	<li><a href="javascript:;">首页</a></li>
+   	  	<li><a href="javascript:;">网站地图</a></li>
+   	  	<li><a href="javascript:;">消费者告知书</a></li>
+   	  	<li><a href="javascript:;">关于我们</a></li>
+   	  	<li id="last"><a href="javascript:;">联系我们</a></li>
+   	  </ul>
+   	  <p>北京普缇客科技有限公司</p>
+   	  <div>Copyright 2007-2014 北京普缇客科技有限公司 京ICP备12003911号-3 京公网安备11010802011455号 站长统计 百度统计</div>
+   </div>
+  </body>
+</html>
